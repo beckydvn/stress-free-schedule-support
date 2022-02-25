@@ -123,7 +123,6 @@ ONE-WAY EXCLUSION May not be taken with or after: ARTF 125/6.0; ARTF 260/3.0; AR
 
 ARTF 128/6.0	Introductory Fine Art II
 A continuation of ARTF 127/6.0, this course offers two of the sections from the media available at this level: painting, drawing, two-dimensional fundamentals, and three-dimensional fundamentals.
- 
 NOTE Open only to students in a BFA Program. NOTE Materials: estimated cost $600
 NOTE A $250 deposit is required by students who intend on participating in the voluntary 2nd year field trip to New York. LEARNING HOURS 288 (144Lb;144P)
 PREREQUISITE A minimum grade of C- in ARTF 127/6.0 and a GPA of 1.60. EXCLUSION(S) ARTF 101/3.0; ARTF 102/3.0; ARTF 106/3.0
@@ -262,7 +261,6 @@ LEARNING HOURS 120 (24L;12G;12O;72P)
 PREREQUISITE Level 2 or above or permission of the Department.
 
 ARTH 231/3.0	Canadian Art I
- 
 A study of Canadian art from its beginnings through the nineteenth century. The nature and development of Canadian art within the context of the social, political and economic history of the country will be examined.
 LEARNING HOURS 120 (36L;84P)
 PREREQUISITE Level 2 or above or permission of the Department.
@@ -459,7 +457,6 @@ PREREQUISITE Level 3 or above.
 ARTH 352/3.0	Printmaking in Early Modern Europe
 A chronological survey of the history of printmaking in Western Europe from its beginnings in the 15th century to the Industrial Revolution. Topics include the cultural impact of the reproducible image, the development of woodcut, engraving, etching and lithography, and the achievements of printmakers such as Dürer, Goltzius, Callot, Rembrandt, Hogarth and Goya.
 LEARNING HOURS 126 (24L;12G;90P) RECOMMENDATION ARTH 253/3.0.
- 
 PREREQUISITE Level 3 or above.
 
 ARTH 353/3.0	Flemish Baroque Art
@@ -500,7 +497,6 @@ PREQUISITE Level 3 or above EQUIVALENCY  ARTH 375/3.0
 
 ARTH 380/6.0	Venice and its Biennale: Global Circuits of Contemporary Art
 A four-week travel study course that gives students the opportunity to experience the Venice Biennale first hand. Through onsite and experiential learning at the Biennale and other arts institutions in Venice, students will study the production, display and circulation of global contemporary art.
- 
 NOTE Students must pay a $4,000.00 course for this course. The course fee covers accommodation, five group meals, public transit in Venice, entrance to all museums and galleries included on the syllabus, and passes for the Venice Biennale. Cost of travel and daily meals must also be paid by the student.
 LEARNING HOURS 224 (75L;12S;56Pc;36G;45P) PREREQUISITE 6.0 units in ARTH.
 
@@ -580,7 +576,6 @@ PREREQUISITE Level 4 and registration in an ARTH Major or Medial Plan and a GPA 
 
 ARTH 425/3.0	House: Studies in the History of an Idea
 This course considers the house as a central typology in the history of architecture and will explore it in its fullest theoretical and literary contexts. We consider the house as an idea and a material whole, including the art that it housed, the functions and performances that it staged, and the patrons, architects and designers that created it.
- 
 LEARNING HOURS 120 (36S;84P)
 PREREQUISITE Level 4 and registration in an ARTH Major or Medial Plan and a GPA of 1.9 and 24.0 units in ARTH.
 
@@ -628,7 +623,6 @@ Explores Caravaggio, Artemisia Gentileschi and contemporaries in Baroque Italy. 
 LEARNING HOURS 120 (36S;84P)
 PREREQUISITE Level 4 and registration in an ARTH Major or Medial Plan and a GPA of 1.9 and 24.0 units in ARTH.
 
-
 ARTH 460/3.0	Curatorial Studies
 This seminar, held at the Agnes Etherington Art Centre, integrates historical, theoretical, and practical approaches to contemporary curatorial issues.
 LEARNING HOURS 126 (18S;18Pc;90P)
@@ -674,7 +668,6 @@ ASCX 101/3.0	Learning and Working in a Digital World
 The future is uncertain. Information is expanding at an exponential rate. Jobs that were formerly done by humans are being taken over by artificial intelligence and automation. This course will ask what it means to be a human learner and worker in a rapidly changing digital world. Students will develop a transferable and flexible toolbox of skills.
 LEARNING HOURS 120(12T;12G;48O;48P)
 PREREQUISITE Registration in an Arts and Science Degree Plan
-
 
 ASCX 200/3.0	Dean’s Changemaker Challenge: Collaborative Problem Solving
 This course is part of the Dean’s Changemaker Challenge. It is dedicated to preparing students to identify- a real- world problem and to implement their solution to a problem. Successful completion of this course will provide access to ASXC 300 where students will have the opportunity to execute on the real-world implementation of their solution.
@@ -774,7 +767,6 @@ Biochemical research techniques with emphasis on nucleic acids, protein structur
 NOTE 6.0-unit course offered in the Fall Term. LEARNING HOURS 222 (6S;144Lb;24I;6O;42P)
 PREREQUISITE Level 4 and registration in a BCHM Specialization Plan and (a GPA of 2.9 in 12 units of BCHM 218/3.0; BCHM 313/3.0; BCHM 315/3.0; BCHM 316/3.0; BCHM 317/6.0).
 
-
 BCHM 422/6.0	Advanced Biochemistry Laboratory II
 An independent research project by each student in one of the departmental research labs. Evaluation is based on oral presentation, lab performance and a thesis.
 NOTE 6.0-unit course offered in the Winter Term. LEARNING HOURS 222 (6S;144Lb;24I;6O;42P)
@@ -823,7 +815,6 @@ BIOL 111/3.0	Ecology and the Environment
 Introduces the basic concepts of ecology and shows how they relate to environmental issues such as population growth, resource management, biodiversity, agriculture, air and water pollution, energy, and climate change, and to solutions leading to a sustainable environment.
 NOTE Also offered online. Consult Arts and Science Online. Learning Hours may vary. LEARNING HOURS 108 (36L;72P)
 ONE-WAY EXCLUSION May not be taken with or after BIOL 300/3.0; BIOL 302/3.0; BIOL 303/3.0.
-
 Admission to 400- and 500-level Biology Courses
 Admission to 400- and 500-level Biology courses requires a minimum cumulative GPA of 2.0 in any previously taken courses from the Biological Foundations List (BIOL_FNDS) regardless of Degree Plan. Requests for special consideration must be submitted to the Chair of Undergraduate Studies.
 
@@ -857,10 +848,8 @@ An introduction to the analysis of data from real life situations. Covers study 
 LEARNING HOURS 120 (36L;12T;72P)
 EXCLUSION(S) CHEE 209/3.0; ECON 250/3.0; GPHY 247/3.0; KNPE 251/3.0 (formerly PHED 251/3.0); NURS 323/3.0; POLS 385/3.0; PSYC 202/3.0; SOCY 211/3.0; STAM 200/3.0; STAT 263/3.0; STAT 267/3.0; STAT 367/3.0; COMM 162/3.0.
 ONE-WAY EXCLUSION May not be taken with or after STAT 269/3.0.
-
 Admission to 400- and 500-level Biology Courses
 Admission to 400- and 500-level Biology courses requires a minimum cumulative GPA of 2.0 in any previously taken courses from the Biological Foundations List (BIOL_FNDS) regardless of Degree Plan. Requests for special consideration must be submitted to the Chair of Undergraduate Studies.
-
 BIOL_FNDS
 BIOL 102/3.0; BIOL 103/3.0; BIOL 200/3.0; BIOL 201/3.0; BIOL 202/3.0; BIOL 205/3.0; BIOL 206/3.0; BIOL 212/3.0; BIOL 300/3.0; BIOL 330/3.0; BIOL 334/3.0; BIOL 339/3.0; BIOL 341/3.0; BIOL 302/3.0; BIOL 303/3.0
 
@@ -911,7 +900,6 @@ PREREQUISITE BIOL 206/3.0 and (3 units from BIOL 200/3.0; BIOL 201/3.0; BIOL 202
 BIOL 327/3.0	Field Biology III
 Two weeks of field work plus written assignments in one or two areas of study to be done when specialized modules are available in May, July, August or February. Studies may include ecology of birds, fish, insects, small mammals, plants, tundra and taiga, lakes and caves.
 NOTE Field trip: estimated cost of each module and the schedule of offerings for each year are available in January.
- 
 PREREQUISITE BIOL 307/3.0 and BIOL 317/3.0. Prior to registering in the course students must complete the application process, be placed in a module and complete the field work.
 
 BIOL 330/3.0	Cell Biology
@@ -966,7 +954,6 @@ BIOL 369/3.0	Sex and Evolution
 Why sex? The evolutionary origins and consequences of sex and sexual reproduction. Topics include costs and benefits of sexual reproduction, the evolution and coevolution of sexes, gametes and genitalia, mating systems, gender differences and sex determination throughout the biotic world.
 LEARNING HOURS 122 (36L;8T;18O;60P) RECOMMENDATION BIOL 206/3.0.
 PREREQUISITE BIOL 102/3.0 and BIOL 103/3.0 and (3.0 units from BCHM 218/3.0; BIOL 200/3.0; BIOL 205/3.0; BIOL 206/3.0; BIOL 201/3.0; BIOL 202/3.0)
-
 Admission to 400- and 500-level Biology Courses
 Admission to 400- and 500-level Biology courses requires a minimum cumulative GPA of 2.0 in any previously taken courses from the Biological Foundations List (BIOL_FNDS) regardless of Degree Plan. Requests for special consideration must be submitted to the Chair of Undergraduate Studies.
 
@@ -1084,7 +1071,6 @@ BIOL 445/3.0	Neuroethology
 The current status of research in the study of the neural control of the natural behaviour of animals. Topics include the detection and coding of information in the environment, the integration of this information in the process of decision- making, the generation of the motor patterns that underlie behaviour, and general constraints on form and function of neural circuits.
 LEARNING HOURS 126 (36L;18T;24O;48P)
 PREREQUISITE [BIOL 339/3.0 or (PHGY 215/3.0 and PHGY 216/3.0) or PHGY 214/6.0) and a minimum GPA of 2.0 in the Biological Foundations List.
-
 Advanced Honours Seminars (BIOL 501 – 535)
 Biology offers a series of advanced 3.0 unit seminars with emphases on reading primary literature, writing, presentation skills and experimental enquiry. Small class sizes and extensive interaction with faculty help promote an independent, discovery-based learning experience. Topics and course numberings for seminar offerings vary from year to year and are listed each spring for third-year students to consider. Normally, due to enrolment restrictions, students taking BIOL 537/12.0 will be permitted to take only one of these seminar courses and all other fourth-year students will be permitted to take a maximum of two.
 
@@ -1165,7 +1151,6 @@ PREREQUISITE Level 4 and registration in a Biology Honours Plan (BIOL-M-BSH, BIO
 BIOL 537/12.0	Research in Biology
 Individual research projects under the supervision of a staff member; reported in the form of a thesis, poster and seminar. LEARNING HOURS 444 (8L;36S;300Pc;100O)
 NOTE In the spring preceding fourth year, students must select projects in consultation with potential supervisors. Registration is subject to availability of a supervisor. Work on the project during summer is advantageous if field studies are required. See also the statement on BIOL 501/3.0-BIOL 535/3.0 in the BIOL Department Information, preliminary information section.
- 
 PREREQUISITE Admission to the final year of a BSCH program in Biology and a minimum GPA of 2.0 in the Biological Foundations List and permission of the project supervisor and course coordinator.
 EXCLUSIONS BIOL 541/12.0.
 
@@ -1586,7 +1571,6 @@ Review of imperatives programming features. Introduction to other widely used pr
 LEARNING HOURS 120 (36L;84P) EQUIVALENCY CISC 260/3.0.
 PREREQUISITE Registration in a School of Computing Plan and C- (obtained in any term) or a ‘Pass’ (obtained in Winter 2020) in (CISC 124/3.0 and CISC 204/3.0).
 
-
 CISC 365/3.0	Algorithms I
 Principles of design, analysis and implementation of efficient algorithms. Case studies from a variety of areas illustrate divide and conquer methods, the greedy approach, branch and bound algorithms and dynamic programming.
 LEARNING HOURS 120 (36L;84P)
@@ -1612,7 +1596,6 @@ PREREQUISITE Level 4 and registration in a School of Computing Plan and C- (obta
 CISC 423/3.0	Software Requirements
 An integrated approach to discovering and documenting software requirements. Identification of stakeholders; customer, operator, analyst, and developer perspectives. Requirements elicitation. Transition from initial (informal) requirements to semi-formal and formal representations. Requirements analysis process; analysis patterns. Requirements specification techniques. Relation to architecture and user interface design; traceability of requirements.
 LEARNING HOURS 120 (36L;84P)
- 
 PREREQUISITE Registration in a School of Computing Plan and C- (obtained in any term) or a ‘Pass’ (obtained in Winter 2020) in (CISC 322/3.0 or CISC 326/3.0).
 COREQUISITE CISC 325/3.0.
 
@@ -1651,7 +1634,6 @@ LEARNING HOURS 120(36L;84P) PREREQUISITE CISC 327/3.0 or SOFT 327/3.0
 
 CISC 451/3.0	Topics in Data Analytics
 Content will vary from year to year; typical areas covered may include: tools for large scale data analytics (Hadoop, Spark), data analytics in the cloud, properties of large scale social networks, applications of data analytics in security.
- 
 LEARNING HOURS 120 (36l;36Lb;48P)
 PREREQUISITE C- (obtained in any term) or a ‘Pass’ (obtained in Winter 2020) in (CISC 333/3.0 or CISC 351/3.0 or CISC 372/3.0).
 
@@ -1671,13 +1653,10 @@ Introduction to computer graphics, including a review of current hardware; model
 LEARNING HOURS 120 (36L;84P)
 PREREQUISITE Level 3 or above and registration in a School of Computing Plan and C- (obtained in any term) or a ‘Pass’ (obtained in Winter 2020) in [CISC 235/3.0 and (MATH 110/6.0 or MATH 111/6.0 or MATH 112/3.0)].
 
-
-
 CISC 457/3.0	Image Processing and Computer Vision
 Introduction to fundamental concepts and applications in image processing and computer vision. Topics include image acquisition, convolution, Discrete Fourier Transform, image enhancement, edge detection, segmentation, image registration, human contrast perception, colour perception and reproduction, stereo vision.
 LEARNING HOURS 120 (36L;84P)
 PREREQUISITE Registration in a School of Computing Plan and C- (obtained in any term) or a ‘Pass’ (obtained in Winter 2020) in [(MATH 110/6.0 or MATH 111/6.0 or MATH 112/3.0) and (MATH 120/6.0 or MATH 121/6.0 or MATH 123/3.0 or MATH 124/3.0 or MATH 126/6.0) and CISC 124/3.0].
-
 
 CISC 458/3.0	Programming Language Processors
 Introduction to the systematic construction of a compiler: grammars and languages, scanners, top-down and bottom-up parsing, runtime organization, symbol tables, internal representations; Polish notation, syntax trees, semantic routines, storage allocation, code generation, interpreters.
@@ -1719,19 +1698,15 @@ Design of deep neural networks based on leading-edge algorithms such as Restrict
 LEARNING HOURS 120 (36L;84P)
 PREREQUISITE Registration in a School of Computing Plan and C- (obtained in any term) or a ‘Pass’ (obtained in Winter 2020) in CISC 371/3.0.
 
-
 CISC 474/3.0	Reinforcement Learning
 Formal and heuristic approaches to problem-solving, planning, knowledge representation and reasoning, Markov decision processes, dynamic programming, temporal-difference learning, Monte Carlo learning, function approximation, integration of learning and planning. Implementing simple examples of logical reasoning, clustering or classification.
 LEARNING HOURS 120 (36L;12G;72P)
 PREREQUISITE Registration in a School of Computing Plan and C- (obtained in any term) or a ‘Pass’ (obtained in Winter 2020) in CISC 352/3.0.
 
-
 CISC 486/3.0	Game Development
 An introduction to 'engines' used in networked 3-dimensional games. Topics include game-engine architecture and components providing 3-dimensional rendering, physics simulation, sound, artificial intelligence and networking services. LEARNING HOURS 120 (36L;15G;69P)
- 
 PREREQUISITE Registration in a School of Computing Plan and C- (obtained in any term) or a ‘Pass’ (obtained in Winter 2020) in [CISC 226/3.0 and (CISC 322/3.0 or CISC 326/3.0) and CISC 324/3.0 and (MATH 110/6.0 or MATH 111/6.0 or MATH
 112/3.0)].
-
 
 CISC 490/3.0	Topics in Computing Science I
 Content varies. Not offered every year. NOTE Learning Hours will vary.
@@ -1761,7 +1736,6 @@ LEARNING HOURS 258 (18S;240G)
 PREREQUISITE Level 4 and registration in a SODE Specialization Plan and a GPA of 1.90 and a GPA of 2.60 in CISC; COCA; COGS; SOFT and 30.0 units in CISC; COCA; COGS; SOFT and [C- (obtained in any term) or a ‘Pass’ (obtained in Winter 2020) in (CISC 322/3.0 or CISC 326/3.0) and (CISC 325/3.0 or CISC 327/3.0)].
 EXCLUSION(S) CISC 499/3.0; CISC 496/.30
 
-
 CISC 499/3.0	Advanced Undergraduate Project
 Topic selected under the supervision of a faculty member. Emphasis may be on the development of a large program, or on more theoretical issues. Independent research, an oral presentation, and a written report are required.
 LEARNING HOURS 120 (120P)
@@ -1770,7 +1744,6 @@ EXCLUSION(S) CISC 496/3.0; CISC 498/6.0; COGS 499/3.0; CISC 500/6.0
 
 CISC 500/6.0	Undergraduate Thesis
 Individual research project under the supervision of a School of Computing faculty member. Evaluation is based on an oral presentation and a written thesis. It is the responsibility of the student to make a research proposal and secure a supervisor prior to enrolling in the course.
- 
 LEARNING HOURS 240 (24I;216P)
 PREREQUISITE Permission of the Department. Minimum cumulative GPA of 3.5 and Level 4 and registration in a COMP Major or BMCO, COGS, COMA, CSCI, or SODE specialization plan.
 EXCLUSION(S) CISC 496/3.0; CISC 499/3.0; COGS 499/3.0
@@ -1859,7 +1832,6 @@ Intensive study of the achievements in architecture, painting and sculpture, and
 PREREQUISITE (CLST 102/3.0 and CLST 103/3.0) or CLST 129/6.0 or CLST 130/3.0 or CLST 131/3.0 or CLST 200/3.0 or CLST
 101/6.0 or permission of the Department.
 
-
 CLST 305/3.0	Archaeology of the Etruscans and Early Romans
 This survey of the material remains of early Italy will focus on the early Iron Age, Etruscan, and Roman (Regal and Republican) cultures. Each culture’s art, architecture, urban patterns, and burial practices will be investigated in terms of the changing political and social conditions affecting those societies.
 LEARNING HOURS 126 (36L;90P)
@@ -1903,7 +1875,6 @@ Study of the period from the formation of Greek civilization following the colla
 LEARNING HOURS 126 (36L;90P)
 PREREQUISITE CLST 200/3.0 or permission of the Department. EXCLUSION(S) CLST 330/3.0
 
-
 CLST 333/3.0	The Rise of the Athenian Empire to the End of the Peloponnesian War
 Study of the rise of Athenian power from the end of the Persian Wars in 479 BCE, and the conflict between Athens and Sparta along with their allies during the Peloponnesian War (431-404 BCE). Topics may include the Delian League and Athenian imperialism, development of radical democracy in Athens, and causes and effects of the Peloponnesian War. LEARNING HOURS 126 (36L;90P)
 PREREQUISITE CLST 200/3.0 or permission of the Department. EXCLUSION(S) CLST 330/3.0
@@ -1941,7 +1912,6 @@ The growth of Athens from the Neolithic period to Late Antiquity. Emphasis on so
 LEARNING HOURS 126 (36S;90P)
 PREREQUISITE CLST 303/3.0 or CLST 304/3.0 or CLST 332/3.0 or CLST 333/3.0 or CLST 334/3.0 or CLST 335/3.0 or CLST
 330/3.0 or CLST 331/3.0 or permission of the Department.
-
 
 CLST 405/3.0	The Topography of Rome
 The growth of Rome from the foundation to Late Antiquity based on archaeological evidence. Emphasis on developments during its classical period.
@@ -2192,9 +2162,7 @@ DEVS 306/3.0	Cuban Culture and Society I
 This course introduces students to Cuban society and culture. The focus is on the period from the Cuban revolution (1959) to the present. Students will examine some of the main events and highlights of Cuban history, politics and culture in this era. This is a prerequisite for DEVS 307 Cuban Culture and Society II, held in Havana
 LEARNING HOURS 120(36L;84P)
 PREREQUISITE Level 3 or above and registration in an ASC Plan
- 
 EXCLUSIONS No more than 6.0 units from DEVS 305/6.0; DEVS 306/3.0; DEVS 307/3.0
-
 
 DEVS 307/3.0	Cuban Culture and Society II Havana
 An experiential learning course that takes place in Havana, in collaboration with U of Havana. Begins with pre-departure sessions at Queen’s followed by two weeks in Havana. Havana instructors include professors, musicians, filmmakers, artists. Havana site visits include museums, art schools, organic gardens, galleries, medical schools, theatres.
@@ -2268,7 +2236,6 @@ DEVS 362/3.0	Globally Engaged Experiential Learning
 This course builds on DEVS 280/3.0 by facilitating an 80-hour experience related to global engagement. Students will engage with concepts of ethical engagement and relationship building as they are guided through a practical experiential learning opportunity in the field of global engagement.
 NOTE Only offered online. Consult Arts and Science Online. LEARNING HOURS 120 (72O;48P)
 PREREQUISITE [(Level 2 or above or registration in the GAEN certificate) and DEVS 280/3.0] or permission of the instructor.
- 
 
 DEVS 363/3.0	Contemporary Southern Africa: Development Trends and Challenges
 This course first provides the historical and regional context necessary to understand urban southern Africa’s contemporary struggles, then examines strategies to address key development challenges and how they may be creating opportunities for new ways of thinking about citizenship in South Africa and the Global South more generally.
@@ -2300,7 +2267,6 @@ ONE-WAY EXCLUSION May not be taken with or after DEVS 420/3.0
 
 DEVS 420/3.0	Study Placement in Development Studies
 Participation in an organized educational or cultural exchange, either i) one term of studies at a developing-country university, or ii) an exchange program in a developing-country setting with an organization such as Canada World Youth or Shastri Indo-Canadian Institute for at least 6 weeks. Students are required to prepare a work-study proposal, a risk assessment of their placement and attend a pre-departure orientation. Assessment will also be based on a journal and final report.
- 
 NOTE Students participating in the study period at the University of Witswatersand (Wits) in Johannesburg will pay ancillary fee for programming (e.g. cultural field trips, busing). Students will pay all travel and living costs while studying at Wits. The study period at Wits is mid-July to end of August.
 LEARNING HOURS 124 (40G;84P)
 PREREQUISITE Level 3 or above and registration in the DEVS Major or Medial Plan and departmental approval in advance from the Placement Coordinator, Global Development Studies.
@@ -2409,7 +2375,6 @@ COREQUISITE DRAM 240/3.0 or DRAM 242/3.0. EXCLUSIONS MUTH 247/1.5 and MUSC 247/1
 DRAM 251/3.0	Introduction to Playwriting
 Writing of dramatic exercises and one-act plays accompanied by dramaturgical study of published and original works. NOTE Priority in the on-campus offering of this course is given to students in a DRAM Plan.
 NOTE Also offered online. Consult Arts and Science Online. Learning Hours may vary.
- 
 LEARNING HOURS 120 (36S;84P)
 PREREQUISITE Level 2 or above.
 
@@ -2496,7 +2461,6 @@ PREREQUISITE Level 3 and (registration in a COCA, DRAM, MAPP, MUSC, MUTH, or STS
 DRAM 350/6.0	Playwriting III
 Continuation of DRAM 251/3.0. An intermediate study of playwriting and dramaturgy, including exercises in dramatic techniques and composition of original works.
 LEARNING HOURS 240 (72S;168P)
- 
 PREREQUISITE Level 3 or above and (registration in a COCA, DRAM, MAPP, MUSC, MUTH, or STSC Plan) and a grade of B- in DRAM 251/3.0.
 EXCLUSIONS DRAM 351/3.0.
 
@@ -2578,7 +2542,6 @@ PREREQUISITE (A grade of B in DRAM 342/3.0 or DRAM 345/3.0) and permission of th
 
 DRAM 545/3.0	Directed Special Studies in Technical Production
 Advanced examination of various roles in technical production, especially production and stage management, over the full year. Practical stage management projects are a component of the course.
- 
 NOTE The normal classroom time of 36 hours is spread over two terms. PREREQUISITE A grade of A- in DRAM 345/3.0 and permission of the School.
  
 ECON 110/6.0	Principles of Economics
@@ -2990,8 +2953,7 @@ NOTE Also offered online. Consult Arts and Science Online. Learning Hours may va
 PREREQUISITE ENGL 100/6.0 or (registration in a GNDS Plan).
 
 ENGL 231/3.0	Special Topics in Genre I For detailed information, consult the Department. LEARNING HOURS 120 (36L;84P)
-PREREQUISTE Level 2 or above
-
+PREREQUISITE Level 2 or above
 
 ENGL 232/3.0	Special Topics in Genre II For detailed information, consult the Department. LEARNING HOURS 120 (36L;84P)
 PREREQUISITE ENGL 100/6.0.
@@ -3008,7 +2970,6 @@ ENGL 237/3.0	Children’s Literature
 A critical study of literature written for children or appropriated by adults for the nursery. The emphasis will be on distinguishing the characteristics and cultural significance of a variety of works from the medieval to the modern period. NOTE Also offered online. Consult Arts and Science Online. Learning Hours may vary.
 LEARNING HOURS 120 (36L;84P)
 PREREQUISITE Level 2 or above
-
 
 ENGL 238/3.0	Comics and Graphic Novels
 A study of the art of graphic narrative from newspaper strips of the Golden Age to current graphic novels, comprising history, aesthetics, and close reading of graphic narrative as a form of literature.
@@ -3075,10 +3036,8 @@ PREREQUISITE Level 2 or above
 
 ENGL 277/3.0	Literature and Gender
 This course will explore how different literary works represent desire, romance, queerness, and other gender-related issues. Particular focus may vary from year to year; for detailed information, consult the Department.
- 
 LEARNING HOURS 120 (36L;84P)
 PREREQUISITE Level 2 or above and Registration in a GNDS Plan.
-
 
 ENGL 278/3.0	Literature and Place
 A study of English-language literature emphasizing or relating to its sense of place. Course content may vary from year to year.
@@ -3093,7 +3052,6 @@ ENGL 281/3.0	Legends of King Arthur: Medieval to Modern
 This course investigates the enduring popularity of the legend of Arthur, with an emphasis on its adaptability to the changing values and viewpoints of different cultural moments (Celtic, Medieval, Victorian, Modern). Themes to be investigated may include chivalry, courtly love, the grail quest, national identity, politics and gender relationships. NOTE Medieval texts will be read in modern translation.
 NOTE Also offered online. Consult Arts and Science Online. Learning Hours may vary. NOTE Also offered at the Bader International Study Centre. Learning Hours may vary. LEARNING HOURS 120 (36L;84P)
 PREREQUISITE Level 2 or above
-
 
 ENGL 283/6.0	Contemporary Canadian Literature
 A study of particular issues and themes in Canadian literature from the 1970s to the present (e.g., postmodernism, multiculturalism, gender and sexual diversity, class relations, migration).
@@ -3182,7 +3140,6 @@ A study of poetry, drama, and prose of the major writers of the period 1660-1800
 LEARNING HOURS 240 (72L;168P)
 PREREQUISITE (ENGL 200/6.0 and ENGL 290/3.0) and (registration in an ENGL Major or Medial Plan).
 
-
 ENGL 335/6.0	English Drama to 1700
 A study of English drama from the medieval to the Restoration period. Emphasis falls on tracing the development of dramatic forms, traditions, and performance practices in relation to socio-cultural history.
 LEARNING HOURS 240 (72L;168P)
@@ -3222,7 +3179,6 @@ ENGL 356/6.0	British Fiction of the 19th Century
 A study of British nineteenth-century fiction featuring selected writers from Jane Austen to Thomas Hardy. LEARNING HOURS 240 (72L;168P)
 PREREQUISITE (ENGL 200/6.0 and ENGL 290/3.0) and (registration in an ENGL Major or Medial Plan).
 
-
 ENGL 357/6.0	19th-Century British Literature and Visual Culture
 A study of the relationship between literary texts and the burgeoning visual culture of the period. Representative visual forms might include book illustration and design, painting, photography, and commercial advertisement.
 LEARNING HOURS 240 (72L;168P)
@@ -3255,7 +3211,6 @@ ENGL 382/6.0	Postcolonial Literatures in Context
 Studies in literature from a specific nation or region of the postcolonial world (such as South Africa, West Africa, Australia, the Caribbean, South Asia). Content will vary, but the aim will be to explore the cultural and historical contexts that inform literary production in the particular nation or region under study.
 LEARNING HOURS 240 (72L;168P)
 PREREQUISITE (ENGL 200/6.0 and ENGL 290/3.0) and (registration in an ENGL Major or Medial Plan).
-
 
 ENGL 387/6.0	Literature and Modern Media
 A study of the creative interactions between print literature and modern audio and visual media such as mass circulation newspaper, radio, film, television, and digital devices.
@@ -3295,7 +3250,6 @@ ENGL 432/3.0	Topics in Restoration and 18th-Century Literature II
 For detailed information, consult the Department. LEARNING HOURS 120 (36S;84P)
 PREREQUISITE (ENGL 200/6.0 and ENGL 290/3.0) and (registration in an ENGL Major or Medial Plan).
 
-
 ENGL 436/3.0	Group I: Special Topics I
 Studies in literary topics focused on the period before 1800 that do not fit within the established Group I rubrics (Medieval, Renaissance, Restoration/18th Century). For detailed information, consult the Department.
 LEARNING HOURS 120 (36S;84P)
@@ -3330,7 +3284,6 @@ PREREQUISITE (ENGL 200/6.0 and ENGL 290/3.0) and (registration in an ENGL Major 
 ENGL 451/3.0	Topics in Victorian Literature I
 For detailed information, consult the Department. LEARNING HOURS 120 (36S;84P)
 PREREQUISITE (ENGL 200/6.0 and ENGL 290/3.0) and (registration in an ENGL Major or Medial Plan).
-
 
 ENGL 452/3.0	Topics in Victorian Literature II
 For detailed information, consult the Department. LEARNING HOURS 120 (36S;84P)
@@ -3406,7 +3359,6 @@ Studies focused on Modern and Contemporary literature that do not fit within the
 LEARNING HOURS 120 (36S;84P)
 PREREQUISITE (ENGL 200/6.0 and ENGL 290/3.0) and (registration in an ENGL Major or Medial Plan).
 
-
 ENGL 487/3.0	Group III: Special Topics II
 Studies focused on Modern and Contemporary literature that do not fit within the established Group III rubrics (British, Canadian, American, Postcolonial, Indigenous). For detailed information, consult the Department.
 LEARNING HOURS 120 (36S;84P)
@@ -3446,7 +3398,6 @@ ENGL 495/6.0	Studies in Literary Criticism and Theory
 Studies in representative critical theories from antiquity onwards, with special emphasis on modern criticism both in its theoretical and practical aspects.
 LEARNING HOURS 240 (72S;168P)
 PREREQUISITE (ENGL 200/6.0 and ENGL 290/3.0) and (registration in an ENGL Major or Medial Plan).
-
 
 ENGL 496/3.0	Topics in Literary Criticism and Theory I
 For detailed information, consult the Department. LEARNING HOURS 120 (36S;84P)
@@ -3505,7 +3456,6 @@ ENIN 301/3.0	Creative Entrepreneurship
 This course offers a primer on personal and organizational creativity, and is designed to support learners to develop entrepreneurial mindsets. Learners will study emerging theories of creative thinking, and develop a deep understanding of, and engagement with, discourses and methods of innovation in the creative industries.
 NOTE Only offered online. Consult Arts and Science Online.
 NOTE Also offered at the Bader International Studies Centre, Herstmonceux. Learning Hours may vary. LEARNING HOURS 120 (72O;48P)
- 
 PREREQUISITE Level 2 or above.
 ENIN 340/3.0	Topics in Innovation and Entrepreneurship
 Examines current innovation and entrepreneurship trends, practices, styles, theories, texts, and discourses. Through online research, assigned readings, and creative assignment, students will engage in creative exploration of innovative products, services, business models, and learn about innovative individuals.
@@ -3797,7 +3747,6 @@ FILM 306/3.0	Comparative Contemporary Film in Europe
 Intermediate study of thematic and stylistic trends in recent European cinema, with reference to social and political changes.
 NOTE Offered only at the Bader International Study Centre, Herstmonceux. LEARNING HOURS 108 (36L;24Lb;48P)
 PREREQUISITE Registration in a FILM Plan, STSC, MAPP or COCA Specialization and 12.0 units in FILM.
-
 
 FILM 307/3.0	Classics of European Cinema
 Intermediate study of some of the most significant films made in Europe from the early 20th century to today. Considers historical, technological, and aesthetic determinants and influence.
@@ -4275,7 +4224,6 @@ FREN 304/3.0	Introduction à la littérature française du Moyen Age
 A study of representative literary works in the Middle Ages, including La Chanson de Roland, Tristan et Iseult, Le Roman de Renart, Le Roman de la Rose, Chrétien de Troyes, Rutebeuf and Villon. Travaux pratiques include essays and tests.
 LEARNING HOURS 120 (36L;84P)
 PREREQUISITE (FREN 230/3.0 and FREN 241/3.0) or (FREN 212/6.0 and FREN 220/6.0) or FREN 221/6.0.
- 
 EXCLUSION(S) FREN 404/3.0.
 
 FREN 305/3.0	Le théâtre depuis 1945
@@ -4283,12 +4231,10 @@ A detailed study of selected plays from French theatre since 1945. Visual presen
 LEARNING HOURS 120 (36L;84P)
 PREREQUISITE (FREN 230/3.0 and FREN 241/3.0) or (FREN 212/6.0 and FREN 220/6.0) or FREN 221/6.0. EXCLUSION(S) FREN 417/3.0.
 
-
 FREN 315/3.0	Littérature française de la Renaissance
 A study of representative literary works of the 15th and 16th centuries, including Villon, Montaigne, Rabelais. Travaux pratiques
 include essays and tests. LEARNING HOURS 120 (36L;84P)
 PREREQUISITE (FREN 230/3.0 and FREN 241/3.0) or (FREN 212/6.0 and FREN 220/6.0) or FREN 221/6.0. EXCLUSION(S) FREN 405/3.0.
-
 
 FREN 320/3.0	Communication et culture V
 For advanced students.
@@ -4323,13 +4269,10 @@ An intro. to French 19th Century and contemporary literature. More specifically 
 LEARNING HOURS  120 (36L;84P)
 PREREQUISITE (FREN 230/3.0 and FREN 241/3.0) or (FREN 212/6.0 and FREN 220/6.0) or FREN 221/6.0.
 
-
-
 FREN 343/3.0	Histoire culturelle et littéraire de la francophonie et du Québec
 An introduction to the history of ideas and cultural evolution in French Canada, African and Caribbean culture and literature, from the colonial period to the present day.
 LEARNING HOURS 120 (36L;84P)
 PREREQUISITE (FREN 230/3.0 and FREN 241/3.0) or (FREN 212/6.0 and FREN 220/6.0) or FREN 221/6.0.
-
 
 FREN 350/3.0	Littératures autochtones comparés en Amérique du Nord
 An examination of comparative approaches to Indigenous literatures across North America. Questions of translation, tribal specificity, literary nationalism, inter- and trans-Indigenous orientations are examined in relation to a diversity of works by Indigenous scholars, writers, filmmakers, and other artists and thinkers.
@@ -4580,7 +4523,6 @@ GEOL 321/3.0	Analysis of Rock Structures
 The nature, origin, and interpretation of deformation and fracture of rocks, and the application of structural methods to site-investigation and resource exploitation. Topics include geometric, kinematic and dynamic analysis of brittle and ductile deformation features; and examination of deformation styles in selected tectonic environments.
 NOTE One field trip with a transportation fee. Estimated $25.00. These are estimated field trip fees. Fees are subject to change and will be finalized by August 1 each year. Please see Departmental website.
 LEARNING HOURS 122 (36L;18Lb;8Oc;60P)
- 
 COREQUISITES GEOL 300/3.0
 
 GEOL 333/3.0	Terrain Evaluation
@@ -4656,7 +4598,6 @@ EXCLUSION(S) GEOL 401/1.5; GEOL 368/3.0 (prior to 2013); GEOL 488/3.0 (prior to 
 
 GEOL 418/3.0	Petroleum Geology
 The origin, migration and accumulation of petroleum resources, emphasizing typical reservoir styles, potential reservoir lithologies, methods of exploration and basic concepts of formation evaluation. Concepts and applications equip students
- 
 with the basic principles necessary to undertake petroleum industry exploration and production. Laboratory exercises include a major exploration problem and presentation.
 NOTE This course may not be offered every year. Consult: http://www.queensu.ca/geol/courses for more information. LEARNING HOURS 129 (36L;33Lb;60P)
 PREREQUISITE GEOL 238/3.0 or permission of the Department. COREQUISITE GEOL 321/3.0.
@@ -4729,7 +4670,6 @@ PREREQUISITE (GEOL 107/3.0 and GEOL 235/3.0 and GEOL 238/3.0 and GEOL 249/3.0 an
 GEOL 543/6.0	Research and Thesis
 Directed, independent research on geological problems. The thesis may be based on data or material collected during summer fieldwork or in the fall/winter around Kingston, on laboratory research, or using published data. Monthly tutorials will cover various aspects of literature review, writing skills and oral presentations. A seminar concerning the thesis topic will be presented at the end of Winter term.
 NOTE An electronic copy of the final thesis, formatted to the supervisor’s satisfaction, must be uploaded to Qspace. The supervisor may require one hardcopy.
- 
 LEARNING HOURS 258 (6L;12S;48I;192P)
 PREREQUISITE Level 4 in a GEOL Major or Specialization Plan, and a GPA of 3.3 (obtained in any term) or a ‘PASS’ (obtained in Winter 2020) in 36.0 units in GEOL, and permission of the Department.
  
@@ -4772,7 +4712,6 @@ EXCLUSIONS GNDS 280 (Topic: Transgender Politics and Representation2015-16 and 2
 GNDS 295/3.0	Comics and Politics
 The course explores historical and contemporary comics, graphic novels, and sequential art in connection with debates surrounding race, class, nation, sexual and gender diversity. Topics include documentary, war, trauma, transgender studies, memory, heroism, capitalism, humour, feminist thought, medical humanities, digital culture, and satire.
 LEARNING HOURS 120 (36L;84P)
- 
 PREREQUISITE Level 2 or permission of the Department. EXCLUSION(S) GNDS 280-004 (2017-2018)
 
 GNDS 311/3.0	Feminist Thought
@@ -4805,7 +4744,6 @@ GNDS 325/3.0	Indigenous Meanings of Reproduction and Health
 Indigenous meanings of reproduction and health will form the core of this course. We will discuss the bio-medical model and examine how it has influenced the health of Indigenous peoples, with a particular focus on maternity care in Canada. We will discuss contradictions and incongruencies in an open, respectful, and thought-provoking manner
 LEARNING HOURS 120 (36L;84P)
 PREREQUISITE  Level 3 or permission of the Department.
-
 
 GNDS 326/3.0	Gender, Diaspora and the Arts
 This course explores transnational realities and diasporic experience, with particular attention to gender and sexuality, through the arts.
@@ -5163,7 +5101,6 @@ PREREQUISITE GPHY 243/3.0 or permission of the Department.
 
 GPHY 344/3.0	Cartography and Computer Aided Design
 An introduction to the principles of Computer Aided Design (CAD) for the creation, manipulation, and editing of plans and maps. Topics will explore the fundamentals of good map design, best practices for visualizing geographic data, digitizing and georeferencing historic maps and airphotos, and importing /exporting CAD drawings to/from GIS software.
- 
 PREREQUISITE Level 3 or permission of the Department.
 
 GPHY 345/3.0	Spatial Analysis
@@ -5316,8 +5253,6 @@ PREREQUISITE A grade of C in GREK 322/3.0 or permission of the Department of Cla
 GREK 430/6.0	Research Course
 Detailed study of certain aspects of Greek Literature and history through directed readings and essay assignments. LEARNING HOURS 240 (24I;216P)
 PREREQUISITE A minimum GPA of 1.90 in 6.0 units from GREK at the 300-level.
-
-GREK 591/0.0	General Examination
  
 GRMN 101/3.0	Beginner’s German I
 This course is for students with no previous knowledge of German. The course concentrates on the basic language skills (listening, reading, writing and speaking) and introduces elements of German culture as recorded in its customs, history and literature.
@@ -5545,7 +5480,6 @@ PREREQUISITE Level 2 or above.
 
 HIST 210/3.0	The History of Sexuality in Canada
 An overview of Canada’s sexual past. Introduces historiographical debates and theoretical approaches to the history of sexuality. Attentive to race, class, and gender, the course employs sexuality as a prism through which to view the operations of power in Canadian history.
- 
 LEARNING HOURS 120 (36L;12O;72P)
 PREREQUISITE Level 2 or above.
 
@@ -5786,7 +5720,6 @@ PREREQUISITE Level 2 or above.
 
 HIST 295/3.0	The Holocaust
 The background to and processes of the destruction of the Jews of Europe between 1933 and 1945. Themes to be covered include: modern anti-semitism, Jewish communities in the inter-war era, Nazi racial policies, the Judenrat, the organization of
- 
 the death camps, the attitudes of the Christian churches, the role of collaborators, the ideology of mass murder, and the
 questions of ‘compliance’, ‘resistance’, and ‘silence’.
 NOTE Offered also as a Cognate course in the Program in Jewish Studies. LEARNING HOURS 129 (77L;52P)
@@ -5824,7 +5757,6 @@ HIST 304/6.0	The Civil War and the Making of America
 Focus on the causes and consequences of the Civil War, slavery, antebellum social and political divisions, secession, the experiences of soldiers and civilians during the war itself, reconstruction, and the place of the Civil War in US culture since 1877.
 NOTE In Fall Term, HIST 304/6.0 meets in the same classroom as HIST 216/3.0. LEARNING HOURS 240 (34.5L;36S;1.5T;168P)
 PREREQUISITE Registration in a HIST Major or Medial Plan.
- 
 EXCLUSIONS HIST 216/3.0
 
 HIST 305/6.0	Muslim Societies
@@ -5982,7 +5914,6 @@ PREREQUISITE A Grade of C+ in 6.0 units from HIST 300-330 and registration in a 
 
 HIST 400/4.5	Topics in History
 Seminar on a selected topic in history. Topics change from year to year; course is either being offered for the first time or is being taught by visiting faculty. Consult department office or website for details.
- 
 LEARNING HOURS 180 (36S;144P)
 PREREQUISITE A Grade of C+ in 6.0 units from HIST 300-330 and registration in a HIST Major or Medial Plan.
 
@@ -6021,8 +5952,7 @@ A history of the rise of global trade, competition, cultural exchange, warfare, 
 PREREQUISITE A Grade of C+ in 6.0 units from HIST 300-330 and registration in a HIST Major or Medial Plan. EXCLUSIONS HIST 411/4.5
 
 HIST 411/4.5	Globalization, Wealth and Inequality in the West since 1945
-Examines the major contours of Western capitalism and the emergence of a more integrated global marketplace since 1945. Topics include: the rise in prosperity followed by the rise in income inequality since the 1970s; technological change; the
- 
+Examines the major contours of Western capitalism and the emergence of a more integrated global marketplace since 1945. Topics include: the rise in prosperity followed by the rise in income inequality since the 1970s; technological change; the 
 'downsizing' phenomenon; related trends in social policy. A balance of pro and con literature on 'globalization' will be examined.
 LEARNING HOURS 180 (36S;144P)
 PREREQUISITE A Grade of C+ in 6.0 units from HIST 300-330 and registration in a HIST Major or Medial Plan. EXCLUSIONS HIST 410/6.0
@@ -6179,7 +6109,6 @@ PREREQUISITE A Grade of C+ in 6.0 units from HIST 300-330 and registration in a 
 HIST 455/9.0	The Spanish Inquisition, 1450-1800: Sexuality, Sin, and Spiritual Beliefs
 This course considers the Spanish Inquisition and extirpation of idolatries campaign in Spain and Latin America between 1492 and 1700. We examine how Catholic orthodoxy and heresy, faith, sexuality, healing practices, witchcraft and mysticism served as cultural unifiers and as markers of gender and ethnic differences.
 LEARNING HOURS 360 (72S;288P)
- 
 PREREQUISITE A Grade of C+ in 6.0 units from HIST 300-330 and registration in a HIST Major or Medial Plan.
 
 HIST 456/4.5	Islam and Muslims in World History
@@ -6226,7 +6155,6 @@ PREREQUISITE A Grade of C+ in 6.0 units from HIST 300-330 and registration in a 
 
 HIST 465/9.0	Topics in Women’s History
 Comparative studies in the history of women and their experiences. Topics will vary from year to year. LEARNING HOURS 360 (72S;288P)
- 
 PREREQUISITE A Grade of C+ in 6.0 units from HIST 300-330 and registration in a HIST Major or Medial Plan.
 
 HIST 466/4.5	Radicalism, Revolution, and Religion in Russian History and Literature
@@ -6249,7 +6177,6 @@ A seminar exploring the influence of Michel Foucault on the study of history, in
 Foucault’s concepts in their own work, particularly in the areas of gender, race, and colonialism. LEARNING HOURS 180 (36S;144P)
 PREREQUISITE A grade of C+ in 6.0 units from HIST 300-330 and registration in a HIST Major or Medial Plan.
 
-
 HIST 473/4.5	Black Women in Modern US History
 This upper-year seminar explores the history of black women in the United States from the late nineteenth century to the contemporary era. It situates the history of black women within the broader contexts of U.S. politics, culture and society, while recognizing the ways that this history is distinguishable within it.
 LEARNING HOURS 180 (36S;144P)
@@ -6265,12 +6192,10 @@ An exploration of war in a Canadian context, with an emphasis on how war has sha
 LEARNING HOURS 360 (72S;288P)
 PREREQUISITE A Grade of C+ in 6.0 units from HIST 300-330 and registration in a HIST Major or Medial Plan.
 
-
 HIST 477/4.5	Animals and History
 Recent Research on the role of animals in history have eroded the barriers between human and natural sciences. By reexamining the part played by animals not merely as beasts of burden, or resources, or even as companions, but as agents in historical processes, this course poses a critique of human exceptionalism and the meaning of agency.
 LEARNING HOURS 180 (36S;144P)
 PREREQUISITE A Grade of C+ in 6.0 units from HIST 300-330 and registration in a HIST Major or Medial Plan.
-.
  
 HIST 478/4.5	Nations and Nationalism in Global History
 This seminar provides an in-depth introduction to the history of the nation-form: narratives of its global origins, its historical development and global dispersal in Europe, Asia, Africa, and the Americas, the simultaneous emergence of anti- colonialism and ultra-nationalism, its eclipse, and subsequent resurgence and revival in the post 9/11 world.
@@ -6433,11 +6358,9 @@ This course examines global health from a variety of perspectives, including ant
 NOTE Also offered at the Bader International Study Centre. Learning Hours may vary. LEARNING HOURS 120 (36L;84P)
 PREREQUISITE Level 3 or above and HLTH 101/3.0.
 
-
 HLTH 351/3.0	Health in Humanitarian Crises
 Humanitarian crises due to natural disasters, armed conflict, disease outbreaks and other threats are growing contributors to ill-health worldwide. Case studies, evolving current events, and experiential learning will be utilized throughout the term to anchor course content.
 NOTE Only offered at the Bader International Study Centre. LEARNING HOURS 129(18L;18S;12G;11O;10Oc;60P)
- 
 PREREQUISITES HLTH 101 and Level 3 or above or registration at the BISC. Course is open to students registered at the BISC.
 EXCLUSIONS No more than 3.0 units from HLTH 351/3.0; HLTH 397/3.0 topic ID Health in Humanitarian Crises
 
@@ -6473,7 +6396,6 @@ PREREQUISITE Level 4 and a minimum GPA of 1.9 and registration at the BISC.
 
 HLTH 404/3.0	Global Studies of Social Inclusion, Community Participation and Mental Illness
 While people with disabilities continue to experience challenges to their full and equal community participation, in the context of mental illness they are subject to particularly profound levels of social exclusion at a global level. We will examine current disability discourse as it relates to mental illnesses and exclusion of this population.
- 
 NOTE This course falls under a selection of courses with a focus on Interdisciplinary Studies in Global Health and Disability that will be offered only at the Bader International Study Centre.
 LEARNING HOURS 120 (30S;20G;4I;10Oc;56P)
 PREREQUISITE Level 4 and a minimum GPA of 1.9 and registration at the BISC.
@@ -7013,7 +6935,6 @@ KNPE 450/3.0	Ergonomics
 This is an interdisciplinary lecture/seminar course designed to provide a comprehensive overview of ergonomics emphasizing applications to product design and prevention of musculoskeletal injuries. The focus includes anthropometry, workplace design, and biomechanical and other human factors. Ergonomic assessment methodologies will be used to assess design features and possible musculoskeletal problems.
 LEARNING HOURS 108 (36L;72P)
 PREREQUISITE Level 4 in a KINE, PHED, or HLTH Plan and (ANAT 101/3.0 or ANAT 315/3.0) and (KNPE 254/3.0 or 6.0 units in PHYS at the 100-level).
- 
 EXCLUSIONS MECH 495/3.0; PT 419/3.0; RHBS 428/3.0
 
 KNPE 454/3.0	Clinical Biomechanics
@@ -7125,8 +7046,6 @@ PREREQUISITE A grade of C in LATN 322/3.0 or permission of the Department of Cla
 LATN 431/6.0	Research Course
 Detailed study of certain aspects of Latin Literature and Roman history through directed readings and essay assignments. LEARNING HOURS 240 (24I;216P)
 PREREQUISITE A minimum GPA of 1.90 in 6.0 units from LATN at the 300 level.
-
-LATN 591/0.0	General Examination
  
 LIBS 100/3.0	Origins and Practices of Liberal Arts
 The Liberal Arts comprise three foundational disciplines: humanities, social sciences, and natural sciences. Such divisions have shaped everything from the organization of universities to the ways in which we organize and understand knowledge in our daily lives. The course will provide a background for each of the three liberal disciplines in ways that explain their historical origins and development over time, including their modern applications.
@@ -7215,7 +7134,6 @@ LING 501/3.0	Directed Readings in Linguistics
 Upon agreement with a qualified instructor, this course may be taken by an upper-year student in Linguistics to explore a specific area or methodology. Regular meetings, directed readings.
 LEARNING HOURS 120 (12I;108P)
 PREREQUISITE 6.0 units at the 300 level or above in LING) and (a GPA of 3.50) and permission of the Department of Languages, Literatures and Cultures.
-
 
 LING 505/9.0	Honours Thesis in Linguistics
 Upon agreement with a qualified instructor, students with fourth year standing in Linguistics may take this course to develop and demonstrate research skills in Linguistics. Working under supervision, students will choose a specific topic in a particular language, prepare a research proposal which involves the collection and analysis of data, carry out the research, and write a thesis based on the results. Fall and Winter Terms.
@@ -7334,7 +7252,6 @@ LEARNING HOURS 120 (36L;84P) EXCLUSIONS IDIS 201/6.0 EQUIVALENCY IDIS 201/6.0.
 
 LLCU 203/3.0	Cultural Anthropology
 Cultural anthropology provides an understanding of the range of human cultural and social diversity – the many ways that humans organize their lives. This course covers the main theories, methods, and topics in the field (e.g. economy, politics, religion, power, identity, environment, health), with a focus on major contemporary social problems.
- 
 LEARNING HOURS 120 (36L;84P)
 PREREQUISITES Level 2 or permission of the Department of Languages, Literatures and Cultures
 
@@ -7413,7 +7330,6 @@ PREREQUISITE Level 2 or permission of the Department of Languages, Literatures a
 
 LLCU 249/3.0	Latin Lovers: Love, Sex, and Popular Culture
 This course explores the emergence, development, and criticism of the Latin Lover figure in the West, from the creation of the archetypical Don Juan in the 17th century to contemporary Hollywood representation of Italian and Latin-American lovers.
- 
 NOTE Only offered online. Consult Arts and Science Online. LEARNING HOURS 114 (36O;78P)
 PREREQUISITE Level 2 or permission of the Department of Languages, Literatures and Cultures.
 
@@ -7453,7 +7369,6 @@ PREREQUISITE Level 3 and LLCU 111/3.0 and registration in LLCU Major Plan or per
 LLCU 308/3.0	From Fellini to Benigni
 This course will examine social, historic and political realities of the twentieth century through the lens of the unique Italian humorist tradition of film making. The course will focus on films by F.Fellini, L.Comencini, E.Scola, G.Tornatore, G.Salvatores, N.Moretti, R.Benigni and other film makers.
 LEARNING HOURS 120 (36L;36T;48P)
- 
 PREREQUISITE Level 2 or permission of the Department of Languages, Literatures and Cultures. EXCLUSIONS ITLN 408/3.0
 
 LLCU 309/3.0	The Films of Pedro Almodóvar
@@ -7491,7 +7406,6 @@ EXCLUSIONS GRMN 425/3.0. GRMN 425/3.0 is taught concurrently with LLCU 325/3.0 w
 LLCU 326/3.0	Film in the New Europe
 European film is our starting point for investigating the connections between work and art. Topics include: urban space; (post- and para-); socialist societies; border crossings, especially gendered labour and cultural flows. This course will investigate how the new Europe and film shape each other.
 NOTE A screening will be made available each week for viewing films.
- 
 LEARNING HOURS 120 (36L; 84P)
 PREREQUISITE Level 2 or permission of the Department of Languages, Literatures and Cultures. EXCLUSIONS GRMN 426/3.0
 
@@ -7917,13 +7831,11 @@ MICR 360/3.0	Immunology
 The general principles and mechanism of immune reaction. Immunochemical and immunobiological aspects of antibody formation and cell-mediated immunity in health and disease will be considered.
 LEARNING HOURS 144 (36L;36O;72P) PREREQUISITE MICR 221/3.0 or MICR 271/3.0.
 
-
 MICR 386/3.0	Fundamentals of Immunology
 Integrates the key principles of immunology to facilitate learning of immunology as it relates to human health and disease. This course offers real-life case studies, problems encountered and solutions applied, immunology virtual laboratory simulation, and extensive coverage of the basic science underlying each topic in the module.
 LEARNING HOURS	120(48O;72P)
 PREREQUISITE Minimum 3rd year (level 3) standing and one of (BCHM 218/3.0 or BCHM 270/3.0), and one of (MICR 270/3.0; MICR 271/3.0; MICR 221/3.0)
 EXCLUSIONS May not be taken with or after MICR 360/3.0 EQUIVALENCY BMED 386/3.0
-
 
 MICR 435/3.0	Advanced Procaryotic Structure and Function
 An in-depth analysis of the genetics, biochemistry, assembly and function of the major structures of the procaryotic cell. Emphasis on the experimental approaches in the current literature.
@@ -7956,7 +7868,6 @@ PREREQUISITE Level 4 and registration in the LISC Major or Specialization Plan a
 MICR 461/3.0	Advanced Immunology
 Advanced immunology course focused on current topics in immunology and immunology-related scientific research. LEARNING HOURS 132 (12L;24T;96P)
 PREREQUISITE	Level 4 and registration in the LISC Major or Specialization Plan and a GPA of 2.5 and a minimum grade of A- in MICR 360/3.0.
-
 
 MICR 499/12.0	Research Project in Microbiology and Immunology
 A research project supervised by and closely related to the research program of a faculty member. The research project involves experimental design, data collection and analysis, written report and oral presentation. Students will be required to attend seminars and tutorials on topics related to research. Limited enrolment.
@@ -8009,7 +7920,7 @@ NOTE Students registered in a MUSC Plan should not register in this course.
 NOTE Also offered online. Consult Arts and Science Online. Learning Hours may vary.
 NOTE Also offered at the Bader International Studies Centre, Herstmonceux. Learning Hours may vary. LEARNING HOURS 120 (36L;12O;72P)
 EXCLUSIONS MUSC 211/3.0; MUSC 203/3.0; MUSC 204/3.0.
-.
+
 MUSC 104/3.0	Music Fundamentals
 An introduction to musical notation, ear training, theory and analysis.
 NOTE Students who hold Royal Conservatory Advanced Rudiments or higher should consult with the School for appropriate course placement. May not be taken for credit by students in the B.Mus. Plan.
@@ -8036,9 +7947,7 @@ MUSC 115/1.5	Large Ensemble
 Large ensemble for qualified instrumentalists and singers. Topics vary. Course includes weekly rehearsals of a wide variety of repertoire, and a minimum of one concert per term, for all students. Credit attained only with regular attendance, active participation, and ample preparation.
 NOTE Students will be registered into the course number that matches their current level of study. (i.e: if a student is in third year they will be registered in MUSC 315).
 LEARNING HOURS 168 (72Pc;96P)
- 
 PREREQUISITE Permission of the School upon audition.
-
 
 MUSC 120/6.0	Applied Study I to IV (Performance)
 A first year study of the student’s applied subject (instrument or voice) in the performance concentration.
@@ -8079,7 +7988,6 @@ This course teaches students the basics of instrumental music composition in the
 NOTE No prior experience with composition is required, but students must demonstrate a thorough understanding of the rudiments of music prior to enrollment.
 LEARNING HOURS 136 (12L;24S;4G;96P)
 PREREQUISITE Registration in a MUTH or MUSC Specialization Plan or MUSC 104/3.0 or MUSC P52/3.0 or permission of the School.
- 
 EXCLUSIONS MUSC 153/6.0
 
 MUSC 152/3.0	Introduction to Vocal Composition
@@ -8096,7 +8004,6 @@ MUSC 171/3.0	Social History of Popular Music
 A survey of important trends in 20th century Western popular music. Topics include genres, individual artists and groups, record labels and stylistic trends, and sociological issues.
 NOTE Also offered online. Consult Arts and Science Online. Learning Hours may vary.
 NOTE Also offered at the Bader International Studies Centre, Herstmonceux. Learning Hours may vary. LEARNING HOURS 120 (36L;84P)
-
 
 MUSC 191/6.0	Theory and Analysis I
 Diatonic voice-leading and harmony, principles of form and small structures (binary, ternary) through part-writing and analysis.
@@ -8118,11 +8025,9 @@ EXCLUSIONS MUSC 204/3.0; ) MUSC 205/3.0
 
 MUSC 211/3.0	Western Art Music: Industrialization to the Internet
 This course is an examination of the styles, genres, and composers of Western art music between 1750 and the present. Exploring the historical trajectory of Western music in global context, we will build skills to critically analyze musical works and connect their production with social and cultural contexts.
- 
 LEARNING HOURS 120 (36L;12O;72P) PREREQUISITE MUTH 111/3.0.
 COREQUISITE MUSC 191/6.0.
 EXCLUSIONS MUSC 102/3.0; MUSC 203/3.0; MUSC 204/3.0
-
 
 MUSC 212/1.5	Medium Ensemble
 Mid-size ensemble experience for qualified performers. Topics vary. Course includes weekly rehearsals of a wider variety of repertoire, and a minimum of one concert per term for all students. Credit attained only with regular attendance, active participation, and ample preparation.
@@ -8162,7 +8067,6 @@ A continuation of MUSC 127/3.0. PREREQUISITE MUSC 127/3.0.
 MUSC 229/3.0	Keyboard Lab
 A comprehensive keyboard musicianship course in a laboratory format specifically designed for keyboard majors and others receiving advanced placement. Course content will include practical instrument-specific activities for pianists.
 NOTE Course content will support and coordinate with the traditional diatonic harmonic material covered in MUSC 191 but will also include other styles. Successful completion of the course will require a working fluency at the keyboard in
- 
 sight-reading, melodic and harmonic analysis as well as transcription. Activities will include harmonization, transposition and improvisation.
 RECOMMENDATION MUSC 292/3.0 and MUSC 293/3.0. LEARNING HOURS 120 (24Lb;96P)
 PREREQUISITE MUSC 129/3.0 or Permission of the School.
@@ -8205,7 +8109,6 @@ COREQUISITE DRAM 271/3.0; MUTH 271/3.0.
 
 MUSC 274/3.0	Music Education: Partnership Placement
 A laboratory course emphasizing weekly field-based observations and supervised practice teaching experiences in music within schools and/or community organizations in conjunction with music education theory.
- 
 PREREQUISITE Level 2 or above and [registration in a MUSC or MUTH Plan or (MUSC 114/3.0 and 3.0 units from MUSC or MUTH)] or permission of the School.
 
 MUSC 280/3.0	Vocal Techniques and Methods
@@ -8243,7 +8146,6 @@ MUSC 287/3.0	Percussion Techniques and Methods
 Study of the principles of playing percussion instruments through performance of select instruments, and examination of salient repertoire and pedagogical resources. Students will also develop proficiency reading salient percussion notation and examine appropriate resources and activities for learning these instruments in a group setting.
 LEARNING HOURS 114(36L;78P)
 PREREQUISITES (Registration in a MUSC or MUTH plan) or (MUSC 104/3.0 or MUSC 105/3.0) or permission of the School.
- 
 EQUIVALENCY MUSC 187/3.0
 
 MUSC 288/3.0	Guitar Techniques and Methods
@@ -8408,8 +8310,7 @@ EXCLUSIONS MUSC 475/3.0 (Topic: Intro. To MIDI Orchestration)
 MUSC 398/3.0	Modal Counterpoint
 Study, through rule-based writing, of 16th century modal counterpoint, from two-part species exercises to free counterpoint in Renaissance style.
 LEARNING HOURS 114 (36L;78P)
- 
-PREREQUISITE MUSC 293/3.0 or permission of the School.
+ PREREQUISITE MUSC 293/3.0 or permission of the School.
 
 MUSC 399/3.0	Tonal Counterpoint
 Study, through composition, of the contrapuntal procedures of the 18th century, with an emphasis on J.S. Bach’s two-part inventions and fugues.
@@ -8451,7 +8352,6 @@ NOTE Accompanist fee - wind, brass, string, and voice students. PREREQUISITE MUS
 EXCLUSIONS MUSC 420/6.0; MUSC 421/6.0
 
 MUSC 425/6.0	Applied Study IV (Performance Recital)
- 
 Students will perform in a public recital in accordance with guidelines established by the Dan School of Music. NOTE Accompanist fee - wind, brass, string, and voice students.
 COREQUISITE MUSC 420/6.0. EXCLUSIONS MUSC 421/6.0
 
@@ -8495,7 +8395,6 @@ PREREQUISITE (MUSC 352/3.0 or MUSC 355/6.0 or MUSC 356/6.0) and permission of th
 
 MUSC 470/3.0	Topics in Music Education I
 Seminars offered by faculty related to their music education research/interests. Content varies year to year. See departmental brochure for further details.
- 
 PREREQUISITE Level 3 or above or permission of the School.
 
 MUSC 475/3.0	Special Topics in Music I
@@ -8542,7 +8441,6 @@ EXCLUSIONS MUSC 470/3.0 (2011-12 to 2014-15)
 MUSC 500/6.0	Honours Thesis
 A substantive research project in music on a topic of the student’s choice, completed under the supervision of a faculty
 member.
- 
 NOTE MUTH 380/3.0 is recommended as a prerequisite for bibliographic and qualitative projects. MUTH 387/3.0 is recommended for quantitative projects.
 LEARNING HOURS 220 (36I;184P) EQUIVALENCY MUSC 592/6.0.
 PREREQUISITE Level 4 and registration in a MUSC Major Plan and permission of the School. COREQUISITE MUTH 380/3.0 or MUTH 387/3.0.
@@ -8606,7 +8504,6 @@ A credit/non-credit practicum for 48 hours of extra-curricular work in music the
 LEARNING HOURS 120(36l;84P)
 PREREQUISITE Level 2 or above and registration in a COCA, DRAM, MAPP, MUSC, or MUTH Plan EXCLUSIONS DRAM 247/1.5 and MUSC 247/1.5
 
-
 MUTH 250/3.0	Structures of Music Theatre
 An introduction to the building blocks of music theatre, including music, book/libretto, staging, choreography, and voice. Drawing on examples from opera, operetta, musical theatre, cabaret, avant-garde, and vaudeville, and engaging in multi- media and live documents, students will delve deeply into questions about how music theatre works.
 LEARNING HOURS 120(36L;12O;72P)
@@ -8614,7 +8511,6 @@ LEARNING HOURS 120(36L;12O;72P)
 MUTH 251/3.0	Issues in Music Theatre
 An introduction to the ways that vaudeville, cabaret, operetta, opera, and musical theatre serve as multi-layered sites of political consequence. By placing these works in dialogue with studies in race, cultural politics, queerness, disability, and aesthetics, students will understand music theatre's potential for intervention in our world.
 LEARNING HOURS 120(36L;12O;72P)
-
 
 MUTH 260/1.5	Music Theatre Ensemble
 Performance experience for qualified musicians in a staged vocal ensemble. Topics include musical theatre, opera, or other ensemble formats combining voice and drama.
@@ -8625,8 +8521,8 @@ PREREQUISITE Permission of the School upon audition.
 MUTH 271/1.5	Medieval Literature in the Performing Arts
 A seminar course devoted to the exploration of drama and music from the Medieval period in England. Students will examine documentation from both religious and secular traditions and their context within society.
 NOTE Only offered at the BISC LEARNING HOURS 120 (36s;24Oc;60P) EQUIVALENCY DRAM 271/3.0.
-PREREQUISITE Level 2 or above
-.
+PREREQUISITE Level 2 or above.
+
 MUTH 310/3.0	Dancer-Singer in Music Theatre
 An applied course integrating advanced‐level singing, dancing, and movement techniques, choreography, devising, and other creative applications in music theatre scenes. Through written assignments and performance, students prepare and perform scenes that integrate the work of the composer, lyricist, and book writer.
 NOTES Students with previous singing and advanced private dance class experience, including through Queen’s clubs, are
@@ -8705,7 +8601,6 @@ Performance experience for qualified musicians in a staged vocal ensemble. Topic
 NOTE Students will be registered into the course number that matches their current level of study. (i.e: if a student is in third year they will be registered in MUTH 360).
 LEARNING HOURS 168 (72Pc;24G;72P)
 PREREQUISITE	Permission of the School upon audition.
-
 
 MUTH 500/6.0	Senior Project
 An independent advanced project or thesis in any area of the basic curriculum in music/theatre, supervised and evaluated by faculty.
@@ -9251,7 +9146,6 @@ PHIL 459/3.0	Current Issues in the Philosophy of Language
 An examination of major issues in contemporary philosophy of language. Possible topics to be studied include: the nature of meaning; the relationship between language and the mind, as well as language and the world; and the syntax, semantics and pragmatics of natural language.
 PREREQUISITE Level 4 and (PHIL 250/6.0 and PHIL 257/6.0) and (a minimum GPA of 2.4 in all 300-level PHIL) and [(registration in a PHIL Major Plan and 9.0 units of PHIL at the 300 level) or (registration in a PHIL Medial Plan and 6.0 units of PHIL at the 300-level) or (registration in a LING Major Plan)].
 
-
 PHIL 464/3.0	Topics in Philosophy of Mind
 An examination of major issues in contemporary philosophy of mind. Possible topics to be considered include: consciousness; definitional questions (what is the mind?); mental causation; mental events; mental properties; and various theories about the nature of the mind.
 LEARNING HOURS 120 (36L;84P)
@@ -9263,7 +9157,6 @@ PREREQUISITE Level 4 and (PHIL 250/6.0 and PHIL 257/6.0) and (a minimum GPA of 2
 
 PHIL 467/3.0	Hermeneutics
 An examination of major issues in hermeneutics or the theory of interpretation. Possible topics to be studied include the history of hermeneutics, objectivity and relativism, critiques of ideology, semiotics, and pragmatism.
- 
 PREREQUISITE Level 4 and (PHIL 250/6.0 and PHIL 257/6.0) and (a minimum GPA of 2.4 in all 300-level PHIL) and [(registration in a PHIL Major Plan and 9.0 units of PHIL at the 300 level) or (registration in a PHIL Medial Plan and 6.0 units of PHIL at the 300-level)].
 
 PHIL 470/3.0	Topics in Philosophy in Science
@@ -9462,8 +9355,7 @@ PREREQUISITE Level 3 or 4 and registration in an ASPH, MAPH, or PHYS Plan.
 
 PHYS 590/6.0	Research Thesis
 Investigation of a contemporary research topic in physics or astronomy under the supervision of a faculty member, and leading to a written thesis and an oral presentation of results.
- 
-PREREQUISITE Level 4 in a PHYS, ASPH or MAPH Plan.
+ PREREQUISITE Level 4 in a PHYS, ASPH or MAPH Plan.
  
 POLS 101/3.0	Contemporary Issues in Politics
 An examination of current political issues. By examining an issue or problem students will be exposed to political institutions, processes and concepts in political science. The subject matter will change depending on the instructor and current political events.
@@ -9624,7 +9516,6 @@ Major issues in the contemporary politics and political economy of sub-Saharan A
 LEARNING HOURS 120 (36L;84P)
 PREREQUISITE (12 units in POLS at the 200 level or above) and (a GPA of 2.0 on all units in POLS), or permission of the Department.
 
-
 POLS 348/3.0	Middle East Politics
 An examination of the politics of the Middle East, including the legacy of the Ottoman Empire and European colonialism, the rise of nationalism, the role of religion, the nature of the state and political participation in different countries in the region.
 LEARNING HOURS 120 (36L;84P)
@@ -9657,9 +9548,7 @@ EXCLUSIONS POLS 394/3.0 (Fall 2015)
 POLS 358/3.0	Critical Perspectives on Contemporary Capitalism
 Selected topics in the critique of capitalism, e.g. Marxism, democracy, the environment, globalization, employment and popular culture.
 LEARNING HOURS 120 (36L;84P)
- 
 PREREQUISITE (12 units in POLS at the 200 level or above) and (a GPA of 2.0 on all units in POLS), or permission of the Department.
-
 
 POLS 359/3.0	Issues in Political Theory
 The course will focus on central issues that arise in political theory: citizens’ relation to the state and to each other. Specifically, the course will discuss problems of liberty, toleration, punishment, and multiculturalism; and inter-state problems such as global justice, just war, justice and the environment, and inter-generational justice.
@@ -9975,7 +9864,6 @@ An examination of the political dimensions of violent conflict in Africa, includ
 LEARNING HOURS (Lecture) 120 (36L;84P) LEARNING HOURS (Seminar) 120 (36S;12G;72P)
 PREREQUISITE Level 4 and (registration in a POLS Major or Medial Plan) and POLS 250/6.0 and (a GPA of 2.5 on all units in POLS).
 
-
 POLS 467/3.0	International Political Economy
 Theoretical approaches and issues within the field, while paying particular attention to hegemony and leadership, the economic dimension of post war and post cold war security, trade, money, debt, underdevelopment, regionalism, and international organization.
 LEARNING HOURS (Lecture) 120 (36L;84P) LEARNING HOURS (Seminar) 120 (36S;12G;72P)
@@ -10010,7 +9898,6 @@ An examination of how contemporary theories of justice fare from the standpoint 
 LEARNING HOURS (Lecture) 120 (36L;84P) LEARNING HOURS (Seminar) 120 (36S;12G;72P)
 PREREQUISITE Level 4 and (registration in a POLS Major or Medial Plan) and POLS 250/6.0 and (a GPA of 2.5 on all units in POLS).
 
-
 POLS 484/3.0	The Politics of Globalization
 An examination of the major theoretical debates and issues in contemporary globalization, including the historical roots of globalization, and the impact of globalization on culture, economics, trade, global governance, and global social movements.
 LEARNING HOURS (Lecture) 120 (36L;84P) LEARNING HOURS (Seminar) 120 (36S;12G;72P)
@@ -10042,7 +9929,6 @@ PREREQUISITE Level 4 and (registration in a POLS Major or Medial Plan) and POLS 
 
 POLS 590/9.0	Thesis
 The thesis is optional and counts as one course toward an honours concentration in Political Studies. The thesis subject must be selected at the end of the penultimate year after consultation with members of the Department, and the thesis must be submitted by 31 March of the final year. The student can choose to pay for binding of the departmental copy. LEARNING HOURS 348 (24S;24Pc;24G;12I;48Oc;216P)
- 
 PREREQUISITE Level 4 and (registration in a POLS Major or Medial Plan) and POLS 250/6.0 and (a GPA of 2.9 on all units in POLS).
  
 PORT 103/3.0	Beginning Portuguese and Culture I
@@ -10098,18 +9984,15 @@ PSYC 204/3.0	Applications and Careers in the Psychological Sciences
 This course explores how the psychological sciences are applied in practice, and identifies education and training paths required for work in the psychological sciences. Students will gain significant exposure to career and education planning considerations within the psychological sciences.
 LEARNING HOURS 111 (24L;12G;3O;72P) PREREQUISITE PSYC 100/6.0.
 
-
 PSYC 221/3.0	Cognitive Psychology
 An introduction to the empirical study of mental processes. Topics include perception and attention, working memory, long-term memory, visual imagery, problem-solving, language, and decision-making.
 NOTE Also offered online. Consult Art and Science Online. Learning Hours may vary.
- 
 NOTE Also offered at the Bader International Study Centre, Herstmonceux. Learning Hours may vary. LEARNING HOURS 120 (36L;84P)
 PREREQUISITE PSYC 100/6.0. EXCLUSION(S) COGS 200/6.0; PSYC 220/6.0
 
 PSYC 231/3.0	The Study of Personality
 An examination of the major theoretical approaches to the study of personality with attention to the utility of these theories as measured by empirical investigations.
 PREREQUISITE PSYC 100/6.0.
-
 
 PSYC 236/3.0	Introduction to Clinical Psychology
 The experimental approach to understanding the causes, symptoms, course, and treatment of mental illness is emphasized in the analysis of disorders of cognition (e.g., schizophrenia), and problem behaviours (e.g., addictions, sexual disorders).
@@ -10170,7 +10053,6 @@ PSYC 323/3.0	Laboratory in Attention
 The laboratory in attention course provides students with both demonstrations and hands-on experience with the methodological design and data analysis techniques used in conducting classic studies of attention. Experimental techniques include attentional cueing, visual search, change blindness, inattentional blindness, eye-tracking, multi-object tracking, and functional imaging.
 PREREQUISITE (PSYC 203/3.0 and [PSYC 221/3.0 or PSYC 220/6.0]) or COGS 200/6.0.
 
-
 PSYC 330/3.0	Selected Topics in Clinical Psychology
 Upper year courses related to the discipline of clinical psychology. Offered periodically. LEARNING HOURS may vary
 PREREQUISITE PSYC 236/3.0.
@@ -10215,7 +10097,6 @@ LEARNING HOURS 120 (18L;18Lb;12Oc;72P) PREREQUISITE PSYC 203/3.0 and PSYC 241/3.
 PSYC 342/3.0	The Psychology of Social Influence
 This course reviews theory and research on the processes by which people exert influence on one another’s behaviours, beliefs, emotions, and attitudes. Topics of study include conformity, compliance, obedience, and persuasion. The course will focus on both the theoretical and applied implications of social influence research.
 NOTE Also offered at the Bader International Study Centre, Herstmonceux. Learning Hours may vary. LEARNING HOURS 120 (36L;84P)
- 
 PREREQUISITE PSYC 100/6.0.
 
 PSYC 343/3.0	Judgement and Decision Making
@@ -10261,7 +10142,6 @@ NOTE Also offered online. Consult Arts and Science Online. Learning Hours may va
 RECOMMENDATION PSYC 100/6.0.
 PREREQUISITE PSYC 271/3.0 or (Level 3 and registration in a BIOL or LISC Plan).
 
-
 PSYC 375/3.0	Comparative Cognition: Animal Learning  Laboratory
 This course covers recent research in comparative cognition at an advanced level. Emphasis will be placed on critically evaluating scientific controversies in specific topics, such as episodic memory in animals, mechanisms of spatial navigation, and value-based decision-making. Laboratory sessions will explore the principles discussed in lectures.
 LEARNING HOURS 126 (18L;18Lb;12O;78P)
@@ -10303,7 +10183,6 @@ PSYC 422/3.0	Selected Topics in Attention
 Addresses topics in attentional control including limits in attentional control, cortical mechanisms of attention, spatial and temporal attention, interaction of attention and memory, and influence of videogame playing on attentional control.
 PREREQUISITE PSYC 221/3.0 or PSYC 220/6.0 or COGS 200/6.0.
 
-
 PSYC 423/3.0	Selected Topics in Real-World Scene Perception
 A discussion of some areas in natural scene perception. Topics that will be discussed include: speeded processing of scene gist, the neural basis of scene perception, attention and eye movements, visual search and memory in real-world contexts, as well as some discussion of other more applied research related to the processing of real-world scenes.
 PREREQUISITE PSYC 221/3.0 or PSYC 220/6.0 or COGS 200/6.0.
@@ -10317,7 +10196,6 @@ PSYC 429/3.0	Pain: Body and Mind
 Pain is easy to recognize, but enormously challenging to define, describe and treat. This interactive and interdisciplinary course approaches the challenge of pain from the perspectives of philosophy, neuroscience and clinical psychology. We will examine what pain is, how we measure and treat it, and how it is instantiated in the body and brain.
 LEARNING HOURS 123(12L;18S;9G;84P) PREREQUISITE PSYC 203/3.0 and PSYC 271/3.0.
 EXCLUSION(S) PSYC 480/3.0 Topic: Pain: Body and Mind
-
 
 PSYC 430/3.0	The Self
 This course reviews theory and research on the self, primarily from a social psychological perspective. Topics include: the nature of the self, search for self-knowledge, self-development, self-cognition, self-regulation of behaviour, self- presentation, self-esteem, and the role of the self in psychological health.
@@ -10357,8 +10235,6 @@ PSYC 442/3.0	Culture and Cognition
 This course will examine a wide range of social cognitive topics (e.g., reasoning, decision making, attribution, language, self- concept, cognitive styles, emotion, relationship and subjective well-being) from a cultural perspective by drawing on a wide range of cross-cultural studies.
 NOTE Also offered at the Bader International Studies Centre, Herstmonceux. Learning Hours may vary. LEARNING HOURS 114 (12L;24S;78P)
 PREREQUISITE PSYC 203/3.0 and PSYC 241/3.0.
-
-
 
 PSYC 443/3.0	Intimate Relationships
 Classic and contemporary research pertaining to adult romantic relationships. Topics include attachment styles, relationship development, communication, and conflict in relationships.
@@ -10437,7 +10313,6 @@ NOTE Students are limited to a maximum of two of PSYC 550/3.0, PSYC 555/3.0, PSY
 LEARNING HOURS 117 (20G;13I;84P)
 PREREQUISITE Permission of the instructor and of the Chair of Undergraduate Studies and Level 3 or above and registration in a PSYC Major, Medial or Specialization Plan.
 
-
 PSYC 555/3.0	Directed Special Reading II
 Reading courses to be arranged in consultation with individual members of the Department.
 NOTE Students are limited to a maximum of two of PSYC 550/3.0, PSYC 555/3.0, PSYC 570/3.0, or PSYC 575/3.0. Students are also limited to a maximum of two 500-level courses supervised by the same faculty member. (Students registered in PSYC 501/9.0 concurrently will not normally take one of these courses with their thesis supervisor.)
@@ -10501,7 +10376,6 @@ PREREQUISITE Level 2 or above or 6.0 units at the 100 level in RELS.
 RELS 214/3.0	The New Testament
 As religious literature expressing the witness to Jesus; and as source for the history, trends and problems of early Christianity.
 LEARNING HOURS 120 (36L;84P)
- 
 PREREQUISITE Level 2 or above or 6.0 units at the 100 level in RELS.
 
 RELS 218/3.0	Christianity
@@ -10590,7 +10464,6 @@ PREREQUISITE Level 2 or above or 6.0 units at the 100 level in RELS.
 
 RELS 266/3.0	Religion and Social Ethics
 Moral problems and religious responses: e.g., sexual morality; violence; civil disobedience. LEARNING HOURS 120 (36L;84P)
- 
 PREREQUISITE Level 2 or above or 6.0 units at the 100 level in RELS.
 
 RELS 296/3.0	Islam in Canada
@@ -10946,7 +10819,6 @@ SOCY 422/3.0	Advanced Studies in Communication and Information Technology
 Examination of social implications of communication and information technology in the context of sociological theory. LEARNING HOURS 120 (36S;84P)
 PREREQUISITE Level 4 and registration in a SOCY Major or Medial Plan and (a minimum grade of C in SOCY 210/3.0 and SOCY 211/3.0 and SOCY 226/3.0 and SOCY 227/3.0) and (a minimum GPA of 2.60 in SOCY 210/3.0 and SOCY 211/3.0 and SOCY 226/3.0 and SOCY 227/3.0) and (a minimum GPA of 2.60 in all SOCY).
 
-
 SOCY 424/3.0	Sociology of Aging
 This course provides a comprehensive and critical assessment of contemporary issues on social aging. This course focuses on how society and its major institutions have reacted to the aging of society as well as how they have shaped it. The social- psychological, social structural (gender, race and social class) and cultural factors that influence a person’s experience of aging are examined.
 LEARNING HOURS 120 (36S;84P)
@@ -10971,7 +10843,6 @@ SOCY 430/3.0	Sociology of Consumer Culture
 A critical engagement with theories of consumer culture with emphasis upon the material, symbolic and practice-orientated aspects of consumption in sociological context; substantive focus upon shopping, taste, brands, tourism, services, digital commodities.
 LEARNING HOURS 120 (36S;84P)
 PREREQUISITE Level 4 and registration in a SOCY Major or Medial Plan and SOCY 306/3.0 and (a minimum grade of C in SOCY 210/3.0 and SOCY 211/3.0 and SOCY 226/3.0 and SOCY 227/3.0) and (a minimum GPA of 2.60 in SOCY 210/3.0 and SOCY 211/3.0 and SOCY 226/3.0 and SOCY 227/3.0) and (a minimum GPA of 2.60 in all SOCY).
-
 
 SOCY 431/3.0	Advanced Studies in Gender Relations
 Advanced study of gender relations from postcolonial and anti-racist theoretical perspectives. Historical and sociological analysis of femininity, masculinity, race and sexuality, particularly in the context of nation-building and colonialism.
@@ -11226,7 +11097,6 @@ or STAT 269/3.0), or permission of the Department. EXCLUSION(S) ECON 351/3.0
 STAT 362/3.0	R for Data Science
 Introduction to R, data creation and manipulation, data import and export, scripts and functions, control flow, debugging and profiling, data visualization, statistical inference, Monte Carlo methods, decision trees, support vector machines, neural network, numerical methods.
 LEARNING HOURS 118 (36L;12G;70P)
- 
 PREREQUISITE (STAT 263/3.0 or STAT 268/3.0) and MATH 120/6.0 or MATH 121/6.0 or MATH 124/3.0 or MATH 126/6.0 or
 MATH 110/6.0 or MATH 111/6.0 or (MATH 112/3.0 and MATH 212/3.0) or permission of the department.
 
@@ -11234,7 +11104,6 @@ STAT 455/3.0	Stochastic Processes and Applications
 Markov chains, birth and death processes, random walk problems, elementary renewal theory, Markov processes, Brownian motion and Poisson processes, queuing theory, branching processes. Given jointly with STAT 855/3.0.
 LEARNING HOURS 120 (36L;12T;72P)
 PREREQUISITE STAT 353/3.0 or (STAT 269/3.0 or STAT 351/3.0 with permission of the Department).
-
 
 STAT 456/3.0	Bayesian Analysis
 An introduction to Bayesian analysis and decision theory; elements of decision theory; Bayesian point estimation, set estimation, and hypothesis testing; special priors; computations for Bayesian analysis. Given jointly with STAT 856/3.0. LEARNING HOURS 120 (36L;84P)
@@ -11272,7 +11141,6 @@ PREREQUISITE (STAT 263/3.0 or STAT 269/3.0), or permission of the Department.
 STAT 471/3.0	Sampling and Experimental Design
 Simple random sampling; Unequal probability sampling; Stratified sampling; Cluster sampling; Multi-stage sampling; Analysis of variance and covariance; Block designs; Fractional factorial designs; Split-plot designs; Response surface methodology; Robust parameter designs for products and process improvement. Offered jointly with STAT 871/3.0. LEARNING HOURS 120 (36L;84P)
 PREREQUISITE (STAT 361/3.0 or ECON 351/3.0) and STAT 463/3.0 or permission of the Department. EQUIVALENCY STAT 362/3.0.
-
 
 STAT 473/3.0	Generalized Linear Models
 An introduction to advanced regression methods for binary, categorical, and count data. Major topics include maximum- likelihood method, binomial and Poisson regression, contingency tables, log linear models, and random effect models. The generalized linear models will be discussed both in theory and in applications to real data from a variety of sources. Given jointly with STAT 873/3.0.
