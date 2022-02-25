@@ -32,7 +32,7 @@ PREREQUISITE BIOL 102/3.0 or BIOL 103/3.0 or BIOL 202/3.0.
 
 ANAT 312/3.0	Functional Neuroanatomy
 Study of the structure and function of the nervous system by lectures, hands-on laboratories, brain dissection, and readings. Topics include, but are not limited to, sensory and motor systems, brain imaging, and clinical examples. PREREQUISITE (ANAT 215/3.0 and ANAT 216/3.0) or (ANAT 315/3.0 and ANAT 316/3.0) or (PHGY 215/3.0 and PHGY 216/3.0).
- 
+
 ANAT 315/3.0	The Human Musculoskeletal System
 Gross and functional anatomy of the back, body wall, upper and lower limbs, including blood supply and neural controls. PREREQUISITE (BIOL 102/3.0 and BIOL 103/3.0) or (BIOL 201/3.0 and BIOL 202/3.0) or KNPE 153/3.0 or PHED 153/3.0. EXCLUSION(S) ANAT 215/3.0.
 
@@ -63,7 +63,7 @@ NOTE Students whose research requires the care and/or handling of animals must a
 LEARNING HOURS 480 (288Lb;24G;24I;144P)
 PREREQUISITE Level 4 and registration in a LISC Specialization Plan and a GPA of 2.50 and [(ANAT 215/3.0 and ANAT 216/3.0) or ANAT 309/3.0 or (ANAT 315/3.0 and ANAT 316/3.0)].
 EXCLUSION(S) CANC 499/12.0; EPID 499/12.0; LISC 499/12.0; MICR 499/12.0; NSCI 499/12.0; PATH 499/12.0; PHAR 499/12.0; PHGY 499/12.0; REPD 499/12; MICR 455/6.0.
- 
+
 ANSH 101/3.0	Beginning Anishinaabe Language and Culture I
 An introduction to the language and culture of the Anishinaabe people. This course is designed for those who have neither been exposed to Anishinaabemowin nor its traditional societal practices. Gain a rich understanding of the Anishinaabe people and their language at the beginning level.
 LEARNING HOURS 120 (36L;84P)
@@ -73,7 +73,7 @@ ANSH 102/3.0	Beginning Anishinaabe Language and Culture II
 A continuation of ANSH 101/3.0. Students will participate and begin to develop the ability to read, write and speak some basic Anishinaabemowin and further their understanding of the rich culture, traditions and worldviews of the Anishinaabe people.
 LEARNING HOURS 120 (36L;84P) PREREQUISITE ANSH 101/3.0.
 EXCLUSION(S) LLCU 102/3.0 (Anishinaabemowin I).
- 
+
 ARAB 100/6.0	Introductory Arabic (Modern Standard)
 Introduction to the basic structures of Modern Standard Arabic. This course gives intensive training equally in listening, speaking, reading, and writing.
 LEARNING HOURS 240 (72L;168P)
@@ -83,7 +83,7 @@ ARAB 200/6.0	Intermediate Modern Standard Arabic
 This intensive intermediate-level course is designed to provide a review of the basic elements of Modern Standard Arabic and continues the development of students’ communicative skills in reading, writing, listening and speaking Arabic. It will offer an introduction to more complex syntactic and grammatical forms and structures, preparing students for carrying on a simple conversation, reading an intermediate level text, and understanding basic conversations.
 LEARNING HOURS 240 (72L;168P)
 PREREQUISITE ARAB 100/6.0 or permission of the Instructor.
- 
+
 ARTF 100/6.0	Introductory Drawing
 A basic introduction to the principles of line and form, intended as a foundation for further studies in the visual arts. NOTE Offered during Summer Term only. Not available for credit towards a B.F.A. program.
 NOTE Materials: estimated cost $100. EXCLUSION(S) ARTF 127/6.0; ARTF 128/6.0.
@@ -161,7 +161,7 @@ In this advanced course students select one media choice from these areas: paint
 NOTE Open only to students in a BFA Program. NOTE Materials: estimated cost $350.
 LEARNING HOURS 324 (144Lb;180P)
 PREREQUISITE A minimum grade of C- in ARTF 228/6.0 and a GPA of 1.60.
- 
+
 ARTF 338/9.0	Advanced Programs II
 In this second advanced-level course students choose two media sections from these areas: paint, media, sculpture/new media, or print media. The media area chosen must be different from that studied in ARTF 337/9.0. The course will include seminars introducing elements of professional practice.
 NOTE Open only to students in a BFA Program. NOTE Materials: estimated cost $350.
@@ -177,7 +177,7 @@ ARTF 448/9.0	Individual Programs II
 In fourth year, each student must submit a proposal for an individual program of creative exploration and research. This can be based on one or more of the following areas: painting, printmedia, 3-D media. Instruction at this level is through individual tutorials and critiques, although all students will meet once a week for a common seminar.
 NOTE Open only to students in a BFA Program. NOTE Materials: estimated cost $50 to $150. LEARNING HOURS 309 (9S;12I;288P)
 PREREQUISITE A minimum grade of C- in ARTF 447/9.0.
- 
+
 ARTH 101/3.0	Introduction to Visual Studies
 Course provides an introduction to interdisciplinary theories and concepts in the study of visual culture, to critically interrogate our increasingly visual world.
 LEARNING HOURS 126 (36L;36O;54P)
@@ -817,7 +817,6 @@ NOTE Also offered online. Consult Arts and Science Online. Learning Hours may va
 ONE-WAY EXCLUSION May not be taken with or after BIOL 300/3.0; BIOL 302/3.0; BIOL 303/3.0.
 Admission to 400- and 500-level Biology Courses
 Admission to 400- and 500-level Biology courses requires a minimum cumulative GPA of 2.0 in any previously taken courses from the Biological Foundations List (BIOL_FNDS) regardless of Degree Plan. Requests for special consideration must be submitted to the Chair of Undergraduate Studies.
-
 BIOL_FNDS
 BIOL 102/3.0; BIOL 103/3.0; BIOL 200/3.0; BIOL 201/3.0; BIOL 202/3.0; BIOL 205/3.0; BIOL 206/3.0; BIOL 212/3.0; BIOL 300/3.0; BIOL 330/3.0; BIOL 334/3.0; BIOL 339/3.0; BIOL 341/3.0; BIOL 302/3.0; BIOL 303/3.0
 
@@ -956,7 +955,6 @@ LEARNING HOURS 122 (36L;8T;18O;60P) RECOMMENDATION BIOL 206/3.0.
 PREREQUISITE BIOL 102/3.0 and BIOL 103/3.0 and (3.0 units from BCHM 218/3.0; BIOL 200/3.0; BIOL 205/3.0; BIOL 206/3.0; BIOL 201/3.0; BIOL 202/3.0)
 Admission to 400- and 500-level Biology Courses
 Admission to 400- and 500-level Biology courses requires a minimum cumulative GPA of 2.0 in any previously taken courses from the Biological Foundations List (BIOL_FNDS) regardless of Degree Plan. Requests for special consideration must be submitted to the Chair of Undergraduate Studies.
-
 BIOL_FNDS
 BIOL 102/3.0; BIOL 103/3.0; BIOL 200/3.0; BIOL 201/3.0; BIOL 202/3.0; BIOL 205/3.0; BIOL 206/3.0; BIOL 212/3.0; BIOL 300/3.0; BIOL 330/3.0; BIOL 334/3.0; BIOL 339/3.0; BIOL 341/3.0; BIOL 302/3.0; BIOL 303/3.0.
 
@@ -2780,16 +2778,14 @@ Applications of mathematics in economic analysis. Topics covered will generally 
 Offered concurrently with ECON 855/3.0. LEARNING HOURS 120 (36L;12G;72P)
 PREREQUISITE ECON 255/3.0 and ECON 310/3.0 and permission of the Department.
  
-ECON 480/3.0, 481/3.0, 482/3.0, 483/3.0, 484/3.0, 485/3.0, 486/3.0, 487/3.0, 488/3.0, 489/3.0
-Seminars in Microeconomics
+ECON 480-489/30.0	Seminars in Microeconomics
 Series of seminar courses on microeconomic topics. Evaluation based on presentations, formal/informal participation and written papers. Offerings vary from year to year with staff availability. Topics announced in advance of course selection and available on the Undergraduate webpage.
 NOTE Fourth year ECON Medial students with fewer than 30.0 ECON units and fourth year APEC students without ECON 320 should contact the department before May 1 to obtain permission to register in this course.
 LEARNING HOURS 120 (18S;18G;12I;72P)
 PREREQUISITE Level 4 and (a minimum cumulative GPA of 1.90) and (a minimum GPA of 2.60 in 30.0 units of ECON) and (ECON 310/3.0; ECON 320/3.0; ECON 351/3.0).
 EXCLUSION(S) ECON 480-499/3.0.
 
-ECON 490/3.0, 491/3.0, 492/3.0, 493/3.0, 494/3.0
-Seminars in Macroeconomics
+ECON 490-494/15.0	Seminars in Macroeconomics
 Series of seminar courses on macroeconomic topics. Evaluation based on presentations, formal/informal participation and written papers. Offerings vary from year to year with staff availability. Topics announced in advance of course selection and available on the Undergraduate webpage.
 NOTE Fourth year ECON Medial students with fewer than 30.0 ECON units and fourth year APEC students without ECON 320 should contact the department before May 1 to obtain permission to register in this course.
 LEARNING HOURS 120 (18S;18G;12I;72P)
@@ -4635,7 +4631,6 @@ PREREQUISITE GPHY 243/3.0 or GEOL 333/3.0 or permission of the Department.
 GEOL 464/1.5	Visualization in the Geosciences
 An introduction to 3D visualization of natural sciences data with a focus on methods relevant to geological engineering, mineral exploration, and geoscience research. Perception, representation, and analytical methods. Design tools and data integration methods. Temporal analysis of natural sciences data. LiDAR data analysis. Global and local models.
 LEARNING HOURS 58 (18L;18Lb;22Pc)
- 
 PREREQUISITE GEOL 463/3.0 or permission of the Department.
 
 GEOL 466/3.0	Isotopes and the Environment
@@ -5298,7 +5293,7 @@ Intensive development of language skills (reading, writing, speaking, listening)
 LEARNING HOURS 120 (36L;12T;84P)
 PREREQUISITE A grade of C in GRMN 202/3.0 or permission of the Department of Languages, Literatures and Cultures.
 
-GRMN 311	German Cultural through Stories- 18th & 19th Century
+GRMN 311/3.0	German Cultural through Stories- 18th & 19th Century
 An introduction to reading, discussing and writing about German literary texts in German. Major periods, authors, and texts of the 18th and 19th centuries will be examined in their cultural and historical contexts. Students will be exposed to different genres: excerpts from novels and dramas, as well as short stories, poems and film adaptations.
 LEARNING HOURS 120 (36L;12T;84P)
 PREREQUISITE A grade of C in GRMN 202/3.0 or permission of the Department of Languages, Literatures and Cultures.
@@ -6434,7 +6429,6 @@ PREREQUISITE HLTH 237/3.0 and Level 4 in a HLTH Major or Medial or Kinesiology d
 HLTH 445/3.0	Critical Health Promotion
 This course provides advanced study of the major theoretical and methodological approaches in critical health promotion. Students will be primarily exposed to academic literature across several disciplines that engage with critical health promotion. Case studies of health promotion practice that illustrate critical perspectives will be discussed.
 LEARNING HOURS 120 (36S; 84P)
- 
 PREREQUISITE Level 4 and (registration in a KINE Specialization Plan, PHED Specialization Plan, or HLTH Major or Medial Plan) and (HLTH 205/3.0 or HLTH 315/3.0).
 EXCLUSION(S) HLTH 493/3.0-001 (2014/15 and 2015/16)
 
@@ -9105,7 +9099,6 @@ PHIL 420/3.0	Ethical Issues
 An examination of major issues in ethics. Possible topics to be considered include political violence, coercion, punishment, immigration, suicide, drug policy, leisure and akrasia.
 PREREQUISITE Level 4 and (PHIL 250/6.0 and PHIL 257/6.0) and (a minimum GPA of 2.4 in all 300-level PHIL) and [(registration in a PHIL Major Plan and 9.0 units of PHIL at the 300 level) or (registration in a PHIL Medial Plan and 6.0 units of PHIL at the 300-level)].
 
-
 PHIL 431/3.0	Ancient Philosophy
 An examination of major issues in ancient philosophy. Possible topics to be considered include the appearance/reality distinction, causation, the emotions, happiness (eudaimonia) and substance.
 PREREQUISITE Level 4 and (PHIL 250/6.0 and PHIL 257/6.0) and (a minimum GPA of 2.4 in all 300-level PHIL) and [(registration in a PHIL Major Plan and 9.0 units of PHIL at the 300 level) or (registration in a PHIL Medial Plan and 6.0 units of PHIL at the 300-level)].
@@ -10796,7 +10789,6 @@ PREREQUISITE The prerequisites for Sociology students are: Completion of Sociolo
 Interested students (both inside and outside) will need to submit an expression of interest followed by an interview with the course instructor. Students register for the course with instructor permission.
 EXCLUSIONS PHIL 406/3.0
 
-
 SOCY 407/3.0	W2B Philosophical Issues
 This is an experimental learning course based on the Walls to Bridges program model, which brings together students from Queen’s University (‘outside students’)with students from a local federal prison(‘inside students) to learn and share knowledge based on their lived experience and critical analysis of academic scholarship. Topics may vary.
 NOTES This course will take place off campus at a local federal prison, as part of the Walls to Bridges prison education program- http://wallstobridges.ca/
@@ -10807,7 +10799,6 @@ EXCLUSION PHIL 407/3.0
 SOCY 420/3.0	Program Evaluation
 This course focuses on program evaluation as applied sociology, including program theory, and will provide a practical understanding of how social research methods are used to assess social intervention programs.
 LEARNING HOURS 120 (36S;84P)
- 
 PREREQUISITE Level 4 and registration in a SOCY Major or Medial Plan and (a minimum grade of C in SOCY 210/3.0 and SOCY 211/3.0 and SOCY 226/3.0 and SOCY 227/3.0) and (a minimum GPA of 2.60 in SOCY 210/3.0 and SOCY 211/3.0 and SOCY 226/3.0 and SOCY 227/3.0) and (a minimum GPA of 2.60 in all SOCY).
 
 SOCY 421/3.0	Multivariate Statistical Applications

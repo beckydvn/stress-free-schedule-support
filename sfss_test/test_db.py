@@ -1,8 +1,7 @@
+from venv import create
 from sfss import db
-from sfss.courses_database_conversion import Courses
+from sfss.courses_database_conversion import create_database
 
+db.drop_all()
 db.create_all()
-db.session.add(Courses("ANAT", 3.0, "test", ["1", "2"], None, None))
-db.session.commit()
-print(Courses.query.all())
-
+create_database()
