@@ -26,11 +26,12 @@ class Courses(db.Model):
         output += "\n\n"
         return output
 
-new_course = False
-f = open("courses.txt", "r")
-text = f.readlines()
-f.close()
+def create_database():
+    new_course = False
+    f = open("sfss/courses.txt", "r")
+    text = f.readlines()
+    f.close()
 
-for i in range(len(text)):
-    if text[i] == "\n":
-        new_course = True
+    for i in range(len(text)):
+        if text[i] == "\n":
+            new_course = True
