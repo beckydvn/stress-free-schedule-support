@@ -1,5 +1,7 @@
+from multiprocessing import Value
 from typing import List
 from sfss import db
+
 
 class Course(db.Model):
     __tablename__ = "Courses"
@@ -21,33 +23,42 @@ class Course(db.Model):
          corequisites=corequisites, exclusions=exclusions, one_way_exclusions=one_way_exclusions, equivalency=equivalency, recommendations=recommendations, learning_hours=learning_hours)
 
     def __repr__(self) -> str:
-        output = "\n".join(["\n", self.id, "CREDITS: " + str(self.credits), "COURSE NAME: " + str(self.course_name), "DESCRIPTION: " + self.description])
+        output = "\n".join(["\n", self.id, "CREDITS: " + str(self.credits), "COURSE NAME: " + str(self.course_name)])
         if self.prerequisites:
-            output += "\nPREREQUISITES: " + " ".join(self.prerequisites)
+            output += "PREREQUISITES: " + self.prerequisites
         if self.corequisites:
-            output += "\nCOREQUISITES: " + " ".join(self.corequisites)
+            output += "COREQUISITES: " + self.corequisites
         if self.exclusions:
-            output += "\nEXCLUSIONS: " + " ".join(self.exclusions)
+            output += "EXCLUSIONS: " + self.exclusions
         if self.one_way_exclusions:
-            output += "\nONE-WAY EXCLUSIONS: " + " ".join(self.one_way_exclusions)
+            output += "ONE-WAY EXCLUSIONS: " + self.one_way_exclusions
         if self.equivalency:
-            output += "\EQUIVALENCIES: " + " ".join(self.equivalency)
+            output += "EQUIVALENCIES: " + self.equivalency
         if self.recommendations:
-            output += "\nRECOMMENDATIONS: " + " ".join(self.recommendations)
+            output += "RECOMMENDATIONS: " + self.recommendations
         if self.learning_hours:
-            output += "\nLEARNING HOURS: " + " ".join(self.learning_hours)
-        output += "\n\n"
+            output += "LEARNING HOURS: " + self.learning_hours
+        output += "\n"
         return output
+
+
+
 
 def parse_description(line: str):
     # split whenever you come across one of the following keywords
+    # need to differenciate the "exclusion" types when splitting
+    line = line.replace("ONE-WAY EXCLUSION ", "ONE-WAY EXCLUSION* ")
     keywords = ["PREREQUISITE ", "COREQUISITE ", "ONE-WAY EXCLUSION* ", "EXCLUSION ", "EQUIVALENCY ", "RECOMMENDATION ", "LEARNING HOURS "]
     splits = {}
-    for outer_k in keywords:
+    for i in range(len(keywords)):
+        outer_k = keywords[i]
         find = line.split(outer_k)
         # found an instance (shouldn't ever have more than 2 unless there's an error in the data)
         if len(find) == 2:
             before, after = find[0], find[1]
+            # if this is the first split, set the description to just the description
+            if i == 0:
+                splits["DESCRIPTION"] = before
             start_index = len(before) + len(outer_k)
             # now we need to find where this section (i.e. prereqs) ends.
             # this is to avoid sections nesting inside each other and to achieve a clean split
@@ -89,11 +100,13 @@ def create_database():
         elif line.strip(" ") == "\n":
             description_dict = parse_description(description)
             for key, value in description_dict.items():
+                if key == "DESCRIPTION":
+                    description = value
                 if key == "PREREQUISITE":
                     prerequisites = value
                 elif key == "COREQUISITE":
                     corequisites = value
-                elif key == "ONE-WAY EXCLUSION*":
+                elif key == "ONE WAY EXCLUSION*":
                     one_way_exclusions = value
                 elif key == "EXCLUSION":
                     exclusions = value

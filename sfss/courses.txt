@@ -2,12 +2,12 @@ ANAT 100/3.0	Anatomy of the Human Body
 This anatomy course is designed to introduce students to the basic structure and functional relationship of the human body. Through a series of weekly learning modules, students will learn about the basic language of Gross Anatomy and Histology in order to understand the working of various body systems. This course is also suitable for individuals who have a general interest in human anatomy.
 NOTE Only offered online. Consult the Bachelor of Health Sciences program office. LEARNING HOURS 120 (48O;72P)
 EXCLUSION ANAT 101/3.0; IDIS 150/6.0
-ONE-WAY EXCLUSION* May not be taken with or after ANAT 215/3.0; ANAT 216/3.0; ANAT 270/3.0; ANAT 312/3.0; ANAT 315/3.0; ANAT 316/3.0.
+ONE-WAY EXCLUSION May not be taken with or after ANAT 215/3.0; ANAT 216/3.0; ANAT 270/3.0; ANAT 312/3.0; ANAT 315/3.0; ANAT 316/3.0.
 
 ANAT 101/3.0	Introductory Human Anatomy
 A basic anatomy course with an emphasis on clinical relevance of structure and function of human body systems. RECOMMENDATION 4U Biology.
 EXCLUSION ANAT 100/3.0; IDIS 150/6.0
-ONE-WAY EXCLUSION* May not be taken with or after ANAT 215/3.0; ANAT 216/3.0; ANAT 270/3.0; ANAT 312/3.0; ANAT 315/3.0; ANAT 316/3.0.
+ONE-WAY EXCLUSION May not be taken with or after ANAT 215/3.0; ANAT 216/3.0; ANAT 270/3.0; ANAT 312/3.0; ANAT 315/3.0; ANAT 316/3.0.
 
 ANAT 215/3.0	Principles of Human Morphology I
 The general principles of human structure and function as appreciated through a survey of the morphological sciences, including: history of anatomy; embryology; neuroanatomy; developmental, microscopic and gross anatomy of the locomotor system.
@@ -23,7 +23,7 @@ This course is designed to introduce the foundations of human structure and func
 NOTE Only offered online. Consult the Bachelor of Health Sciences program office.
 NOTE May not be taken for credit towards the Plan requirements of the LISC Specialization or Major Plans. LEARNING HOURS 120 (60O;60P)
 PREREQUISITE Level 2 and one of (ANAT 100/3.0 or BIOL 102/3.0 or PHGY 170/3.0).
-ONE-WAY EXCLUSION* May not be taken with or after ANAT 215/3.0; ANAT 216/3.0; ANAT 315/3.0; ANAT 316/3.0.
+ONE-WAY EXCLUSION May not be taken with or after ANAT 215/3.0; ANAT 216/3.0; ANAT 315/3.0; ANAT 316/3.0.
 
 ANAT 309/3.0	Functional Histology
 An outline of basic mammalian tissues.
@@ -112,14 +112,14 @@ ARTF 125/3.0	Introduction to Studio Art in Printmaking
 This survey course introduces various Printmaking techniques including monoprint, relief, etching, digital and hybrid methods. Students focus on applying the various methods to personal research interests to create original print based imagery that demonstrates formal, conceptual, historical and contemporary consideration.
 NOTE BFAH students may not enroll in this course. NOTE Materials: estimated cost $100.
 RECOMMENDATION Some drawing experience.
-ONE-WAY EXCLUSION* May not be taken with or after ARTF 227/6.0 or ARTF 265/3.0.
+ONE-WAY EXCLUSION May not be taken with or after ARTF 227/6.0 or ARTF 265/3.0.
 
 ARTF 127/6.0	Introductory Fine Art I
 A foundation course that offers two of the sections from the four media areas available at this level: painting, drawing, two- dimensional fundamentals, and three-dimensional fundamentals. One class per week will be devoted to learning safe procedures and technical skills in the wood-shop. There will be a half-day WHMIS safety training workshop.
 NOTE Open only to students in a BFA Program.
 NOTE Materials: estimated cost $600 (includes technical skills fee of $25). LEARNING HOURS 288 (144Lb;144P)
 EXCLUSION ARTF 100/6.0; ARTF 101/3.0; ARTF 102/3.0; ARTF 106/3.0
-ONE-WAY EXCLUSION* May not be taken with or after: ARTF 125/6.0; ARTF 260/3.0; ARTF 265/3.0.
+ONE-WAY EXCLUSION May not be taken with or after: ARTF 125/6.0; ARTF 260/3.0; ARTF 265/3.0.
 
 ARTF 128/6.0	Introductory Fine Art II
 A continuation of ARTF 127/6.0, this course offers two of the sections from the media available at this level: painting, drawing, two-dimensional fundamentals, and three-dimensional fundamentals.
@@ -708,7 +708,7 @@ NOTE This introductory biochemistry online course is intended for prospective st
 NOTE May not be taken for credit towards the Plan requirements of the BCHM or LISC Specialization or Major Plans. LEARNING HOURS 126 (66O;60P)
 PREREQUISITE	Level 2 or above and [(4U Biology and PHGY 170/3.0) or (BIOL 102/3.0 and BIOL 103/3.0)] or permission of the Department.
 EXCLUSION BCHM 102/3.0
-ONE-WAY EXCLUSION* May not be taken with or after BCHM 310/9.0; BCHM 315/3.0.
+ONE-WAY EXCLUSION May not be taken with or after BCHM 310/9.0; BCHM 315/3.0.
 
 BCHM 310/9.0	General Biochemistry
 Principles of protein biochemistry, enzymology, and protein engineering. Metabolism of carbohydrates, amino acids and lipids. Role of coenzymes. Generation and storage of metabolic energy. Principles of regulatory mechanisms, membrane structure and function, hormone action, and cellular signaling.
@@ -809,12 +809,12 @@ RECOMMENDATION BIOL 102/3.0.
 BIOL 110/3.0	Human Genetics and Evolution
 Introductory genetics and evolutionary processes as they relate to the human condition - genetic diseases, medical techniques, inheritance and ethical issues such as cloning and genetically modified foods.
 NOTE Also offered online. Consult Arts and Science Online. Learning Hours may vary. LEARNING HOURS 118 (26L;10T;10G;36O;36P)
-ONE-WAY EXCLUSION* May not be taken with or after BIOL 102/3.0; BIOL 103/3.0.
+ONE-WAY EXCLUSION May not be taken with or after BIOL 102/3.0; BIOL 103/3.0.
 
 BIOL 111/3.0	Ecology and the Environment
 Introduces the basic concepts of ecology and shows how they relate to environmental issues such as population growth, resource management, biodiversity, agriculture, air and water pollution, energy, and climate change, and to solutions leading to a sustainable environment.
 NOTE Also offered online. Consult Arts and Science Online. Learning Hours may vary. LEARNING HOURS 108 (36L;72P)
-ONE-WAY EXCLUSION* May not be taken with or after BIOL 300/3.0; BIOL 302/3.0; BIOL 303/3.0.
+ONE-WAY EXCLUSION May not be taken with or after BIOL 300/3.0; BIOL 302/3.0; BIOL 303/3.0.
 Admission to 400- and 500-level Biology Courses
 Admission to 400- and 500-level Biology courses requires a minimum cumulative GPA of 2.0 in any previously taken courses from the Biological Foundations List (BIOL_FNDS) regardless of Degree Plan. Requests for special consideration must be submitted to the Chair of Undergraduate Studies.
 BIOL_FNDS
@@ -846,7 +846,7 @@ BIOL 243/3.0	Introduction to Statistics
 An introduction to the analysis of data from real life situations. Covers study design, descriptive and inferential statistics. Topics include probability, t-tests, regression, Chi-square tests, analysis of variance. Emphasis is in the foundation of statistical inference and practical application of statistical methods using statistical software.
 LEARNING HOURS 120 (36L;12T;72P)
 EXCLUSION CHEE 209/3.0; ECON 250/3.0; GPHY 247/3.0; KNPE 251/3.0 (formerly PHED 251/3.0); NURS 323/3.0; POLS 385/3.0; PSYC 202/3.0; SOCY 211/3.0; STAM 200/3.0; STAT 263/3.0; STAT 267/3.0; STAT 367/3.0; COMM 162/3.0.
-ONE-WAY EXCLUSION* May not be taken with or after STAT 269/3.0.
+ONE-WAY EXCLUSION May not be taken with or after STAT 269/3.0.
 Admission to 400- and 500-level Biology Courses
 Admission to 400- and 500-level Biology courses requires a minimum cumulative GPA of 2.0 in any previously taken courses from the Biological Foundations List (BIOL_FNDS) regardless of Degree Plan. Requests for special consideration must be submitted to the Chair of Undergraduate Studies.
 BIOL_FNDS
@@ -999,7 +999,7 @@ Principles of terrestrial ecosystem ecology: soils; plant-soil interactions; ene
 NOTE Overnight field trip: estimated cost $75.
 LEARNING HOURS 124 (12L,24S;18Lb;12Pc;12G;12O;16Oc;18P)
 PREREQUISITE (BIOL 300/3.0 or GPHY 317/3.0 or BIOL 302/3.0 or BIOL 303/3.0) and a minimum GPA of 2.0 in the Biological Foundations List.
-ONE-WAY EXCLUSION* May not be taken with or after BIOL 510/3.0.
+ONE-WAY EXCLUSION May not be taken with or after BIOL 510/3.0.
 
 BIOL 418/3.0	Fisheries Techniques
 This course will introduce students to many “hands-on” techniques currently used in fisheries. This will include fish identification, different capture techniques for fisheries assessment, bioacoustics, environmental monitoring, techniques for ageing fish, diet analysis, fish tracking (biotelemetry approaches), and data management.
@@ -1021,7 +1021,7 @@ PREREQUISITE (BIOL 300/3.0 or BIOL 302/3.0 or BIOL 303/3.0) and a minimum GPA of
 BIOL 423/3.0	Modern Insect Science
 An exploration into the world of insects, one of the most abundantly successful group of organisms on the earth. LEARNING HOURS 120 (12L;36T;72P)
 RECOMMENDATION BIOL 330/3.0 or BCHM 218/3.0.
-ONE-WAY EXCLUSION* May not be taken with or after BIOL 507/3.0.
+ONE-WAY EXCLUSION May not be taken with or after BIOL 507/3.0.
 PREREQUISITE BIOL 205/3.0 and a minimum GPA of 2.0 in the Biological Foundations List.
 
 BIOL 430/3.0	Molecular Genetics of Development
@@ -1109,7 +1109,7 @@ PREREQUISITE Level 4 and registration in a Biology Honours Plan (BIOL-M-BSH, BIO
 BIOL 507/3.0	Biotechnology
 This course covers the ethical, societal and environmental impacts of biotechnology. There will be critical analysis of public policy and the value of biotechnologies to science and the public. Topics will likely include synthetic biology, human cloning, xenotransplants, stem cells, nanomaterials, marine biotechnology, eugenics, patenting, GMOs and the release of biotech products to the environment.
 LEARNING HOURS 120 (36S;84P)
-PREREQUISITE Level 4 and registration in a Biology Honours Plan (BIOL-M-BSH, BIOL-P-BSH, BIMA-P-BSH, BIPS-P-BSH, BTEC-P-BSH, EBIO-P-BSH) and a minimum GPA of 2.0 in the Biological Foundations List or permission of the Department. ONE-WAY EXCLUSION* May not be taken with or after BIOL 441/3.0.
+PREREQUISITE Level 4 and registration in a Biology Honours Plan (BIOL-M-BSH, BIOL-P-BSH, BIMA-P-BSH, BIPS-P-BSH, BTEC-P-BSH, EBIO-P-BSH) and a minimum GPA of 2.0 in the Biological Foundations List or permission of the Department. ONE-WAY EXCLUSION May not be taken with or after BIOL 441/3.0.
 
 BIOL 508/3.0	Biology of the Cell Cycle
 Cell proliferation underlies development and tissue renewal and is implicated in many diseases. Our universal model of eukaryotic cell cycle control is based on studies in a number of model systems. The course will focus on control mechanisms, deriving information from systems as diverse as yeast and human cells.
@@ -1157,7 +1157,7 @@ Research practicum under the supervision of a Biology faculty member. The course
 NOTE Students will normally be enrolled in the fourth year of their Program, having completed the third year core requirements of their Plan.
 LEARNING HOURS 128 (8S;12T;60Pc;48P)
 PREREQUISITE Registration in a Biology Honours Plan (BIOL-M-BSH, BIOL-P-BSH, BIMA-P-BSH, BIPS-P-BSH, EBIO-P-BSH)
-and a minimum GPA of 2.0 in the Biological Foundations List and permission of the Department. ONE-WAY EXCLUSION* Not to be taken concurrently with BIOL 537/12.0.
+and a minimum GPA of 2.0 in the Biological Foundations List and permission of the Department. ONE-WAY EXCLUSION Not to be taken concurrently with BIOL 537/12.0.
 
 BIOL 539/3.0	Research Mentorship in Biology II
 Research practicum under the supervision of a Biology faculty member. The course will involve a combination of research in the host laboratory, attendance of BIOL 537/12.0 or other seminars in the Department, and literature research to present as a major paper and seminar.
@@ -1165,14 +1165,14 @@ NOTE Students will normally be enrolled in the fourth year of their Program, hav
 LEARNING HOURS 128 (8S;12T;60Pc;48P)
 PREREQUISITE Registration in a Biology Honours Plan (BIOL-M-BSH, BIOL-P-BSH, BIMA-P-BSH, BIPS-P-BSH, EBIO-P-BSH)
 and a minimum GPA of 2.0 in the Biological Foundations List and permission of the Department. COREQUISITE BIOL 538/3.0.
-ONE-WAY EXCLUSION* Not to be taken concurrently with BIOL 537/12.0.
+ONE-WAY EXCLUSION Not to be taken concurrently with BIOL 537/12.0.
 
 BIOL 540/6.0	Research Mentorship in Biology
 Research practicum under the supervision of a Biology faculty member. The course will involve a combination of research in the host laboratory, attendance of BIOL 537 or other seminars in the Department, and literature research to present as a major paper and seminar.
 NOTE Students will normally be enrolled in the fourth year of their Program, having completed the third-year core requirements of their Plan.
 LEARNING HOURS 248 (8S;24T;120Pc;96P)
 PREREQUISITE Registration in a Biology Honours Plan (BIOL-M-BSH, BIOL-P-BSH, BIMA-P-BSH, BIPS-P-BSH, EBIO-P-BSH)
-and a minimum GPA of 2.0 in the Biological Foundations List and permission of the Department. ONE-WAY EXCLUSION* Not to be taken concurrently with BIOL 537/12.0.
+and a minimum GPA of 2.0 in the Biological Foundations List and permission of the Department. ONE-WAY EXCLUSION Not to be taken concurrently with BIOL 537/12.0.
 
 BIOL 541/12.0	Research in Biotechnology
 Individual research projects under the supervision of a staff member; reported in the form of a thesis, poster, and seminar. NOTE Students must select projects in consultation with potential supervisors a minimum of one full term in advance of starting the course.
@@ -1292,7 +1292,7 @@ CHEM 313/3.0	Quantum Mechanics
 Elementary principles and applications of wave mechanics with special reference to molecular orbitals and chemical bonding.
 LEARNING HOURS 120 (36L;12T;72P)
 PREREQUISITE (CHEM 211/3.0 or CHEM 222/3.0) and (MATH 110/6.0 or MATH 111/6.0 or MATH 112/3.0) and (MATH 120/6.0 or MATH 121/6.0 or [MATH 123/3.0 and MATH 124/3.0]) and (PHYS 104/6.0 or PHYS 106/6.0 or PHYS 117/6.0).
-ONE-WAY EXCLUSION* May not be taken with or after PHYS 344/3.0. EQUIVALENCY CHEM 346/3.0.
+ONE-WAY EXCLUSION May not be taken with or after PHYS 344/3.0. EQUIVALENCY CHEM 346/3.0.
 
 CHEM 321/3.0	Instrumental Chemical Analysis
 Overview of instrumental methods of chemical analysis. Topics include gas and liquid chromatography, mass spectrometric detection, new separation methods, electrochemical analysis, inductively coupled plasma-based elemental analysis.
@@ -1412,19 +1412,19 @@ CISC 101/3.0	Elements of Computing Science
 Introduction to algorithms: their definition, design, coding, and execution on computers. Intended for students who have no programming experience. All or most assignment work will be completed during lab time.
 NOTE Also offered online. Consult Arts and Science Online. Learning Hours may vary. LEARNING HOURS 120 (36L;24Lb;60P)
 EXCLUSIONS APSC 142/3.0; APSC 143/3.0; CISC 110/3.0; CISC 151/3.0
-ONE-WAY EXCLUSION* May not be taken with or after: CISC 121/3.0; CISC at the 200-level or above.
+ONE-WAY EXCLUSION May not be taken with or after: CISC 121/3.0; CISC at the 200-level or above.
 
 CISC 102/3.0	Discrete Mathematics for Computing I
 Introduction to mathematical discourse and proof methods. Sets, functions, sequences, and relations. Properties of the integers. Induction. Equivalence relations. Linear and partial orderings.
 NOTE Also offered online. Consult Arts and Science Online. Learning Hours may vary. NOTE Sufficient preparation for CISC 121; alternative to CISC 110/3.0 and CISC 151/3.0 LEARNING HOURS 120 (36L;84P)
-ONE-WAY EXCLUSION* May not be taken with or after CISC 203/3.0.
+ONE-WAY EXCLUSION May not be taken with or after CISC 203/3.0.
 
 CISC 110/3.0	Creative Computing
 Introduction to fundamental programming concepts in the context of visual, interactive media. Students may develop applications in any domain (e.g., fine art, education, commerce, physical or social sciences) while learning about algorithms, program design, logic, program control flow, functions, testing, etc.
 NOTE No computing or art background required. Sufficient preparation for CISC 121/3.0. Alternative to CISC 101/3.0 and CISC 151/3.0. With permission of the school, students with programming experience may take this concurrently with CISC 121/3.0
 LEARNING HOURS 120 (36L;84P)
 EXCLUSIONS APSC 142/3.0; APSC 143/3.0; CISC 101/3.0; CISC 151/3.0
-ONE-WAY EXCLUSION* May not be taken with or after CISC 121/3.0 or CISC at the 200-level or above.
+ONE-WAY EXCLUSION May not be taken with or after CISC 121/3.0 or CISC at the 200-level or above.
 
 CISC 121/3.0	Introduction to Computing Science I
 Introduction to design, analysis, and implementation of algorithms. Recursion, backtracking, and exits. Sequences. Elementary searching and sorting. Order-of-magnitude complexity. Documentation, iterative program development, translating natural language to code, testing and debugging.
@@ -1441,7 +1441,7 @@ CISC 151/3.0	Elements of Computing with Data Analytics
 Introduction to algorithms: their definition, design, coding, and execution on computers, with applications drawn from data analytics, including simple prediction and clustering. Intended for students who have no programming experience. All or most assignment work will be completed during lab time.
 NOTE Sufficient preparation for CISC 121/3.0. Alternative to CISC 101/3.0 and CISC 110/3.0 LEARNING HOURS 120 (36L;84P)
 EXCLUSIONS APSC 142/3.0; APSC 143/3.0; CISC 101/3.0; CISC 110/3.0
-ONE-WAY EXCLUSION* May not be taken with or after CISC 121/3.0; CISC; SOFT at the 200-level and above.
+ONE-WAY EXCLUSION May not be taken with or after CISC 121/3.0; CISC; SOFT at the 200-level and above.
  
 CISC 181/3.0	Digital Societies
 This introductory course provides a broad overview and ethical implications of technological topics and trends in the digital world such as the Internet of Things (IoT), Social Networks, Security and Privacy, Data Analytics, and Artificial Intelligence (AI). No programming experience is required.
@@ -1973,7 +1973,7 @@ PREREQUISITE Level 2 or above and (C- in 6.0 units in ARTF or ARTH or DRAM or FI
 COGS 100/3.0	Introduction to Cognitive Science
 A multidisciplinary approach to the study of the mind combining approached from philosophy, psychology, linguistics, neuroscience, anthropology, and artificial intelligence. Logic, rules, concepts, and other mental representations used to generate thought and behaviour. Implementation of computational and cognitive models of mental processes.
 NOTE Also offered online. Consult Arts and Science Online. Learning Hours may vary. LEARNING HOURS 120 (36L;84P)
-ONE-WAY EXCLUSION* May not be taken with or after CISC 352/3.0; PSYC 200/6.0.
+ONE-WAY EXCLUSION May not be taken with or after CISC 352/3.0; PSYC 200/6.0.
 
 COGS 201/3.0	Cognition and Computation
 Introduction to the computational aspects of the mind. Implementation of computer programs for reasoning, decision making, and problem solving to understand these mental processes. Information theory and behaviourism; computational models of cognition, perception and memory processes demonstrating modeling approaches, and cognitive architectures. LEARNING HOURS 120 (36L;84P)
@@ -2261,7 +2261,7 @@ DEVS 411/3.0	Post-Placement Seminar in Development Studies
 Required for students who have successfully completed the course requirements for DEVS 410. The course will provide a forum for students to debrief and to critically examine their placement experience. Evaluation based on presentation, participation, journal synthesis and a final report.
 LEARNING HOURS 120 (36S;84P)
 PREREQUISITE DEVS 410/6.0 and Level 3 or above and registration in the DEVS Major Plan and departmental approval in advance from the Placement Coordinator, Global Development Studies.
-ONE-WAY EXCLUSION* May not be taken with or after DEVS 420/3.0
+ONE-WAY EXCLUSION May not be taken with or after DEVS 420/3.0
 
 DEVS 420/3.0	Study Placement in Development Studies
 Participation in an organized educational or cultural exchange, either i) one term of studies at a developing-country university, or ii) an exchange program in a developing-country setting with an organization such as Canada World Youth or Shastri Indo-Canadian Institute for at least 6 weeks. Students are required to prepare a work-study proposal, a risk assessment of their placement and attend a pre-departure orientation. Assessment will also be based on a journal and final report.
@@ -4121,7 +4121,7 @@ This online French course is aimed at students with little or no knowledge of Fr
 NOTE Only offered online. Consult Arts and Science Online. NOTE Not available for credit towards any plan in FREN.
 NOTE Students with a higher level of French than beginner speakers cannot enrol in this course, and will need to sign a solemn declaration to this effect at the start of the course.
 LEARNING HOURS 144 (132O;12P) EQUIVALENCY FREN P16/3.0.
-ONE-WAY EXCLUSION* May not be taken with or after FREN 107/3.0; FREN 111/3.0; FREN 112/3.0; FREN 118/3.0; FREN 150/6.0; FREN 219/3.0; FREN 320/3.0; FREN P10/6.0; FREN P11/3.0; FREN P12/3.0; FREN P17/3.0; FREN 100/6.0; FREN
+ONE-WAY EXCLUSION May not be taken with or after FREN 107/3.0; FREN 111/3.0; FREN 112/3.0; FREN 118/3.0; FREN 150/6.0; FREN 219/3.0; FREN 320/3.0; FREN P10/6.0; FREN P11/3.0; FREN P12/3.0; FREN P17/3.0; FREN 100/6.0; FREN
 101/3.0; FREN 102/3.0; FREN 110/6.0.
 
 FREN 107/3.0	Communication et culture II
@@ -4129,19 +4129,19 @@ This online French course is designed for students with a basic knowledge of Fre
 NOTE Only offered online. Consult Arts and Science Online. NOTE Not available for credit towards any plan in FREN.
 NOTE Students with a higher level of French than false beginner speakers cannot enrol in this course, and will need to sign a solemn declaration to this effect at the start of the course.
 LEARNING HOURS 144 (132O;12P) EQUIVALENCY FREN P17/3.0.
-ONE-WAY EXCLUSION* May not be taken with or after FREN 111/3.0; FREN 112/3.0; FREN 118/3.0; FREN 150/6.0; FREN 219/3.0; FREN 320/3.0; FREN P10/6.0, FREN P11/3.0; FREN P12/3.0; FREN 100/6.0; FREN 101/3.0; FREN 102/3.0; FREN
+ONE-WAY EXCLUSION May not be taken with or after FREN 111/3.0; FREN 112/3.0; FREN 118/3.0; FREN 150/6.0; FREN 219/3.0; FREN 320/3.0; FREN P10/6.0, FREN P11/3.0; FREN P12/3.0; FREN 100/6.0; FREN 101/3.0; FREN 102/3.0; FREN
 110/6.0.
 
 FREN 111/3.0	Révision de la grammaire I
 Review of the French language in the North American context: written and oral exercises, compositions, short readings. Emphasis on grammar and vocabulary.
 NOTE Not available for credit towards any plan in FREN LEARNING HOURS 120 (36L;84P)
-EXCLUSION No more than 6.0 units from FREN P10/6.0; FREN P11/3.0; FREN P12/3.0; FREN 111/3.0; FREN 112/3.0. ONE-WAY EXCLUSION* May not be taken with or after FREN 112/3.0; FREN 118/3.0; FREN 150/6.0; FREN 219/3.0; FREN 320/3.0; FREN P12/3.0; FREN 100/6.0; FREN 101/3.0; FREN 102/3.0; FREN 110/6.0.
+EXCLUSION No more than 6.0 units from FREN P10/6.0; FREN P11/3.0; FREN P12/3.0; FREN 111/3.0; FREN 112/3.0. ONE-WAY EXCLUSION May not be taken with or after FREN 112/3.0; FREN 118/3.0; FREN 150/6.0; FREN 219/3.0; FREN 320/3.0; FREN P12/3.0; FREN 100/6.0; FREN 101/3.0; FREN 102/3.0; FREN 110/6.0.
 EQUIVALENCY FREN P11/3.0.
 
 FREN 112/3.0	Révision de la grammaire II
 Review of the French language in the North American context: written and oral exercises, compositions, short readings. Emphasis on grammar and vocabulary.
 NOTE Not available for credit towards any plan in FREN LEARNING HOURS 120 (36L;84P)
-EXCLUSION No more than 6.0 units from FREN P10/6.0; FREN P11/3.0; FREN P12/3.0; FREN 111/3.0; FREN 112/3.0. ONE-WAY EXCLUSION* May not be taken with or after FREN 118/3.0; FREN 150/6.0; FREN 219/3.0; FREN 320/3.0; FREN 100/6.0; FREN 101/3.0; FREN 102/3.0; FREN 110/6.0.
+EXCLUSION No more than 6.0 units from FREN P10/6.0; FREN P11/3.0; FREN P12/3.0; FREN 111/3.0; FREN 112/3.0. ONE-WAY EXCLUSION May not be taken with or after FREN 118/3.0; FREN 150/6.0; FREN 219/3.0; FREN 320/3.0; FREN 100/6.0; FREN 101/3.0; FREN 102/3.0; FREN 110/6.0.
 EQUIVALENCY FREN P12/3.0.
 
 FREN 118/3.0	Communication et culture III
@@ -4149,7 +4149,7 @@ This online French course is designed for students who have completed beginner l
 NOTE Only offered online. Consult Arts and Science Online. NOTE Not available for credit towards any Plan in FREN.
 NOTE Students who are fluent French speakers cannot enrol in this course, and will need to sign a solemn declaration to this effect at the start of the course.
 LEARNING HOURS 114 (36L;18Lb;60P)
-ONE-WAY EXCLUSION* May not be taken after FREN 150/6.0 or FREN 100/6.0.
+ONE-WAY EXCLUSION May not be taken after FREN 150/6.0 or FREN 100/6.0.
  
 FREN 150/6.0	Français intermédiaire
 Practice in reading, writing, grammar review, and literary analysis.
@@ -4160,13 +4160,13 @@ EXCLUSION No more than 6.0 units from FREN 150/6.0; FREN 100/6.0; FREN 101/3.0; 
 
 FREN 219/3.0	Communication et culture IV
 For students with immersion background. LEARNING HOURS 114 (36L;18Lb;60P)
-ONE-WAY EXCLUSION* May not be taken with or after FREN 320/3.0.
+ONE-WAY EXCLUSION May not be taken with or after FREN 320/3.0.
 
 FREN 225/3.0	French in the Professional Workplace
 This course is designed to provide students with foundational French oral and written skills to successfully navigate through a range of professional workplace environments. It will expose students to professional situations and enable them to actively engage in real life scenarios; from applying and interviewing for a position when entering the workforce, to chairing meetings and conducting routine business as an active member of a professional organization.
 NOTE This course is not intended for fluent French speakers. NOTE Not available for credit towards any Plan in FREN. NOTE Only offered online. Consult Arts and Science Online. LEARNING HOURS 120 (30O;90P)
 PREREQUISITE FREN 118/3.0 or FREN 150/6.0.
-ONE-WAY EXCLUSION* May not be taken with or after any FREN 200 or FREN 300 level course except for FREN 219/3.0 and/or FREN 320/3.0
+ONE-WAY EXCLUSION May not be taken with or after any FREN 200 or FREN 300 level course except for FREN 219/3.0 and/or FREN 320/3.0
 
 FREN 230/3.0	Analyse textuelle et étude de la langue
 The methodology of literary analysis. Assignments may include textual analysis and dissertation. LEARNING HOURS 120 (30L;6O;84P)
@@ -4183,28 +4183,28 @@ This course will provide learners with work-related vocabulary as well as the wr
 NOTE Language is the principal focus of this course. Prior experience or professional knowledge in the field is not necessary.
 NOTE This course is not intended for fluent French speakers. NOTE Not available for credit towards any Plan in FREN. NOTE Only offered online. Consult Arts and Science Online. LEARNING HOURS 120 (30O;90P)
 PREREQUISITE FREN 225/3.0 or permission of the department.
-ONE-WAY EXCLUSION* May not be taken with or after any FREN 200 or FREN 300 level course except for FREN 219/3.0, FREN 237/3.0, FREN 238/3.0, FREN 239/3.0, FREN 320/3.0
+ONE-WAY EXCLUSION May not be taken with or after any FREN 200 or FREN 300 level course except for FREN 219/3.0, FREN 237/3.0, FREN 238/3.0, FREN 239/3.0, FREN 320/3.0
  
 FREN 237/3.0	French for Government Professionals
 The course will provide learners with technical vocabulary as well as the written and oral French communication skills to effectively engage in a range of situations, activities, and tasks within government workplaces. Collaborative group work and assignments will simulate real world situations.
 NOTE Language is the principal focus of this course. Prior experience or professional knowledge in the field is not necessary.
 NOTE This course is not intended for fluent French speakers. NOTE Not available for credit towards any Plan in FREN. NOTE Only offered online. Consult Arts and Science Online. LEARNING HOURS 120 (30O;90P)
 PREREQUISITE FREN 225/3.0 or permission of the department.
-ONE-WAY EXCLUSION* May not be taken with or after any FREN 200 or FREN 300 level course except for FREN 219/3.0, FREN 236/3.0, FREN 238/3.0, FREN 239/3.0, FREN 320/3.0
+ONE-WAY EXCLUSION May not be taken with or after any FREN 200 or FREN 300 level course except for FREN 219/3.0, FREN 236/3.0, FREN 238/3.0, FREN 239/3.0, FREN 320/3.0
 
 FREN 238/3.0	French for Legal Professionals
 The course will provide learners with technical vocabulary as well as the French written and oral language skills to effectively communicate with French speaking clients and conduct routine legal communication in French. Collaborative group work and assignments will simulate real world situations.
 NOTE Language is the principal focus of this course. Prior experience or professional knowledge in the field is not necessary.
 NOTE This course is not intended for fluent French speakers. NOTE Not available for credit towards any Plan in FREN. NOTE Only offered online. Consult Arts and Science Online. LEARNING HOURS 120 (30O;90P)
 PREREQUISITE FREN 225/3.0 or permission of the department.
-ONE-WAY EXCLUSION* May not be taken with or after any FREN 200 or FREN 300 level course except for FREN 219/3.0, FREN 236/3.0, FREN 237/3.0, FREN 239/3.0,FREN 320/3.0
+ONE-WAY EXCLUSION May not be taken with or after any FREN 200 or FREN 300 level course except for FREN 219/3.0, FREN 236/3.0, FREN 237/3.0, FREN 239/3.0,FREN 320/3.0
 
 FREN 239/3.0	Indigenous Arts and Cultures
 This online course is intended for professionals working in contexts related to Indigenous arts and cultures (artistic and cultural organizations, education, government). It is designed to provide learners with the oral and written skills necessary to accurately understand and effectively engage with Indigenous arts and cultures in the workplace.
 NOTE This course is not intended for fluent French speakers. NOTE Not available for credit towards any Plan in FREN
 NOTE Only offered online. LEARNING HOURS 120 (30O;90P)
 PREREQUISITE FREN 225/3.0 or permission of the department
-ONE-WAY EXCLUSION* May not be taken with or after any FREN 200 or 300 level course except FREN 219/3.0, FREN 236/3.0, FREN 237/3.0, FREN 238/3.0, FREN 320/3.0.
+ONE-WAY EXCLUSION May not be taken with or after any FREN 200 or 300 level course except FREN 219/3.0, FREN 236/3.0, FREN 237/3.0, FREN 238/3.0, FREN 320/3.0.
 
 FREN 241/3.0	Histoire culturelle et littéraire de l’Ancien Régime
 An introduction to French literature from the Middle Ages to the end of the Eighteenth Century stressing how tensions generated between different ideas within a period determine the aesthetic, philosophical, and literary choices made by major authors.
@@ -4387,7 +4387,7 @@ An online course for students with little or no previous knowledge of French. Le
 NOTE Only offered online. Consult Arts and Science Online. NOTE Not available for credit towards any plan in FREN.
 NOTE Students with a higher level of French than beginner speakers cannot enrol in this course, and will need to sign a solemn declaration to this effect at the start of the course.
 LEARNING HOURS 120 (90O;30P)
-ONE-WAY EXCLUSION* May not be taken with or after any FREN courses except FREN 106/3.0.
+ONE-WAY EXCLUSION May not be taken with or after any FREN courses except FREN 106/3.0.
 
 FRST 125/3.0	Basic Business French
 This online course is an introduction to the language of business in French. Students will learn how to understand texts in the areas of administrative correspondence, personnel issues (CV, covering letter, hiring process), basic financial reporting, and advertising. Explanations are given in English; all materials to be analyzed are in French.
@@ -4396,7 +4396,7 @@ NOTE Not available for credit towards any plan in FREN. With permission of the D
 NOTE Students with a higher level of French than beginner speakers cannot enrol in this course, and will need to sign a solemn declaration to this effect at the start of the course.
 LEARNING HOURS 120 (96O;24P)
 PREREQUISITE FRST 105/3.0 or FREN 107/3.0 or permission of the Department.
-ONE-WAY EXCLUSION* May not be taken with or after any FREN or FRST courses except FRST 105/3.0, FREN 106/3.0 (formerly FREN P16/3.0) or FREN 107/3.0 (formerly FREN P17/3.0).
+ONE-WAY EXCLUSION May not be taken with or after any FREN or FRST courses except FRST 105/3.0, FREN 106/3.0 (formerly FREN P16/3.0) or FREN 107/3.0 (formerly FREN P17/3.0).
 
 FRST 290/3.0	Paris Through Literature, Painting, Cinema, and Photography
 Students will explore Paris through the different perspectives offered by writers, filmmakers, painters, photographers, and other artists who have played an important role in significant literary and artistic trends and movements. The course covers literature, painting, and film starting at the end of the 19th century and extends to the present.
@@ -4472,7 +4472,7 @@ COREQUISITE [MATH 120/6.0 or MATH 121/6.0 or (MATH 123/3.0 and MATH 124/3.0)] an
 GEOL 262/3.0	Geological Aspects of Mineral Deposits
 The basic mineralogy and petrology of mineral deposits are examined. The formation and classification of mineral deposits, considering such aspects as tectonic setting, age, rock composition, geometry, and mineralogy are investigated. Emphasis is placed on the processes by which mineral deposits are formed and transformed, and their influence on mining and production. Laboratory work integrates geological information from the scale of hand samples to regional maps as tools to assist with mine design, estimation of ore grade and evaluation of issues related to ore processing.
 LEARNING HOURS 114 (36L;18Lb;60P) PREREQUISITE GEOL 104/3.0.
-ONE-WAY EXCLUSION* May not be taken with or after GEOL 232/3.0; GEOL 362/3.0.
+ONE-WAY EXCLUSION May not be taken with or after GEOL 232/3.0; GEOL 362/3.0.
 
 GEOL 269/3.0	Physics of the Earth
 An examination of the physical principles and properties exhibited by the Earth which can be used to understand its origin, structure, dynamic processes, and evolution through time. Topics such as gravity, seismology, magnetism, geochronology, and heat flow are discussed in conjunction with the unifying theory of plate tectonics.
@@ -5252,12 +5252,12 @@ PREREQUISITE A minimum GPA of 1.90 in 6.0 units from GREK at the 300-level.
 GRMN 101/3.0	Beginner’s German I
 This course is for students with no previous knowledge of German. The course concentrates on the basic language skills (listening, reading, writing and speaking) and introduces elements of German culture as recorded in its customs, history and literature.
 LEARNING HOURS 120 (36L;120;72P)
-ONE-WAY EXCLUSION* May not be taken with or after GRMN 102/3.0; GRMN 201/3.0; GRMN 202/3.0.
+ONE-WAY EXCLUSION May not be taken with or after GRMN 102/3.0; GRMN 201/3.0; GRMN 202/3.0.
 
 GRMN 102/3.0	Beginner’s German II
 This course is for students with a limited background in German. The course concentrates on the basic language skills (listening, reading, writing and speaking) and introduces elements of German culture as recorded in its customs, history and literature.
 LEARNING HOURS 120 (36L;12O;72P)
-PREREQUISITE A grade of C in GRMN 101/3.0 or permission of the Department of Languages, Literatures and Cultures. ONE-WAY EXCLUSION* May not be taken with or after GRMN 201/3.0; GRMN 202/3.0.
+PREREQUISITE A grade of C in GRMN 101/3.0 or permission of the Department of Languages, Literatures and Cultures. ONE-WAY EXCLUSION May not be taken with or after GRMN 201/3.0; GRMN 202/3.0.
 
 GRMN 201/3.0	Intermediate German I
 A continuation of GRMN 102/3.0 aimed at expanding basic language skills (listening, reading, writing and speaking). Students will review and deepen their knowledge of grammatical structures through exposure to a variety of German-language media and culture.
@@ -5572,7 +5572,7 @@ HIST 243/3.0	The Crusades
 A general introduction to the history of the Crusades and holy war in the medieval period. Western, Muslim and Byzantine perspectives will be considered.
 LEARNING HOURS 132 (36L;96P)
 PREREQUISITE Level 2 or above.
-ONE-WAY EXCLUSION* May not be taken with or after HIST 430/6.0; HIST 443/4.5; HIST 444/4.5
+ONE-WAY EXCLUSION May not be taken with or after HIST 430/6.0; HIST 443/4.5; HIST 444/4.5
 
 HIST 244/3.0	Selected Topics in History
 Lecture course on a selected historical issue. Subject changes from year to year; course is either being offered for the first time or is being taught by visiting faculty. Consult department office or website for details.
@@ -6261,14 +6261,14 @@ NOTE Also offered online. Consult Arts and Science Online. Learning Hours may va
 HLTH 102/3.0	Personal Health and Wellness
 This course provides an introduction to the variety of factors which could affect a person’s health and wellness. NOTE Not available to students in a PHED or KINE Plan.
 NOTE Also offered at the Bader International Study Centre. Learning Hours may vary. LEARNING HOURS 108 (36L;72P)
-ONE-WAY EXCLUSION* May not be taken with or after 12.0 units in KNPE (formerly PPHE; PHED; KINE).
+ONE-WAY EXCLUSION May not be taken with or after 12.0 units in KNPE (formerly PPHE; PHED; KINE).
 
 HLTH 200/3.0	Physical Fitness and Wellness
 An overview of principles of physical fitness and wellness with an emphasis on the planning and implementation of a personalized physical fitness program.
 NOTE Not available to students in a KINE or PHED Plan.
 NOTE Also offered online. Consult Arts and Science Online. Learning Hours may vary. LEARNING HOURS 108 (36L;72P)
 PREREQUISITE Level 2.
-ONE-WAY EXCLUSION* May not be taken with or after: KNPE 227/3.0 (formerly PHED 155/3.0); KNPE 255/3.0 (formerly
+ONE-WAY EXCLUSION May not be taken with or after: KNPE 227/3.0 (formerly PHED 155/3.0); KNPE 255/3.0 (formerly
 PHED 255/3.0).
 
 HLTH 205/3.0	Introduction to Health Promotion
@@ -6296,8 +6296,8 @@ This course provides an introduction to methods, techniques and approaches to re
 LEARNING HOURS 108 (36L;72P)
 PREREQUISITE Level 2 or above and registered in a KINE, PHED or a (HLTH Major or Medial) Plan.
 COREQUISITE 3.0 units from STAT 263/3.0; STAT 267/3.0; STAT 367/3.0; COMM 162/3.0; ECON 250/3.0; PSYC 202/3.0; SOCY 211/3.0; BIOL 243/3.0; CHEE 209/3.0; GPHY 247/3.0; KNPE 251/3.0 or PHED 251/3.0; POLS 385/3.0; NURS 323/3.0. EXCLUSION BMED 270/3.0
-ONE-WAY EXCLUSION* May not be taken with or after: GPHY 240/3.0; PSYC 203/3.0; SOCY 210/3.0.
-ONE-WAY EXCLUSION* May not be taken with or after: GPHY 240/3.0; PSYC 203/3.0; SOCY 321/3.0; STAT 362/3.0.
+ONE-WAY EXCLUSION May not be taken with or after: GPHY 240/3.0; PSYC 203/3.0; SOCY 210/3.0.
+ONE-WAY EXCLUSION May not be taken with or after: GPHY 240/3.0; PSYC 203/3.0; SOCY 321/3.0; STAT 362/3.0.
 
 HLTH 270/3.0	Movement Behaviours and Health
 Movement is on a continuum that includes sleep, sedentary behaviour, and physical activity. This course will use primary prevention and life course approaches to study movement behaviour levels of the population, the influence of movement behaviours on health, and strategies for intervening on movement behaviours.
@@ -6326,7 +6326,7 @@ Basic methods involved in researching the distribution and determinants of healt
 NOTE Restricted to students in a HLTH, KINE, or PHED Plan. Limited spaces are available to students in the LISC(H) and BCHM(H) Plans.
 LEARNING HOURS 120 (24L;6T;6G;84P)
 PREREQUISITE [(KNPE 251/3.0 or STAT_Options) and HLTH 252/3.0] or [STAT_Options and registration in a LISC(H) or BCHM(H) Plan].
-ONE-WAY EXCLUSION* May not be taken with or after: EPID 301/3.0.
+ONE-WAY EXCLUSION May not be taken with or after: EPID 301/3.0.
 
 HLTH 331/3.0	Advanced Human Nutrition
 Current issues relating to nutrition and health promotion/disease prevention. Such topics as cardiovascular disease, weight control, eating disorders, nutrient needs during the life cycle, fads and quackery, sociocultural, economic and media influences. Topics may vary.
@@ -6619,18 +6619,18 @@ LEARNING HOURS 120 (36L;84P) PREREQUISITE INUK 101/3.0.
 ITLN 111/3.0	Beginning Italian I
 Offers a basic level of Italian understanding, speaking, reading and writing for students with no knowledge of Italian whatsoever.
 NOTE Also offered through the Venice Term Abroad Program. Learning Hours may vary. LEARNING HOURS 120 (36L;84P)
-ONE-WAY EXCLUSION** May not be taken with or after ITLN 204/3.0; ITLN 205/3.0. EQUIVALENCY ITLN P10/3.0.
+ONE-WAY EXCLUSION* May not be taken with or after ITLN 204/3.0; ITLN 205/3.0. EQUIVALENCY ITLN P10/3.0.
 
 ITLN 112/3.0	Beginning Italian II
 The continuation of ITLN 112/3.0. Also for students who have some knowledge of Italian but have not completed 4U Italian or equivalent. For these students an assessment interview with the instructor is required before registration. Contact the Department of Languages, Literatures and Cultures for details.
 LEARNING HOURS 120 (36L;84P)
 PREREQUISITE A grade of C in ITLN 111/3.0 or ITLN P10/3.0. EXCLUSION ITLN 111/3.0; ITLN P10/3.0
-ONE-WAY EXCLUSION** May not be taken with or after ITLN 204/3.0; ITLN 205/3.0.
+ONE-WAY EXCLUSION* May not be taken with or after ITLN 204/3.0; ITLN 205/3.0.
 
 ITLN 204/3.0	Italiano intermedio
 A review of the fundamentals of the Italian language, designed to reinforce and develop the student’s comprehension, speaking and writing ability.
 LEARNING HOURS 120 (36L;84P) PREREQUISITE A grade of C in ITLN 112/3.0.
-ONE-WAY EXCLUSION** May not be taken with or after ITLN 205/3.0.
+ONE-WAY EXCLUSION* May not be taken with or after ITLN 205/3.0.
 
 ITLN 205/3.0	Italiano avanzato
 Emphasizing the application of morphology and syntax, with written and oral practice. Readings will be discussed from lexical, syntactical and thematic points of view.
@@ -7788,7 +7788,7 @@ Important topics in mathematics not covered in any other courses. PREREQUISITE P
 MICR 121/3.0	Microbiology for Nursing Students
 This course provides the student with a foundation in the subdisciplines of bacteriology, virology, parasitology, and immunology. The course is designed to examine common infectious diseases through a body-systems approach. Laboratory and tutorial sessions emphasize diagnostic microbiology.
 PREREQUISITE BCHM 102/3.0.
-ONE-WAY EXCLUSION* May not be taken with or after MICR at the 200-level or above.
+ONE-WAY EXCLUSION May not be taken with or after MICR at the 200-level or above.
 
 MICR 221/3.0	Basic Microbiology
 A fundamental study of the structure and growth of microorganisms and viruses. The roles of microbes in aquatic, terrestrial and human environments will be considered.
@@ -7809,7 +7809,7 @@ NOTE Only offered online. Consult the Bachelor of Health Sciences program office
 NOTE May not be taken for credit towards the Plan requirements of the LISC Specialization or Major Plans. LEARNING HOURS 114 (36O;78P)
 RECOMMENDATION 4U Biology.
 PREREQUISITE Level 2 and (BIOL 102/3.0 or MICR 121/3.0 or PHGY 170/3.0).
-ONE-WAY EXCLUSION* May not be taken with or after MICR 360/3.0; BMED 386/3.0.
+ONE-WAY EXCLUSION May not be taken with or after MICR 360/3.0; BMED 386/3.0.
 
 MICR 271/3.0	Introduction to Microbiology
 An introduction to the biology of microbes, including both pathogenic & beneficial bacteria, viruses, fungi, & protozoa. This overview of the biological features of these microorganisms will highlight these organisms’ roles in the environment & in human health contributing to infectious diseases vs. maintaining healthy microbiomes.
@@ -7874,13 +7874,13 @@ MOHK 101/3.0	Beginning Mohawk Language and Culture I
 An introduction to the language and culture of the Kanyen’kehá:ka, the people of the Mohawk Nation. This course is designed for those who have neither been exposed to Kanyen’kéha, the Mohawk language, nor its traditional societal practices. Learn basic Mohawk language and gain a rich understanding of the Mohawk culture and tradition.
 LEARNING HOURS 120 (36L;84P)
 EXCLUSION LLCU 101/3.0 (Topic: Mohawk I).
-ONE-WAY EXCLUSION*: May not be taken with or after MOHK 103/3.0; MOHK 104/3.0; MOHK 201/3.0; MOHK 202/3.0.
+ONE-WAY EXCLUSION: May not be taken with or after MOHK 103/3.0; MOHK 104/3.0; MOHK 201/3.0; MOHK 202/3.0.
 
 MOHK 102/3.0	Beginning Mohawk Language and Culture II
 A continuation of MOHK 101/3.0. Students will participate and begin to develop the ability to read, write and speak some basic Mohawk language and further their understanding of the richness of Mohawk culture, traditions, and worldviews. NOTE Also offered in the Mohawk Territory of Tyendinaga for students registered in the Certificate of Mohawk Language and Culture. Learning Hours may vary.
 LEARNING HOURS 120 (36L;84P)
 PREREQUISITE MOHK 101/3.0 or LLCU 101/3.0 (Topic: Mohawk I). EXCLUSION LLCU 102/3.0 (Topic: Mohawk II).
-ONE-WAY EXCLUSION*: May not be taken with or after MOHK 103/3.0; MOHK 104/3.0; MOHK 201/3.0; MOHK 202/3.0.
+ONE-WAY EXCLUSION: May not be taken with or after MOHK 103/3.0; MOHK 104/3.0; MOHK 201/3.0; MOHK 202/3.0.
 
 MOHK 103/3.0	Oral Mohawk Language - Beginning I (TMT)
 This course is delivered in Tyendinaga and will offer foundational instruction in Kanyen'kéha, the language of the Mohawk People. It will build oral language skills for everyday communication and lay the groundwork for continuing study in MOHK
@@ -8712,7 +8712,7 @@ EXCLUSION ANAT 499/12.0; CANC 499/12.0; EPID 499/12.0; LISC 499/12.0; MICR 499/1
 PHAR 100/3.0	Introductory Pharmacology
 Topics covered include central nervous system stimulants and depressants, narcotics, alcohol, cardiovascular agents, contraceptives, environmental toxicants, mechanism of drug action and disposition, antibiotics, drugs used in sports, over- the-counter drugs, food additives, and vitamins.
 NOTE Also offered online. Consult the Bachelor of Health Sciences program office. RECOMMENDATION 4U Biology.
-ONE-WAY EXCLUSION* May not be taken with or after: PHAR 230/3.0; PHAR 270/3.0; PHAR 340/3.0; PHAR 370/3.0; PHAR 450/3.0.
+ONE-WAY EXCLUSION May not be taken with or after: PHAR 230/3.0; PHAR 270/3.0; PHAR 340/3.0; PHAR 370/3.0; PHAR 450/3.0.
 
 PHAR 230/3.0	Pharmacology for the Health Sciences
 Lecture series on the following topics: principles of drug action, autonomic pharmacology, cardiovascular-renal pharmacology, neuropsychopharmacology, chemotherapy, drugs acting on the endocrine system, over-the-counter drugs, and therapeutic applications.
@@ -8763,7 +8763,7 @@ EXCLUSIONS ANAT 499/12.0; CANC 499/12.0; EPID 499/12.0; LISC 499/12.0; MICR 499/
 PHGY 170/3.0	Human Cell Physiology
 This is an introductory level course on the structure and function of human cells for students interested in pursuing human health-related disciplines. Students will also learn the principles of energy metabolism, cell growth and proliferation, and how cells interact with their environment. There is also an overall focus to relate cellular processes to human function and disease, culminating in a group presentation focused on one specific cell process and how it affects health. Students taking this course will be well-prepared for upper year molecular biology courses.
 NOTE Only offered online. Consult the Bachelor of Health Sciences program office. LEARNING HOURS 114 (36O;78P)
-ONE-WAY EXCLUSION* May not be taken with or after KNPE 225/3.0.
+ONE-WAY EXCLUSION May not be taken with or after KNPE 225/3.0.
 
 PHGY 215/3.0	Principles of Mammalian Physiology I
 The focus of this course is on the central and peripheral nervous systems, muscle physiology, the heart, and the vascular system.
@@ -10005,7 +10005,7 @@ PSYC 271/3.0	Brain and Behaviour I
 An introduction to behavioural neuroscience. The course primarily focuses on the basics of neuronal operation, functional neuroanatomy, neuropharmacology, and behavioral neuroscience methods. This will be followed by an examination of input (sensory) and output (motor) systems of the brain. Finally, topics relevant to lateralization of function and language will be covered.
 NOTE Also offered online. Consult Arts and Science Online. Learning Hours may vary. LEARNING HOURS 120 (36L;84P)
 PREREQUISITE PSYC 100/6.0.
-ONE-WAY EXCLUSION* May not be taken with or after NSCI 323/3.0; NSCI 324/3.0; PSYC 370/3.0.
+ONE-WAY EXCLUSION May not be taken with or after NSCI 323/3.0; NSCI 324/3.0; PSYC 370/3.0.
 
 PSYC 299/3.0	Introduction to Directed Research in Psychology
 Laboratory courses to be arranged in consultation with individual Faculty members of the Department. LEARNING HOURS 120(72Lb;24G;24P)
@@ -10894,38 +10894,38 @@ Offers a basic level of Spanish understanding, speaking, reading and writing for
 NOTE Also offered online. Consult Arts and Science Online. Learning Hours may vary.
 NOTE Also offered at the Bader International Studies Centre, Herstmonceux. Learning Hours may vary. LEARNING HOURS 120 (36L;12O;72P)
 EQUIVALENCY SPAN P10/3.0.
-ONE-WAY EXCLUSION* May not be taken with or after SPAN 112/3.0; SPAN 204/3.0; SPAN 205/3.0; SPAN 301/3.0; SPAN 302/3.0; SPAN 303/3.0; SPAN 304/3.0; SPAN 401/3.0; SPAN 402/3.0; SPAN 201/6.0.
+ONE-WAY EXCLUSION May not be taken with or after SPAN 112/3.0; SPAN 204/3.0; SPAN 205/3.0; SPAN 301/3.0; SPAN 302/3.0; SPAN 303/3.0; SPAN 304/3.0; SPAN 401/3.0; SPAN 402/3.0; SPAN 201/6.0.
 
 SPAN 112/3.0	Beginning Spanish II
 The continuation of SPAN 111/3.0. Also for students entering the University who have some knowledge of Spanish but have not completed 4U Spanish or equivalent. For these students an assessment exam or interview with an academic adviser is required before registration. Contact the Department of Languages, Literatures and Cultures for details.
 NOTE Also offered at the Bader International Studies Centre, Herstmonceux. Learning Hours may vary. LEARNING HOURS 120 (36L;6O;78P)
 PREREQUISITE A grade of C in SPAN 111/3.0 or SPAN P10/3.0. EXCLUSION SPAN 111/3.0; SPAN P10/3.0.
-ONE-WAY EXCLUSION* May not be taken with or after SPAN 201/6.0; SPAN 204/3.0; SPAN 205/3.0; SPAN 301/3.0; SPAN 302/3.0; SPAN 303/3.0; SPAN 304/3.0; SPAN 401/3.0; SPAN 402/3.0.
+ONE-WAY EXCLUSION May not be taken with or after SPAN 201/6.0; SPAN 204/3.0; SPAN 205/3.0; SPAN 301/3.0; SPAN 302/3.0; SPAN 303/3.0; SPAN 304/3.0; SPAN 401/3.0; SPAN 402/3.0.
 
 SPAN 204/3.0	Español intermedio
 A review of the fundamentals of Spanish, in cultural contexts, designed to develop aural, oral, reading and writing skills. LEARNING HOURS 120 (36L;84P)
 RECOMMENDATION 4U Spanish. PREREQUISITE A grade of C in SPAN 112/3.0.
-ONE-WAY EXCLUSION* May not be taken with or after SPAN 201/6.0; SPAN 205/3.0; SPAN 301/3.0; SPAN 302/3.0; SPAN 303/3.0; SPAN 304/3.0; SPAN 401/3.0; SPAN 402/3.0.
+ONE-WAY EXCLUSION May not be taken with or after SPAN 201/6.0; SPAN 205/3.0; SPAN 301/3.0; SPAN 302/3.0; SPAN 303/3.0; SPAN 304/3.0; SPAN 401/3.0; SPAN 402/3.0.
 
 SPAN 205/3.0	Español avanzado
 An advanced treatment of the written and spoken language, involving a study of syntax and style, written composition, translation into Spanish and oral discussions of cultural topics.
 LEARNING HOURS 120 (36L;84P) PREREQUISITE A grade of C in SPAN 204/3.0.
-ONE-WAY EXCLUSION* May not be taken with or after SPAN 201/6.0; SPAN 301/3.0; SPAN 302/3.0; SPAN 303/3.0; SPAN 304/3.0; SPAN 401/3.0; SPAN 402/3.0.
+ONE-WAY EXCLUSION May not be taken with or after SPAN 201/6.0; SPAN 301/3.0; SPAN 302/3.0; SPAN 303/3.0; SPAN 304/3.0; SPAN 401/3.0; SPAN 402/3.0.
 
 SPAN 206/3.0	Spanish Conversation and Culture
 This course is an intermediate conversation course designed to advance skills in oral communication and cultural competence, supported by grammar review and written assignments. Students will engage with different media sources, including Spanish-language film, news items, cultural readings, music and literary texts.
 LEARNING HOURS 120 (36L;84P) PREREQUISITE A grade of C in SPAN 204/3.0. COREQUISITE SPAN 205/3.0 or SPAN 302/3.0.
-ONE-WAY EXCLUSION* May not be taken with of after SPAN 401/3.0; SPAN 402/3.0.
+ONE-WAY EXCLUSION May not be taken with of after SPAN 401/3.0; SPAN 402/3.0.
 
 SPAN 301/3.0	Gramática avanzada y composición I
 This course provides a comprehensive review of the most difficult aspects of Spanish grammar through advanced exercises in reading, composition, and conversation. The goal of the course is to consolidate and perfect the student’s written and oral skills.
 LEARNING HOURS 120 (36L;84P) PREREQUISITE SPAN 201/6.0 or SPAN 205/3.0.
-ONE-WAY EXCLUSION* May not be taken with or after SPAN 302/3.0; SPAN 401/3.0; SPAN 402/3.0.
+ONE-WAY EXCLUSION May not be taken with or after SPAN 302/3.0; SPAN 401/3.0; SPAN 402/3.0.
  
 SPAN 302/3.0	Gramática avanzada y composición II
 This course provides a comprehensive review of the most difficult aspects of Spanish grammar through advanced exercises in reading, composition, and conversation. The goal of the course is to consolidate and perfect the student’s written and oral skills.
 PREREQUISITE SPAN 301/3.0.
-ONE-WAY EXCLUSION* May not be taken with or after SPAN 401/3.0; SPAN 402/3.0.
+ONE-WAY EXCLUSION May not be taken with or after SPAN 401/3.0; SPAN 402/3.0.
 
 SPAN 303/3.0	Español para contextos profesionales I
 Intensive practice in advanced grammar with a focus on Spanish for business, technical, administrative and related cultural purposes.
@@ -10995,7 +10995,7 @@ PREREQUISITE SPAN 201/6.0 or SPAN 205/3.0.
  
 SPAN 401/3.0	Advanced Grammar Through Translation I
 This course aims to perfect the students’ ability to write and speak in Spanish, with intensive practice of advanced Spanish grammatical structures through translation exercises, as well as compositions and oral work.
-PREREQUISITE SPAN 302/3.0 or SPAN 304/3.0 (or permission of the Department of Languages, Literatures and Cultures). ONE-WAY EXCLUSION** May not be taken with or after SPAN 402/3.0.
+PREREQUISITE SPAN 302/3.0 or SPAN 304/3.0 (or permission of the Department of Languages, Literatures and Cultures). ONE-WAY EXCLUSION* May not be taken with or after SPAN 402/3.0.
 
 SPAN 402/3.0	Advanced Grammar Through Translation II
 This course aims to perfect the students’ ability to write and speak in Spanish, with intensive practice of advanced Spanish grammatical structures through translation exercises, as well as compositions and oral work.
@@ -11050,14 +11050,14 @@ STAM 200/3.0	Introduction to Statistics
 An introduction to the analysis of data from real life situations. Covers study design, descriptive and inferential statistics. Topics include probability, t-tests, regressions, Chi-square tests, analysis of variance. Emphasis is in the foundation of statistical inference and practical application of statistical methods using statistical software.
 NOTE Also offered online. Consult Arts and Science Online. LEARNING HOURS 120 (96O;24P)
 EXCLUSION BIOL 243/3.0; CHEE 209/3.0; ECON 250/3.0; GPHY 247/3.0; KNPE 251/3.0; NURS 323/3.0; POLS 385/3.0; PSYC 202/3.0; SOCY 211/3.0; STAT 263/3.0; STAT 267/3.0; STAT 367/3.0; COMM 162/3.0
-ONE-WAY EXCLUSION* May not be taken with or after STAT 269/3.0.
+ONE-WAY EXCLUSION May not be taken with or after STAT 269/3.0.
  
 STAT 263/3.0	Introduction to Statistics
 A basic course in statistical methods with the necessary probability included. Topics include probability models, random variables, distributions, estimation, hypothesis testing, elementary nonparametric methods.
 NOTE Also offered online. Consult Arts and Science Online. Learning Hours may vary. LEARNING HOURS 120 (36L;84P)
 RECOMMENDATION An Ontario 4U mathematics course or equivalent.
 EXCLUSION BIOL 243/3.0; CHEE 209/3.0; ECON 250/3.0; GPHY 247/3.0; KNPE 251/3.0; NURS 323/3.0; POLS 385/3.0; PSYC 202/3.0; SOCY 211/3.0; STAM 200/3.0; STAT 267/3.0; STAT 367/3.0; COMM 162/3.0
-ONE-WAY EXCLUSION* May not be taken with or after STAT 269/3.0.
+ONE-WAY EXCLUSION May not be taken with or after STAT 269/3.0.
 
 STAT 268/3.0	Statistics and Probability I
 Basic ideas of probability theory such as random experiments, probabilities, random variables, expected values, independent events, joint distributions, conditional expectations, moment generating functions. Main results of probability theory including Chebyshev’s inequality, law of large numbers, central limit theorem. Introduction to statistical computing. LEARNING HOURS 120 (36L;84P)
