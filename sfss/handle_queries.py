@@ -1,9 +1,9 @@
-from sfss.courses_database_conversion import Course
 from nltk.corpus import wordnet
-from sfss import db
+from sfss import db, Course
 from sqlalchemy import func
+from typing import List
 
-if __name__ == "__main__":
+def get_query_results(queries: List[str]):
     """
     # references: 
     # https://www.guru99.com/wordnet-nltk.html
@@ -25,7 +25,6 @@ if __name__ == "__main__":
 
     parts of speech: adjective, verb, noun, etc.
     """
-    queries = ["math"]#, "english"]
     related_words = set()
     course_recs = []
 
@@ -39,44 +38,15 @@ if __name__ == "__main__":
             related_words.update(*[w.lemma_names() for w in syn.hyponyms()])
             related_words.update(*[w.lemma_names() for w in syn.hypernyms()])
     related_words = [r.replace("_", " ") for r in related_words]
-    remove_fac = False
-    if "art" or "science" in related_words:
-        remove_fac = True
     print(related_words)
-    related_words = ["science"]
-    # searches are case insensitive and include faculty names other than arts and science
+    # searches are case insensitive and include faculty names other than Arts and Science
+    # (we choose to disclude Arts and Science as the faculty is too broad...)
+    # reference: https://stackoverflow.com/questions/32124009/mysql-string-replace-using-sqlalchemy
     for r in related_words:
-        #raw = Course.query.filter(Course.description.contains(r)).all()
-        # TODO: test
-        raw = db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(r)).all()
-        raw2 = db.session.query(Course).filter((Course.description).contains(r)).all()
-        for entry in raw:
-            print(r in entry.description)
-        course_recs.extend(raw)
-        # if r == "art" or r == "science":
-        #     for entry in raw:
-        #         print(r, r in entry.description.replace("Arts and Science", ""))
-        #         if r in entry.description.replace("Arts and Science", ""):
-        #             course_recs.append(entry)
-        # else:
-        #     course_recs.extend(raw)
+        course_recs.extend(db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(r)).all())
 
-            #course_recs.extend(Course.query.filter((r in str(Course.description).replace("Arts and Science", "")) == True).all()) 
-            #test = Course.description
-            #course_recs.extend(db.session.query(Course).filter(r in str(Course.description) == True).all())
-            # raw = select(Course).\
-            #     where(
-            #         case(
-            #             Course.description.contains
-            #         )
-            #     )
-            # Course.description.like("Arts and Science", "").contains(r)).all()
-
-        #if remove_fac:
-            #for i in range(len(raw)):
-
-        #else:
-        #   course_recs.extend(Course.query.filter(Course.description.contains(r)).all()) 
     print(f"{len(course_recs)} recommendations found:")
     for c in course_recs:
         print(f"id: {c.id}\ndescription: {c.description}")
+
+get_query_results(["math"])
