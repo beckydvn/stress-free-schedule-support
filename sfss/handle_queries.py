@@ -1,9 +1,7 @@
 from sfss.courses_database_conversion import Course
-import nltk
 from nltk.corpus import wordnet
-from sqlalchemy import case, select
-from sqlalchemy.sql.expression import true
 from sfss import db
+from sqlalchemy import func
 
 if __name__ == "__main__":
     """
@@ -45,11 +43,11 @@ if __name__ == "__main__":
     if "art" or "science" in related_words:
         remove_fac = True
     print(related_words)
-    related_words = ["education"]
+    related_words = ["science"]
     # searches are case insensitive and include faculty names other than arts and science
     for r in related_words:
         #raw = Course.query.filter(Course.description.contains(r)).all()
-        from sqlalchemy import func
+        # TODO: test
         raw = db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(r)).all()
         raw2 = db.session.query(Course).filter((Course.description).contains(r)).all()
         for entry in raw:

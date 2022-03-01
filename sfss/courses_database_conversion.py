@@ -41,14 +41,12 @@ class Course(db.Model):
         output += "\n"
         return output
 
-
-
-
 def parse_description(line: str):
     # split whenever you come across one of the following keywords
     # need to differenciate the "exclusion" types when splitting
     line = line.replace("ONE-WAY EXCLUSION ", "ONE-WAY EXCLUSION* ")
-    keywords = ["PREREQUISITE ", "COREQUISITE ", "ONE-WAY EXCLUSION* ", "EXCLUSION ", "EQUIVALENCY ", "RECOMMENDATION ", "LEARNING HOURS "]
+    keywords = ["LEARNING HOURS ", "RECOMMENDATION ", "PREREQUISITE ", "COREQUISITE ", "EXCLUSION ", "ONE-WAY EXCLUSION* ",  "EQUIVALENCY "]
+    split_counts = 0
     splits = {}
     for i in range(len(keywords)):
         outer_k = keywords[i]
@@ -57,8 +55,10 @@ def parse_description(line: str):
         if len(find) == 2:
             before, after = find[0], find[1]
             # if this is the first split, set the description to just the description
-            if i == 0:
+            # TODO: FIX
+            if split_counts == 0:
                 splits["DESCRIPTION"] = before
+            split_counts += 1
             start_index = len(before) + len(outer_k)
             # now we need to find where this section (i.e. prereqs) ends.
             # this is to avoid sections nesting inside each other and to achieve a clean split
