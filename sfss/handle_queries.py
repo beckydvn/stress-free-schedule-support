@@ -45,10 +45,15 @@ if __name__ == "__main__":
     if "art" or "science" in related_words:
         remove_fac = True
     print(related_words)
+    related_words = ["education"]
+    # searches are case insensitive and include faculty names other than arts and science
     for r in related_words:
         #raw = Course.query.filter(Course.description.contains(r)).all()
         from sqlalchemy import func
-        raw = db.session.query(Course).filter_by(func.lower(Course.description)==func.lower("GANYE")).first()
+        raw = db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(r)).all()
+        raw2 = db.session.query(Course).filter((Course.description).contains(r)).all()
+        for entry in raw:
+            print(r in entry.description)
         course_recs.extend(raw)
         # if r == "art" or r == "science":
         #     for entry in raw:
