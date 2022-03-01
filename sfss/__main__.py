@@ -1,5 +1,4 @@
 from sfss import *
-from sfss.courses_database_conversion import *
 
 FLASK_PORT = 8081
 

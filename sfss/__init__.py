@@ -10,9 +10,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///../db.sqlite'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
-
 class Course(db.Model):
-    __tablename__ = "Courses"
     id = db.Column(db.String, primary_key=True, nullable=False, unique=True)
     credits = db.Column(db.Float, nullable=False, unique=False)
     course_name = db.Column(db.String, nullable=False, unique=False)
@@ -31,7 +29,8 @@ class Course(db.Model):
          corequisites=corequisites, exclusions=exclusions, one_way_exclusions=one_way_exclusions, equivalency=equivalency, recommendations=recommendations, learning_hours=learning_hours)
 
     def __repr__(self) -> str:
-        output = "\n".join(["\n", self.id, "CREDITS: " + str(self.credits), "COURSE NAME: " + str(self.course_name)])
+        output = "\n\n"
+        output += "\n".join(["\n", self.id, "CREDITS: " + str(self.credits), "COURSE NAME: " + str(self.course_name)])
         if self.prerequisites:
             output += "PREREQUISITES: " + self.prerequisites
         if self.corequisites:
@@ -53,7 +52,7 @@ def parse_description(line: str):
     # split whenever you come across one of the following keywords
     # need to differenciate the "exclusion" types when splitting
     line = line.replace("ONE-WAY EXCLUSION ", "ONE-WAY EXCLUSION* ")
-    keywords = ["LEARNING HOURS ", "RECOMMENDATION ", "PREREQUISITE ", "COREQUISITE ", "EXCLUSION ", "ONE-WAY EXCLUSION* ",  "EQUIVALENCY "]
+    keywords = ["LEARNING HOURS ", "PREREQUISITE ", "RECOMMENDATION ", "COREQUISITE ", "EXCLUSION ", "ONE-WAY EXCLUSION* ",  "EQUIVALENCY "]
     split_counts = 0
     splits = {}
     for i in range(len(keywords)):
@@ -129,6 +128,6 @@ def create_database():
             description += line
     db.session.commit()
 
-db.drop_all()
+# do not move
 db.create_all()
 create_database()
