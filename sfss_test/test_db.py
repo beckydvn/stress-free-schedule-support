@@ -15,9 +15,9 @@ def test_narrow_db_search():
     db.create_all()
     related_words_test = {"math": ["mathematics", "statistics"], "english": ["english"]}
     filter_list = []
-    for key in related_words_test:
+    for query in related_words_test:
         # all the entries that contain any value from this query
-        test = [func.replace(Course.description, "Arts and Science", "").contains(f"{v}") for v in related_words_test[key]]
+        test = [func.replace(Course.description, "Arts and Science", "").contains(f"{v}") for v in related_words_test[query]]
         filter_list.append(or_(*test))
     query = db.session.query(Course).filter(and_(*filter_list)).all()
     for q in query:
