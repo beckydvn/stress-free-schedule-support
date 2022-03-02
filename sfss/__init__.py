@@ -7,9 +7,7 @@ db_file = 'db.sqlite'
 if os.path.exists(db_file):
     os.remove(db_file)
 
-# NOTE: test this
-if not nltk.download:
-    nltk.download('omw-1.4')
+nltk.download("wordnet")
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///../db.sqlite'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False

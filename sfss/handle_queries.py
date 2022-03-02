@@ -16,10 +16,12 @@ def choose_semantic_meaning(query):
 
 def get_query_results(queries: List[str]):
     """
-    # references: 
-    # https://www.guru99.com/wordnet-nltk.html
-    # the NLTK textbook
-    # https://www.nltk.org/howto/wordnet.html
+    references: 
+    https://www.guru99.com/wordnet-nltk.html
+    https://www.nltk.org/howto/wordnet.html
+    https://stackoverflow.com/questions/32124009/mysql-string-replace-using-sqlalchemy
+    https://stackoverflow.com/questions/66591809/filter-a-sqlalchemy-query-by-field-that-contains-a-substring-from-a-list
+    and of course, the NLTK textbook!
 
     synset: set of words that share a common meaning.
     we want to retrieve all synsets that relate to the query; i.e. if the query is "friend"
@@ -39,7 +41,6 @@ def get_query_results(queries: List[str]):
     # TODO: (possibly) return a dict with the course selected mapped to the highlighted word(s) that
     # prompted the result. send these words to HTML through the controller to highlight/italicize/whatever.
 
-    course_recs = {}
     related_words = {}
     for query in queries:
         related_words[query] = set()
@@ -52,12 +53,12 @@ def get_query_results(queries: List[str]):
         related_words[query].update(*[w.lemma_names() for w in syn.hypernyms()])
         related_words[query] = {val.replace("_", " ") for val in related_words[query]}
     print(related_words)
+
     """ 
     searches are case insensitive and include faculty names other than Arts and Science
     (we choose to disclude Arts and Science as the faculty is too broad...)
     also, we force that the whole word is contained by using spaces (to avoid matching unrelated words
     that happen to have a smaller related word nested in its spelling...)
-    reference: https://stackoverflow.com/questions/32124009/mysql-string-replace-using-sqlalchemy
     """
     
     filter_list = []
