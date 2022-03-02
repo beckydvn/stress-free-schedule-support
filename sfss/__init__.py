@@ -26,7 +26,7 @@ class Course(db.Model):
     one_way_exclusions = db.Column(db.String, nullable=True, unique=False)
     equivalency = db.Column(db.String, nullable=True, unique=False)
     recommendations = db.Column(db.String, nullable=True, unique=False)
-    learning_hours = db.Column(db.String, nullable=False, unique=False)
+    learning_hours = db.Column(db.String, nullable=True, unique=False)
 
     def __init__(self, id: str, credits: int, course_name: str, description: str, prerequisites: str, corequisites: str,
                 exclusions: str, one_way_exclusions: str, equivalency: str, recommendations: str, learning_hours: str) -> None:
@@ -34,8 +34,7 @@ class Course(db.Model):
          corequisites=corequisites, exclusions=exclusions, one_way_exclusions=one_way_exclusions, equivalency=equivalency, recommendations=recommendations, learning_hours=learning_hours)
 
     def __repr__(self) -> str:
-        output = "\n"
-        output += "\n".join(["\n", self.id, "CREDITS: " + str(self.credits), "COURSE NAME: " + str(self.course_name)])
+        output = self.description
         if self.prerequisites:
             output += "PREREQUISITES: " + self.prerequisites
         if self.corequisites:
@@ -59,6 +58,17 @@ def parse_description(line: str):
     line = line.replace("ONE-WAY EXCLUSION ", "ONE-WAY EXCLUSION* ")
     keywords = ["LEARNING HOURS ", "RECOMMENDATION ", "PREREQUISITE ", "COREQUISITE ", "EXCLUSION ", "ONE-WAY EXCLUSION* ",  "EQUIVALENCY "]
     splits = {}
+    indices = []
+    for k in keywords:
+        try:
+            indices.append(line.index(k))
+        except ValueError:
+            pass
+    if not indices:
+        indices = [len(line)]
+    splits["DESCRIPTION"] = line[:min(indices)]
+    
+    # TODO: rewrite cleanly like above...
     for i in range(len(keywords)):
         outer_k = keywords[i]
         find = line.split(outer_k)
@@ -101,10 +111,15 @@ def create_database():
         line = text[i]
         if new_course:
             id, credits, course_name = parse_course(line)
+            description += id + "\t"
+            description += credits + "\n"
+            description += course_name
             new_course = False
         elif line.strip(" ") == "\n":
             description_dict = parse_description(description)
             for key, value in description_dict.items():
+                if key == "DESCRIPTION":
+                    description = value
                 if key == "PREREQUISITE":
                     prerequisites = value
                 elif key == "COREQUISITE":
@@ -119,7 +134,6 @@ def create_database():
                     recommendations = value
                 elif key == "LEARNING HOURS":
                     learning_hours = value
-                    
             db.session.add(Course(id, credits, course_name, description, prerequisites, corequisites, exclusions, one_way_exclusions, equivalency, recommendations, learning_hours))
             new_course = True
             description = ""

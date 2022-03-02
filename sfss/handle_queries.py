@@ -61,31 +61,27 @@ def get_query_results(queries: List[str]):
     reference: https://stackoverflow.com/questions/32124009/mysql-string-replace-using-sqlalchemy
     """
     
-    if(len(queries) > 1):
-        filter_list = {}
-        for key in related_words:
-            filter_list[key] = []
-        filter_list = []
-
-        related_words_test = {"math": ["mathematics"], "english": ["english"]}
-        for key, val in related_words_test.items():
-            # all the entries that contain any value from this query
-            test = [func.replace(Course.description, "Arts and Science", "").contains(f"{v}") for v in val]
-            filter_list.append(or_(*test))
-        query = db.session.query(Course).filter(and_(*filter_list)).all()
-        for q in query:
-            if not ("mathematics" in q.description.lower() or "english" in q.description.lower()):
-                print(q.id, "\n", q.description)
-                print("ERROR\n")
-
+    filter_list = []
     # for a search to be viable, it must contain at least one word from each query category
-    for key, val in related_words.items():
-        course_recs[key].extend(db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(f" {val} ")).all())
+    for key in related_words:
+        # all the entries that contain any value from this query
+        test = [func.replace(Course.description, "Arts and Science", "").contains(f" {v} ") for v in related_words[key]]
+        filter_list.append(or_(*test))
+    course_recs = db.session.query(Course).filter(and_(*filter_list)).all()
+    for q in course_recs:
+        is_in = False
+        for c in {'airmanship', 'oenology', 'falconry', 'homiletics', 'puppetry', 'eristic', 'telescopy', 'art', 'taxidermy', 'aviation', 'minstrelsy', 'prowess', 'horology', 'fortification', 'artistry', 'ventriloquy', 'enology', 'superior skill', 'musicianship', 'ventriloquism',
+        'past', 'past times', 'yesteryear', 'history', 'part music', 'Chopin', 'line', 'monophony', 'genre', 'monophonic music', 'auditory communication', 'Bach', 'prelude', 'Beethoven', 'instrumental music', 'composition', 'melodic line', "Ta'ziyeh", 'polytonality', 'subdivision', 'Handel', 'Haydn', 'Gilbert and Sullivan', 'piece', 'syncopation', 'monody', 'musical harmony', 'polyphony', 'harmony', 'tune', 'popularism', 'serialism', 'musical composition', 'Brahms', 'musical genre', 'polytonalism', 'melodic phrase', 'section', 'opus', 'music genre', 'antiphony', 'polyphonic music', 'overture', 'Stravinsky', 'piece of music', 'air', 'chorus', 'dance music', 'serial music', 'musical style', 'strain', 'refrain', 'melody', 'vocal', 'concerted music', 'Wagner', 'pizzicato', 'ballet', 'Mozart', 'vocal music', 'music'}:
+            if c in q.description.lower():
+                print(c)
+                is_in = True
+        if not is_in:
+            print("ERROR")
 
     print(f"{len(course_recs)} recommendations found:\n")
     for c in course_recs:
-       print(f"id: {c.id}\ndescription: {c.description}\n")
+       print(c.description)
 
     return course_recs
 
-get_query_results(["english", "math"])
+get_query_results(["art", "math"])
