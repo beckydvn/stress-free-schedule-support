@@ -1,6 +1,11 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import nltk
+import os
+
+db_file = 'db.sqlite'
+if os.path.exists(db_file):
+    os.remove(db_file)
 
 # NOTE: test this
 if not nltk.download:
@@ -29,7 +34,7 @@ class Course(db.Model):
          corequisites=corequisites, exclusions=exclusions, one_way_exclusions=one_way_exclusions, equivalency=equivalency, recommendations=recommendations, learning_hours=learning_hours)
 
     def __repr__(self) -> str:
-        output = "\n\n"
+        output = "\n"
         output += "\n".join(["\n", self.id, "CREDITS: " + str(self.credits), "COURSE NAME: " + str(self.course_name)])
         if self.prerequisites:
             output += "PREREQUISITES: " + self.prerequisites
@@ -52,8 +57,7 @@ def parse_description(line: str):
     # split whenever you come across one of the following keywords
     # need to differenciate the "exclusion" types when splitting
     line = line.replace("ONE-WAY EXCLUSION ", "ONE-WAY EXCLUSION* ")
-    keywords = ["LEARNING HOURS ", "PREREQUISITE ", "RECOMMENDATION ", "COREQUISITE ", "EXCLUSION ", "ONE-WAY EXCLUSION* ",  "EQUIVALENCY "]
-    split_counts = 0
+    keywords = ["LEARNING HOURS ", "RECOMMENDATION ", "PREREQUISITE ", "COREQUISITE ", "EXCLUSION ", "ONE-WAY EXCLUSION* ",  "EQUIVALENCY "]
     splits = {}
     for i in range(len(keywords)):
         outer_k = keywords[i]
@@ -61,10 +65,6 @@ def parse_description(line: str):
         # found an instance (shouldn't ever have more than 2 unless there's an error in the data)
         if len(find) == 2:
             before, after = find[0], find[1]
-            # if this is the first split, set the description to just the description
-            if split_counts == 0:
-                splits["DESCRIPTION"] = before
-            split_counts += 1
             start_index = len(before) + len(outer_k)
             # now we need to find where this section (i.e. prereqs) ends.
             # this is to avoid sections nesting inside each other and to achieve a clean split
@@ -101,13 +101,10 @@ def create_database():
         line = text[i]
         if new_course:
             id, credits, course_name = parse_course(line)
-            description = ""
             new_course = False
         elif line.strip(" ") == "\n":
             description_dict = parse_description(description)
             for key, value in description_dict.items():
-                if key == "DESCRIPTION":
-                    description = value
                 if key == "PREREQUISITE":
                     prerequisites = value
                 elif key == "COREQUISITE":
@@ -122,8 +119,17 @@ def create_database():
                     recommendations = value
                 elif key == "LEARNING HOURS":
                     learning_hours = value
+                    
             db.session.add(Course(id, credits, course_name, description, prerequisites, corequisites, exclusions, one_way_exclusions, equivalency, recommendations, learning_hours))
             new_course = True
+            description = ""
+            prerequisites = None
+            corequisites = None
+            one_way_exclusions = None
+            exclusions = None
+            equivalency = None
+            recommendations = None
+            learning_hours = None
         else:
             description += line
     db.session.commit()
