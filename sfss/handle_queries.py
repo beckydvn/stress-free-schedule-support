@@ -51,7 +51,7 @@ def get_query_results(queries: List[str]):
         related_words[query].update(*[w.lemma_names() for w in syn.hyponyms()])
         related_words[query].update(*[w.lemma_names() for w in syn.hypernyms()])
         related_words[query] = {val.replace("_", " ") for val in related_words[query]}
-
+    print(related_words)
     """ 
     searches are case insensitive and include faculty names other than Arts and Science
     (we choose to disclude Arts and Science as the faculty is too broad...)
@@ -63,13 +63,14 @@ def get_query_results(queries: List[str]):
     filter_list = []
     # for a search to be viable, it must contain at least one word from each query category
     for query in related_words:
-        # all the entries that contain any value from this query
+        # each entry must contain at least one word from each key
         test = [func.replace(Course.description, "Arts and Science", "").contains(f" {v} ") for v in related_words[query]]
         filter_list.append(or_(*test))
-    course_recs = db.session.query(Course).filter(and_(*filter_list)).all()
+    # make this true for all entries using "and_"
+    return db.session.query(Course).filter(and_(*filter_list)).all()
 
+if __name__ == "__main__":
+    course_recs = get_query_results(["math", "english"])
     print(f"{len(course_recs)} recommendations found:\n")
     for c in course_recs:
-       print(c.description)
-
-    return course_recs
+       print(c.description, "\n")
