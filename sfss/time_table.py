@@ -4,6 +4,8 @@ from functools import total_ordering
 from random import Random
 from typing import Dict
 from pip import main
+from tabulate import tabulate
+import numpy
 
 class Days(Enum):
     MON = 1
@@ -93,8 +95,33 @@ class Query:
         return str(self.table)
     
     def show_table(self):
-        # table[][]
-        return 0
+        start_time = 7
+        end_time = 23
+        times = numpy.arange(start_time,end_time,0.5)
+
+        str_times = [""] * len(times)
+
+        for i in range(len(times)):
+            if times[i] >= 13:
+                str_times[i] = str(times[i] - 12) + "pm"
+            elif times[i] >= 12:
+                str_times[i] = str(times[i]) + "pm"
+            else:
+                str_times[i] = str(times[i]) + "am" 
+
+        # every row represents 30 mins, from 8am to 11pm, every col represents a day
+        table = [[0 for _ in range(len(Days)+1)] for _ in range(len(times))]
+
+        for row in range(len(times)):
+            for col in range(len(Days)+1):
+                if col == 0:
+                    table[row][col] = str_times[row]
+                else:
+                    for course_lesson in self.table[Days(col)]:
+                        if times[row] >= course_lesson[1].start and times[row] <= course_lesson[1].end:
+                            table[row][col] = course_lesson[0]
+                            break
+        print(tabulate(table, headers=["Times","Mond", "Tues", "Wed", "Thurs", "Fri"]))
 
     def generate_table(self):
         '''
@@ -212,6 +239,7 @@ if __name__ == "__main__":
     course2 = Course("course 2", [section3, section2])
     
     query1 = Query([course1, course2], TimePreference.LATE)
+    query1.show_table()
     print(query1)
     print(course1)
     print(course2)
