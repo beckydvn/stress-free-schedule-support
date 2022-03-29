@@ -20,6 +20,14 @@ class TimePreference(Enum):
     SPREAD = 4
     NA = 5
 
+# lower number represents higher priority
+# each priority value must be at least 24 apart from the last for heuristic to work
+# heuristic adds priority to score, (score between 0-23 (based on hours)) keeps priorities in seperate score tiers
+class Priority(Enum):
+    HIGH = 0
+    MID = 50
+    LOW = 100
+
 '''
 class CompactnessPreference(Enum):
     COMPACT = 1
@@ -69,7 +77,7 @@ class Section:
 
 class Course:
     ''' has list of sections course can be taken, potentially priorities depending on how much student wants to take it '''
-    def __init__(self, name:str, section_list: list[Section], priority=None):
+    def __init__(self, name:str, section_list: list[Section], priority:Priority=Priority.LOW):
         self.section_list = section_list
         self.priority = priority
         self.name = name
@@ -146,7 +154,7 @@ class Query:
                 if self.time_preference == TimePreference.SPREAD and  old_lessons != self.__lessons_added:
                     # update priority based on new mean
                     self.__sort_sections(new_remaining)
-                    remaining.sort(key=lambda s: self.__time_heuristic(s.section_list[0]))
+                    remaining.sort(key=lambda s: self.__time_heuristic(s.section_list[0],s.priority))
             
             # take out the courses that were added
             remaining = new_remaining
@@ -158,15 +166,17 @@ class Query:
             if len(course.section_list) > 1:
                 course.section_list.sort(key=lambda s: self.__time_heuristic(s))
 
-    def __time_heuristic(self, section:Section):
+    def __time_heuristic(self, section:Section, priority:Priority=Priority.LOW):
+        # priority value is high enough to bump courses of dif priorities out of each other's tiers
+        # time preference will only be relevant against other courses of same priority
         if self.time_preference == TimePreference.EARLY:
-            return section.ave_start_time   
+            return section.ave_start_time + priority.value  
         elif self.time_preference == TimePreference.MID:
-            return abs(12 - section.ave_start_time)
+            return abs(12 - section.ave_start_time) + priority.value
         elif self.time_preference == TimePreference.LATE:
-            return 24 - section.ave_start_time
+            return 24 - section.ave_start_time + priority.value
         elif self.time_preference == TimePreference.SPREAD:
-            return abs(self.__ave_start_time - section.ave_start_time)
+            return abs(self.__ave_start_time - section.ave_start_time) * priority.value
         else:
             return Random.random()
 
