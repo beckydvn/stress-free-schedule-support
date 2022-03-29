@@ -5,7 +5,6 @@ from random import Random
 from typing import Dict
 from pip import main
 from tabulate import tabulate
-import numpy
 
 class Days(Enum):
     MON = 1
@@ -30,12 +29,16 @@ class CompactnessPreference(Enum):
 
 class Time():
     def __init__(self, hour:int, min:int=0, pm=False):
-        self.time_string = "%d:%s%s"%(hour,str(min) if min>=10 else str(min)+"0","pm" if pm else "am")
-        
+        self.time_string = "%d:%s%s"%(hour,str(min) if min>=10 else str(min)+"0","pm" if pm else "am")       
         if pm:
             hour += 12
-        min = min/60
+        min = (min/60) % 1
         self.mil_time = hour+min # 24h time
+
+    def __str__(self):
+        return self.time_string
+    def __repr__(self):
+        return self.time_string
 
 class LessonTime():
     ''' has start time, end time of a class (24hour clock) '''
@@ -97,28 +100,23 @@ class Query:
     def show_table(self):
         start_time = 7
         end_time = 23
-        times = numpy.arange(start_time,end_time,0.5)
+        times = [Time(hour%12 if hour >= 13 else hour, min, True if hour>=12 else False) for hour in range(start_time,end_time) for min in range(0,60,30) ]
 
-        str_times = [""] * len(times)
-
-        for i in range(len(times)):
-            if times[i] >= 13:
-                str_times[i] = str(times[i] - 12) + "pm"
-            elif times[i] >= 12:
-                str_times[i] = str(times[i]) + "pm"
-            else:
-                str_times[i] = str(times[i]) + "am" 
-
-        # every row represents 30 mins, from 8am to 11pm, every col represents a day
+        '''
+        for hour in range (start_time, end_time):
+            for min in range (0,60,30):
+                print(Time(hour%12 if hour >= 13 else hour, min, True if hour>=12 else False))
+        '''
+        # every row represents 30 mins, every col represents a day
         table = [[0 for _ in range(len(Days)+1)] for _ in range(len(times))]
 
         for row in range(len(times)):
             for col in range(len(Days)+1):
                 if col == 0:
-                    table[row][col] = str_times[row]
+                    table[row][col] = times[row].time_string
                 else:
                     for course_lesson in self.table[Days(col)]:
-                        if times[row] >= course_lesson[1].start and times[row] <= course_lesson[1].end:
+                        if times[row].mil_time >= course_lesson[1].start and times[row].mil_time <= course_lesson[1].end:
                             table[row][col] = course_lesson[0]
                             break
         print(tabulate(table, headers=["Times","Mond", "Tues", "Wed", "Thurs", "Fri"]))
