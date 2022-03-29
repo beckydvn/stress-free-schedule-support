@@ -1,6 +1,5 @@
 import copy
 from enum import Enum
-from functools import total_ordering
 from random import Random
 from typing import Dict, List
 from tabulate import tabulate
@@ -20,8 +19,9 @@ class TimePreference(Enum):
     NA = 5
 
 # lower number represents higher priority
-# each priority value must be at least 24 apart from the last for heuristic to work
-# heuristic adds priority to score, (score between 0-23 (based on hours)) keeps priorities in seperate score tiers
+# each priority value must be at least 48 apart from the last for heuristic to work
+# heuristic adds priority to score, (score between 0-23 (based on hours) + variance of up to 23 for midday hueristic) 
+# keeps priorities in seperate score tiers
 class Priority(Enum):
     HIGH = 0
     MID = 50
@@ -91,7 +91,7 @@ class Course:
         return self.name + ": " + " ".join(["\n\t" + str(section) for section in self.section_list])
 
 class Query:
-    ''' list of courses student wants to take, flags for preferences (time)/ (table compactness) '''
+    ''' list of courses student wants to take, flags for time preference '''
     def __init__(self, course_list:List[Course], time_preference:TimePreference=TimePreference.NA):
         self.course_list = course_list
         self.time_preference = time_preference
@@ -146,7 +146,7 @@ class Query:
         # sort sections within courses
         self.__sort_sections(remaining)
         # sort courses by best section
-        remaining.sort(key=lambda s: self.__time_heuristic(s.section_list[0]))
+        remaining.sort(key=lambda s: self.__time_heuristic(s.section_list[0], s))
         new_remaining = remaining
         while remaining:
             for course in remaining:
@@ -170,19 +170,24 @@ class Query:
         for course in remaining:
             # sort sections within courses
             if len(course.section_list) > 1:
-                course.section_list.sort(key=lambda s: self.__time_heuristic(s))
+                course.section_list.sort(key=lambda s: self.__time_heuristic(s, course))
 
-    def __time_heuristic(self, section:Section, priority:Priority=Priority.LOW):
+    def __time_heuristic(self, section:Section, course:Course):
         # priority value is high enough to bump courses of dif priorities out of each other's tiers
         # time preference will only be relevant against other courses of same priority
+        if len(course.section_list) == 1:
+            return course.priority.value    # single section courses are put in first because if that one doesn't fit they don't have other options
         if self.time_preference == TimePreference.EARLY:
-            return section.ave_start_time + priority.value  
+            return section.ave_start_time + course.priority.value  
         elif self.time_preference == TimePreference.MID:
-            return abs(12 - section.ave_start_time) + priority.value
+            midday = 14
+            dist_from_midday = abs(midday - section.ave_start_time) 
+            total_score = dist_from_midday + section.getVariance()  # more spread out
+            return total_score + course.priority.value
         elif self.time_preference == TimePreference.LATE:
-            return 24 - section.ave_start_time + priority.value
+            return 24 - section.ave_start_time + course.priority.value
         elif self.time_preference == TimePreference.SPREAD:
-            return abs(self.__ave_start_time - section.ave_start_time) * priority.value
+            return abs(self.__ave_start_time - section.ave_start_time) * course.priority.value
         else:
             return Random.random()
 
