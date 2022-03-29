@@ -1,0 +1,22 @@
+.container {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.tag-container {
+    border: 2px solid rgb(102, 199, 255);
+    padding: 10px;
+    border-radius:45px;
+    display: flex;
+}
+
+.tag-container .tag {
+    padding: .5rem 1rem;
+    border: 1px solid rgb(102, 199, 255);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background: white;
+    cursor: default;
+}

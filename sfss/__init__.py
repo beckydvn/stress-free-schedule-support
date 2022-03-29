@@ -2,15 +2,45 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import nltk
 import os
+import ssl
 
-db_file = 'db.sqlite'
-if os.path.exists(db_file):
-    os.remove(db_file)
+
+
+try:
+    _create_unverified_https_context = ssl._create_unverified_context
+except AttributeError:
+    pass
+else:
+    ssl._create_default_https_context = _create_unverified_https_context
 
 nltk.download("wordnet")
+
+# db_file = 'db.sqlite'
+# if os.path.exists(db_file):
+#     os.remove(db_file)
+# app = Flask(__name__)
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///../db.sqlite'
+# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+# app.config['SECRET_KEY'] = '69cae04b04756f65eabcd2c5a11c8c24'
+# db = SQLAlchemy(app)
+
+package_dir = os.path.dirname(
+    os.path.abspath(__file__)
+)
+
+templates = os.path.join(
+    package_dir, "templates"
+)
+
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///../db.sqlite'
+db_string = os.getenv('db_string')
+if db_string:
+    app.config['SQLALCHEMY_DATABASE_URI'] = db_string
+else:
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///../db.sqlite'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SECRET_KEY'] = '69cae04b04756f65eabcd2c5a11c8c24'
+# create database
 db = SQLAlchemy(app)
 
 class Course(db.Model):
@@ -108,6 +138,7 @@ def create_database():
     for i in range(len(text)):
         line = text[i]
         if new_course:
+            db.session.commit()
             id, credits, course_name = parse_course(line)
             description += id + "\t"
             description += credits + "\n"
