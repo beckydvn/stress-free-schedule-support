@@ -2,8 +2,7 @@ import copy
 from enum import Enum
 from functools import total_ordering
 from random import Random
-from typing import Dict
-from pip import main
+from typing import Dict, List
 from tabulate import tabulate
 
 class Days(Enum):
@@ -28,6 +27,10 @@ class Priority(Enum):
     MID = 50
     LOW = 100
 
+class AmPm(Enum):
+    AM = 1
+    PM = 2
+
 '''
 class CompactnessPreference(Enum):
     COMPACT = 1
@@ -36,9 +39,9 @@ class CompactnessPreference(Enum):
 '''
 
 class Time():
-    def __init__(self, hour:int, min:int=0, pm=False):
-        self.time_string = "%d:%s%s"%(hour,str(min) if min>=10 else str(min)+"0","pm" if pm else "am")       
-        if pm:
+    def __init__(self, hour:int, min:int=0, am_pm:AmPm=AmPm.AM):
+        self.time_string = "%d:%s%s"%(hour,str(min) if min>=10 else str(min)+"0","pm" if AmPm.PM else "am")       
+        if am_pm == AmPm.PM:
             hour += 12
         min = (min/60) % 1
         self.mil_time = hour+min # 24h time
@@ -65,7 +68,7 @@ class LessonTime():
 
 class Section: 
     ''' list of times course runs '''
-    def __init__(self, lessons_list:list[LessonTime], name="Section"):
+    def __init__(self, lessons_list:List[LessonTime], name="Section"):
         self.lessons_list = lessons_list
         self.ave_start_time = sum([course.start for course in  lessons_list])/len(lessons_list) # used for determinig timezone of the section (early/miday/late)
         self.name = name
@@ -77,7 +80,7 @@ class Section:
 
 class Course:
     ''' has list of sections course can be taken, potentially priorities depending on how much student wants to take it '''
-    def __init__(self, name:str, section_list: list[Section], priority:Priority=Priority.LOW):
+    def __init__(self, name:str, section_list: List[Section], priority:Priority=Priority.LOW):
         self.section_list = section_list
         self.priority = priority
         self.name = name
@@ -89,7 +92,7 @@ class Course:
 
 class Query:
     ''' list of courses student wants to take, flags for preferences (time)/ (table compactness) '''
-    def __init__(self, course_list:list[Course], time_preference:TimePreference=TimePreference.NA):
+    def __init__(self, course_list:List[Course], time_preference:TimePreference=TimePreference.NA):
         self.course_list = course_list
         self.time_preference = time_preference
         # private vars for table generation
@@ -108,7 +111,7 @@ class Query:
     def show_table(self):
         start_time = 7
         end_time = 23
-        times = [Time(hour%12 if hour >= 13 else hour, min, True if hour>=12 else False) for hour in range(start_time,end_time) for min in range(0,60,30) ]
+        times = [Time(hour%12 if hour >= 13 else hour, min, AmPm.PM if hour>=12 else AmPm.AM) for hour in range(start_time,end_time) for min in range(0,60,30) ]
 
         '''
         for hour in range (start_time, end_time):
@@ -135,7 +138,6 @@ class Query:
         '''
         # courses still needing to be added to schedule
         remaining = copy.deepcopy(self.course_list)
-        new_remaining = remaining
         # set of conflicting courses (not included in final table)
         conflicting = set()
         # dictionary representing schedule of each day
@@ -145,8 +147,12 @@ class Query:
         self.__sort_sections(remaining)
         # sort courses by best section
         remaining.sort(key=lambda s: self.__time_heuristic(s.section_list[0]))
+        new_remaining = remaining
         while remaining:
             for course in remaining:
+                # do highest priority stuff first
+                if course.priority != remaining[0].priority:
+                    break 
                 old_lessons = self.__lessons_added
                 self.__try_to_add(course, table_dict, conflicting, new_remaining)
                                 
@@ -223,14 +229,14 @@ if __name__ == "__main__":
     class1 = LessonTime(Time(8,30), Time(9,30), Days.MON)
     class2 = LessonTime(Time(10,30), Time(11,30), Days.TUES)
     class3 = LessonTime(Time(9,30), Time(10,30), Days.WED)
-    print(class1)
+    #print(class1)
 
     section1 = Section([class1, class2, class3], "Section 1")
     #print(section1.ave_start_time)
 
-    class4 = LessonTime(Time(5,30, True), Time(6,30, True), Days.WED)
-    class5 = LessonTime(Time(4,30, True), Time(5,30, True), Days.THURS)
-    class6 = LessonTime(Time(8,30, True), Time(9,30, True), Days.FRI)
+    class4 = LessonTime(Time(5,30, AmPm.PM), Time(6,30, AmPm.PM), Days.WED)
+    class5 = LessonTime(Time(4,30, AmPm.PM), Time(5,30, AmPm.PM), Days.THURS)
+    class6 = LessonTime(Time(8,30, AmPm.PM), Time(9,30, AmPm.PM), Days.FRI)
 
     section2 = Section([class4, class5, class6], "Section 2")
     #print(section2.ave_start_time)
@@ -238,7 +244,7 @@ if __name__ == "__main__":
     course1 = Course("course 1", [section1, section2])
 
     class7 = LessonTime(Time(10,30), Time(11,30), Days.WED)
-    class8 = LessonTime(Time(2, 0,True), Time(3, 0, True), Days.THURS)
+    class8 = LessonTime(Time(2, 0, AmPm.PM), Time(3, 0, AmPm.PM), Days.THURS)
     class9 = LessonTime(Time(9), Time(10), Days.FRI)
 
     section3 = Section([class7, class8, class9], "Section 3")
@@ -248,6 +254,7 @@ if __name__ == "__main__":
     
     query1 = Query([course1, course2], TimePreference.LATE)
     query1.show_table()
+    print(query1.conflicting)
     print(query1)
     print(course1)
     print(course2)
