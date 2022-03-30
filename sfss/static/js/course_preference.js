@@ -9,8 +9,8 @@ input.addEventListener('keyup', function(e) {
         addTags();
         // input.value = '';
         var text = document.getElementById("userInput").value; 
-        var li = "<li>" + text + "</li>";
-        document.getElementById("list").innerHTML += li;
+        var br = text + ", ";
+        document.getElementById("list").value += br;
         document.getElementById("userInput").value = ""; // clear the value
     }
 })

@@ -7,7 +7,9 @@ def index_get():
 
 @app.route('/', methods=['POST'])
 def index_post():
-    return "TEST"
-    # return handle_queries.get_query_results(request.form.get('userInput'))
+    list = request.form.get("list")
+    split_list = list.split(", ")
+    return handle_queries.get_query_results(split_list)
+
 
 

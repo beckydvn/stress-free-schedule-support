@@ -14,6 +14,7 @@ else:
     ssl._create_default_https_context = _create_unverified_https_context
 
 nltk.download("wordnet")
+nltk.download('omw-1.4')
 
 # db_file = 'db.sqlite'
 # if os.path.exists(db_file):
