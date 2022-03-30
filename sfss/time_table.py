@@ -1,6 +1,7 @@
 import copy
 from enum import Enum
-from random import Random
+#from random import Random
+import random
 from typing import Dict, List
 from tabulate import tabulate
 
@@ -39,10 +40,20 @@ class CompactnessPreference(Enum):
 '''
 
 class Time():
-    def __init__(self, hour:int, min:int=0, am_pm:AmPm=AmPm.AM):
-        self.time_string = "%d:%s%s"%(hour,str(min) if min>=10 else str(min)+"0","pm" if AmPm.PM else "am")       
+    def __init__(self, hour:int, min:int=0, am_pm:AmPm=AmPm.AM):     
+        if hour%12 == 0:
+            hour = 12 
+        elif hour>12:   # if spilled over midnight or noon, change time of day
+            hour = hour%12
+            if am_pm == AmPm.AM:
+                am_pm = AmPm.PM
+            else:
+                am_pm = AmPm.AM
+        self.time_string = "%d:%s%s"%(hour,str(min) if min>=10 else str(min)+"0","pm" if am_pm == AmPm.PM else "am")
+
         if am_pm == AmPm.PM:
-            hour += 12
+            hour = hour + 12 if hour != 12 else hour
+        hour = hour % 24
         min = (min/60) % 1
         self.mil_time = hour+min # 24h time
 
@@ -58,20 +69,33 @@ class LessonTime():
         self.end = end.mil_time
         self.day = day
 
+        self.start_time = start
+        self.end_time = end
+
         self.start_string = start.time_string
         self.end_string = end.time_string
 
     def __str__(self):
-        return "%s-%s" %(self.start_string, self.end_string)
+        return "%s-%s (%s)" %(self.start_string, self.end_string, self.day.name)
     def __repr__(self):
-        return "%s-%s" %(self.start_string, self.end_string)
+        return "%s-%s (%s)" %(self.start_string, self.end_string, self.day.name)
 
 class Section: 
     ''' list of times course runs '''
     def __init__(self, lessons_list:List[LessonTime], name="Section"):
         self.lessons_list = lessons_list
-        self.ave_start_time = sum([course.start for course in  lessons_list])/len(lessons_list) # used for determinig timezone of the section (early/miday/late)
+        self.ave_start_time = sum([lesson.start for lesson in  lessons_list])/len(lessons_list) # used for determinig timezone of the section (early/miday/late)
         self.name = name
+    
+    def get_variance(self):
+        #average variance between lessons
+        variance = 0
+        for lesson in self.lessons_list:
+            # ave dist of lesson from other lessons
+            variance += sum([abs(lesson.start-other_lesson.start) for other_lesson in self.lessons_list]) / len(self.lessons_list)
+        # ave dist a lesson is from all other lessons
+        variance /= len(self.lessons_list)
+        return variance
 
     def __str__(self):
         return self.name + ": " + " ".join(["[" + str(lesson) + "]" for lesson in self.lessons_list])
@@ -86,7 +110,7 @@ class Course:
         self.name = name
     
     def __str__(self):
-        return self.name + ": " + " ".join(["\n\t" + str(section) for section in self.section_list])
+        return self.name + " (Priority %s)"%(self.priority.name) + ": " + " ".join(["\n\t" + str(section) for section in self.section_list])
     def __repr__(self):
         return self.name + ": " + " ".join(["\n\t" + str(section) for section in self.section_list])
 
@@ -111,7 +135,7 @@ class Query:
     def show_table(self):
         start_time = 7
         end_time = 23
-        times = [Time(hour%12 if hour >= 13 else hour, min, AmPm.PM if hour>=12 else AmPm.AM) for hour in range(start_time,end_time) for min in range(0,60,30) ]
+        times = [Time(hour%12 if hour >= 13 else hour, min, AmPm.PM if hour>=12 else AmPm.AM).time_string for hour in range(start_time,end_time) for min in range(0,60,30) ]
 
         '''
         for hour in range (start_time, end_time):
@@ -119,18 +143,17 @@ class Query:
                 print(Time(hour%12 if hour >= 13 else hour, min, True if hour>=12 else False))
         '''
         # every row represents 30 mins, every col represents a day
-        table = [[0 for _ in range(len(Days)+1)] for _ in range(len(times))]
+        table = [[[] for _ in range(len(Days)+1)] for _ in range(len(times))]
 
         for row in range(len(times)):
-            for col in range(len(Days)+1):
-                if col == 0:
-                    table[row][col] = times[row].time_string
-                else:
-                    for course_lesson in self.table[Days(col)]:
-                        if times[row].mil_time >= course_lesson[1].start and times[row].mil_time <= course_lesson[1].end:
-                            table[row][col] = course_lesson[0]
-                            break
-        print(tabulate(table, headers=["Times","Mond", "Tues", "Wed", "Thurs", "Fri"]))
+            table[row][0] = times[row]
+        for day in Days:
+            # for each (class, lesson) tuple in this day
+            for course_lesson in self.table[day]:
+                #print(type(times[0]), type(course_lesson[1].start_time))
+                for i in range(times.index(course_lesson[1].start_time.time_string),times.index(course_lesson[1].end_time.time_string)+1):
+                    table[i][day.value].append(course_lesson[0])
+        print(tabulate(table, headers=["Times","Mon", "Tues", "Wed", "Thurs", "Fri"]))
 
     def generate_table(self):
         '''
@@ -160,7 +183,7 @@ class Query:
                 if self.time_preference == TimePreference.SPREAD and  old_lessons != self.__lessons_added:
                     # update priority based on new mean
                     self.__sort_sections(new_remaining)
-                    remaining.sort(key=lambda s: self.__time_heuristic(s.section_list[0],s.priority))
+                    remaining.sort(key=lambda s: self.__time_heuristic(s.section_list[0],s))
             
             # take out the courses that were added
             remaining = new_remaining
@@ -182,20 +205,22 @@ class Query:
         elif self.time_preference == TimePreference.MID:
             midday = 14
             dist_from_midday = abs(midday - section.ave_start_time) 
-            total_score = dist_from_midday + section.getVariance()  # more spread out
+            total_score = dist_from_midday + section.get_variance()  # more spread out
             return total_score + course.priority.value
         elif self.time_preference == TimePreference.LATE:
             return 24 - section.ave_start_time + course.priority.value
         elif self.time_preference == TimePreference.SPREAD:
             return abs(self.__ave_start_time - section.ave_start_time) * course.priority.value
         else:
-            return Random.random()
+            return random.random()
 
     def __no_conflict(self, course:Course, table:Dict[Days, tuple]):
         ''' return true if no conflict, false if conflict '''
         for lesson_time in course.section_list[0].lessons_list:
-            if lesson_time in [x[1] for x in table[lesson_time.day]]:
-                return False
+            dict_entries = [x[1] for x in table[lesson_time.day]]
+            for entry in dict_entries:
+                if lesson_time.start < entry.end and lesson_time.end > entry.start:
+                    return False
         return True
     
     def __add_to_table(self, course:Course, table:Dict[Days, tuple], new_remaining):
@@ -211,7 +236,6 @@ class Query:
         if len(course.section_list) == 1:
             if self.__no_conflict(course, table_dict):
                 self.__add_to_table(course, table_dict, new_remaining)
-                self.__dirty = True
             else:
                 conflicting.add(course.name)
                 new_remaining.remove(course)
@@ -219,11 +243,10 @@ class Query:
         else:
             if self.__no_conflict(course, table_dict):
                 self.__add_to_table(course, table_dict, new_remaining)
-                self.__dirty = True
             else:
                 course.section_list.pop(0)
                 # re-sort courses to set this course to the right index based on new best section 
-                new_remaining.sort(key=lambda s: self.__time_heuristic(s.section_list[0]))
+                new_remaining.sort(key=lambda s: self.__time_heuristic(s.section_list[0], s))
     
 
 
@@ -231,6 +254,8 @@ class Query:
 
 
 if __name__ == "__main__":
+    
+    '''
     class1 = LessonTime(Time(8,30), Time(9,30), Days.MON)
     class2 = LessonTime(Time(10,30), Time(11,30), Days.TUES)
     class3 = LessonTime(Time(9,30), Time(10,30), Days.WED)
@@ -263,8 +288,42 @@ if __name__ == "__main__":
     print(query1)
     print(course1)
     print(course2)
+    '''
 
 
+    lessons = 3
+    sections = 3
+    courses = 5
+    course_list = []
+    for i in range(courses):
+        section_list = []    
+        for x in range(sections):
+            lesson_list = []
+            for _ in range(lessons):
+                # 30% chance to be am
+                am_pm = AmPm.AM if random.randint(1,10) <= 5 else AmPm.PM
+                if am_pm == AmPm.AM:
+                    hour = random.randint(8,12)
+                    if hour == 12:
+                        am_pm = AmPm.PM # becomes noon
+                else:
+                    hour = random.randint(1,9)
+                min = random.randrange(0,60,30)                
+                day = Days(random.randint(1,5))
+                lesson_list.append(LessonTime(Time(hour, min, am_pm), Time((hour+1)%12,min,am_pm if hour != 11 else AmPm.PM), day))
+            section_list.append(Section(lesson_list,"Section %i"%(x)))
+        rng = random.randint(1,3)
+        priority = Priority.LOW if rng == 1 else Priority.MID if rng == 2 else Priority.HIGH
+        course_list.append(Course("Course %i"%(i), section_list, priority))
 
+    print("Courses: \n")
+    for course in course_list:
+        print(course)
+
+    for preference in TimePreference:
+        query = Query(course_list, preference)
+        print("Preference = " + preference.name)
+        print("missing courses: ", query.conflicting)
+        query.show_table()
 
 
