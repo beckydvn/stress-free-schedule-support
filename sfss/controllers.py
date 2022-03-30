@@ -9,9 +9,10 @@ def index_get():
 
 @app.route('/', methods=['POST'])
 def index_post():
-    list = request.form.get("list")
-    split_list = list.split(",")
-    # if split_list:
-    #     split_list.remove("")
-    print(handle_queries.get_query_results(split_list))
+    split_list = request.form.get("list").split(",")
+    exclusive = request.form.get("course-search-mode")
+    if exclusive:
+        output = handle_queries.get_query_results(split_list, exclusive=True)
+    else:
+        output = handle_queries.get_query_results(split_list, exclusive=False)
     return render_template('index.html')

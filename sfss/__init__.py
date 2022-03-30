@@ -1,10 +1,10 @@
+from calendar import c
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import nltk
 import os
 import ssl
-
-
+import json
 
 try:
     _create_unverified_https_context = ssl._create_unverified_context
@@ -56,6 +56,24 @@ class Course(db.Model):
     equivalency = db.Column(db.String, nullable=True, unique=False)
     recommendations = db.Column(db.String, nullable=True, unique=False)
     learning_hours = db.Column(db.String, nullable=True, unique=False)
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o:o.__dict__, indent=11)
+
+    def __dict__(self):
+        return {
+            "id": self.id,
+            "credits": self.credits,
+            "course_name": self.course_name,
+            "description": self.description,
+            "prerequisites": self.prerequisites,
+            "corequisites": self.corequisites,
+            "exclusions": self.exclusions,
+            "one_way_exclusions": self.one_way_exclusions,
+            "equivalency": self.equivalency,
+            "recommendations": self.recommendations,
+            "learning_hours": self.learning_hours
+        }
 
     def __init__(self, id: str, credits: int, course_name: str, description: str, prerequisites: str, corequisites: str,
                 exclusions: str, one_way_exclusions: str, equivalency: str, recommendations: str, learning_hours: str) -> None:
