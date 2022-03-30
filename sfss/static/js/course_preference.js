@@ -8,9 +8,9 @@ input.addEventListener('keyup', function(e) {
         tags.push(input.value);
         addTags();
         // input.value = '';
-        var text = document.getElementById("userInput").value; 
-        var br = text + ",";
-        document.getElementById("list").value += br;
+        //var text = document.getElementById("userInput").value; 
+        //var br = text + ",";
+        document.getElementById("list").value = tags;
         document.getElementById("userInput").value = ""; // clear the value
     }
 })
@@ -50,6 +50,7 @@ document.addEventListener('click', function(e) {
         const index = tags.indexOf(value);
         tags = [...tags.slice(0, index), ...tags.slice(index + 1)];
         addTags();
+        document.getElementById("list").value = tags;
     }
 })
 

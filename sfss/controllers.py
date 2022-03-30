@@ -11,7 +11,7 @@ def index_get():
 def index_post():
     list = request.form.get("list")
     split_list = list.split(",")
-    if split_list:
-        split_list.remove("")
+    # if split_list:
+    #     split_list.remove("")
     print(handle_queries.get_query_results(split_list))
     return render_template('index.html')
