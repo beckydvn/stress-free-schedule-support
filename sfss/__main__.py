@@ -1,4 +1,5 @@
 from sfss import *
+from sfss.controllers import *
 
 FLASK_PORT = 8081
 

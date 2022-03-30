@@ -27,13 +27,13 @@ function reset() {
 
 function createTag(label) {
     const div = document.createElement('div');
-    div.setAttributes('class', 'tag');
+    div.setAttribute('class', 'tag');
     const span = document.createElement('span');
     span.innerHTML = label;
     const closeBtn = document.createElement('i');
     closeBtn.setAttribute('class', 'material-icons');
     closeBtn.setAttribute('data-item', label);
-    closeBtn.innerHTML = 'remove';
+    closeBtn.innerHTML = 'x';
 
     div.appendChild(span);
     div.appendChild(closeBtn);
@@ -49,7 +49,7 @@ document.addEventListener('click', function(e) {
     }
 })
 
-function addSubject() {
+function search() {
     valid = true;
 
     tags.forEach(function(tag) {
@@ -71,6 +71,6 @@ function validateCourse(subject) {
     return re.test(subject);
 }
 
-// function searchElective() {
-    
-// }
+function searchElective() {
+    // get_query_results[tags];
+}

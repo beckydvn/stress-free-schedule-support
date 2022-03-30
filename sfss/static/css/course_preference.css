@@ -1,0 +1,78 @@
+.container {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.tag-container {
+    border: 2px solid rgb(102, 199, 255);
+    padding: 10px;
+    border-radius:45px;
+    display: flex;
+}
+
+.tag-container .tag {
+    padding: .5rem 1rem;
+    border: 1px solid rgb(102, 199, 255);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background: white;
+    cursor: default;
+}
+
+.tag-container .tag:hover {
+    background: rgb(151, 217, 255);
+}
+
+.tag i {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.tag-container input {
+    flex: 1;
+    font-size: 16px;
+    padding: 5px;
+    outline: none;
+    border: 0;
+}
+
+.material-icons {
+    padding-bottom: .1rem;
+    padding-left: .5rem;
+}
+
+.material-icons:hover {
+    color:rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.searchBtn {
+    color: rgb(102, 199, 255);
+    border: 2px solid rgb(102, 199, 255);
+    border-radius: 15px;
+    padding: .5rem 1rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.searchBtn:hover {
+    color: white;
+    background: rgb(102, 199, 255);
+    cursor: pointer;
+}
+
+.error {
+    border: 1px rgb(red);
+    color: red;
+    border-radius: 15px;
+    padding: .5rem 1rem;
+    background: rgb(229, 137, 137);
+    display: none;
+}
+
+
+
+
+
