@@ -3,31 +3,18 @@
     <head>
         <link rel="stylesheet" href="../static/css/course_preference.css">
     </head>
-    <body>
-        <!-- <script type="text/JavaScript">
-            $(document).on('keyup', function (e) {
-            if (e.key === 'Enter' || e.keyCode === 13) {
-                var text = document.getElementById("userInput").value;
-                var break = "<br />" + text;
-                document.getElementById("list").insertAdjacentHTML('beforeend', break);
-                document.getElementById("userInput").value = ""; // clear the value
-            }
-        });
-        </script> -->
-        
+    <body>        
         <div class="error" id="error">Subjects can only contain letters!</div>
         <div class="container">
             <p>Enter all subjects that apply to you:</p>
             <div id="tag-container" class="tag-container">
-                <!-- <div class="tag">
-                    <span>JavaScript</span>
-                    <i class="material-icons">X</i>
-                </div> -->
                 <input type='text' id="userInput">
             </div>
+            <input type="checkbox" id="course-search-mode" name="course-search-mode" value="Enter your preferred search mode." title = 
+            "INFO TEST">
+            
         </div>
 
-        <!-- <div class="searchBtn" onclick="searchElective()">Search</div> -->
         <script src="../static/js/course_preference.js"> </script>
 
         <form method="post">
