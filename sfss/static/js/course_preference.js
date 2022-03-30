@@ -7,7 +7,11 @@ input.addEventListener('keyup', function(e) {
     if (e.key === 'Enter') {
         tags.push(input.value);
         addTags();
-        input.value = '';
+        // input.value = '';
+        var text = document.getElementById("userInput").value; 
+        var li = "<li>" + text + "</li>";
+        document.getElementById("list").innerHTML += li;
+        document.getElementById("userInput").value = ""; // clear the value
     }
 })
 

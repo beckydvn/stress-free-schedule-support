@@ -4,6 +4,18 @@
         <link rel="stylesheet" href="../static/css/course_preference.css">
     </head>
     <body>
+        <script type="text/JavaScript">
+            $(document).on('keyup', function (e) {
+            if (e.key === 'Enter' || e.keyCode === 13) {
+                var text = document.getElementById("userInput").value; 
+                var li = "<li>" + text + "</li>";
+
+                document.getElementById("list").insertAdjacentHTML('beforeend', li);
+                document.getElementById("userInput").value = ""; // clear the value
+            }
+        });
+        </script>
+
         <div class="error" id="error">Subjects can only contain letters!</div>
         <div class="container">
             <p>Enter all subjects that apply to you:</p>
@@ -12,9 +24,12 @@
                     <span>JavaScript</span>
                     <i class="material-icons">X</i>
                 </div> -->
-                <input id="userInput">
+                <input type='text' id="userInput">
             </div>
         </div>
+        <ul id='list'>
+            <b>Selected subjects:</b>
+        </ul>
 
         <!-- <div class="searchBtn" onclick="searchElective()">Search</div> -->
         <script src="../static/js/course_preference.js"> </script>

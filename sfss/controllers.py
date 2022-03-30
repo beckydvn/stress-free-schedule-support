@@ -8,6 +8,6 @@ def index_get():
 @app.route('/', methods=['POST'])
 def index_post():
     return "TEST"
-    #return handle_queries.get_query_results(request.form.get('userInput'))
+    # return handle_queries.get_query_results(request.form.get('userInput'))
 
 
