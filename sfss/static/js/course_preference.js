@@ -1,5 +1,6 @@
 const tagContainer = document.getElementById('tag-container')
 const input = document.getElementById('userInput')
+const courseContainer = document.getElementById('course-container')
 
 let tags = [];
 
@@ -76,6 +77,33 @@ function validateCourse(subject) {
     return re.test(subject);
 }
 
-function searchElective() {
-    // get_query_results[tags];
+function createCourse(query) {
+    const div = document.createElement('div');
+    div.setAttribute('class', 'course');
+    const span = document.createElement('span');
+    span.innerHTML = query;
+
+    div.appendChild(span);
+    return div;
 }
+
+function searchElective() {
+    // reset();
+    // tags.slice().reverse().forEach(function(tag) {
+    //     const input = createTag(tag);
+    //     tagContainer.prepend(input);
+    // })
+}
+
+document.addEventListener('click', function(e) {
+    if (e.target.tagName === 'input') {
+        tags.push(input.value);
+        addTags();
+        // input.value = '';
+        //var text = document.getElementById("userInput").value; 
+        //var br = text + ",";
+        document.getElementById("list").value = tags;
+        document.getElementById("userInput").value = ""; // clear the value
+    }
+})
+

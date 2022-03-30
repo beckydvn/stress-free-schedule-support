@@ -14,4 +14,4 @@ def index_post():
     # if split_list:
     #     split_list.remove("")
     print(handle_queries.get_query_results(split_list))
-    return render_template('index.html')
+    return render_template('course_result.html', output=handle_queries.get_query_results(split_list))
