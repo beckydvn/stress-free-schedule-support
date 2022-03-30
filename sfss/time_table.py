@@ -216,7 +216,12 @@ class Query:
 
     def __no_conflict(self, course:Course, table:Dict[Days, tuple]):
         ''' return true if no conflict, false if conflict '''
+        own_lessons = []
         for lesson_time in course.section_list[0].lessons_list:
+            # checking against other lessons in the section in case user is an idiot
+            for own_lesson in own_lessons:
+                if lesson_time.start <= own_lesson.end and lesson_time.end >= own_lesson.start:
+                    return False
             dict_entries = [x[1] for x in table[lesson_time.day]]
             for entry in dict_entries:
                 if lesson_time.start <= entry.end and lesson_time.end >= entry.start:
@@ -292,7 +297,7 @@ if __name__ == "__main__":
 
 
     lessons = 3
-    sections = 3
+    sections = 15
     courses = 5
     course_list = []
     for i in range(courses):
@@ -300,7 +305,6 @@ if __name__ == "__main__":
         for x in range(sections):
             lesson_list = []
             for _ in range(lessons):
-                # 30% chance to be am
                 am_pm = AmPm.AM if random.randint(1,10) <= 5 else AmPm.PM
                 if am_pm == AmPm.AM:
                     hour = random.randint(8,12)
