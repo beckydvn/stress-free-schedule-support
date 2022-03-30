@@ -15,6 +15,3 @@ def index_post():
         split_list.remove("")
     print(handle_queries.get_query_results(split_list))
     return render_template('index.html')
-
-
-
