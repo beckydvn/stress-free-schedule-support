@@ -9,7 +9,7 @@ input.addEventListener('keyup', function(e) {
         addTags();
         // input.value = '';
         var text = document.getElementById("userInput").value; 
-        var br = text + ", ";
+        var br = text + ",";
         document.getElementById("list").value += br;
         document.getElementById("userInput").value = ""; // clear the value
     }

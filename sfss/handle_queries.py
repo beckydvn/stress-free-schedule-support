@@ -43,16 +43,19 @@ def get_query_results(queries: List[str]):
 
     related_words = {}
     for query in queries:
+        # print(query)
+        # print(wordnet.synsets(query))
+        syn = (wordnet.synsets(query))[0]
         related_words[query] = set()
         related_words[query].add(query)
         # we want to consider all synsets, lemmas, hyponyms, hypernyms.
-        syn = choose_semantic_meaning(query)
+        #syn = choose_semantic_meaning(query)
         related_words[query].update([l.name() for l in syn.lemmas()])
         # syn.hyponyms() and syn.hypernyms() return synsets as well
         related_words[query].update(*[w.lemma_names() for w in syn.hyponyms()])
         related_words[query].update(*[w.lemma_names() for w in syn.hypernyms()])
         related_words[query] = {val.replace("_", " ") for val in related_words[query]}
-    print(related_words)
+    # print(related_words)
 
     """ 
     searches are case insensitive and include faculty names other than Arts and Science
