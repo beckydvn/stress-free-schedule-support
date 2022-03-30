@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
 .container {
     display: inline-block;
     margin-top: 1rem;
@@ -29,6 +31,8 @@
     font-size: 16px;
     margin-left: 5px;
     color: #666;
+    display: flex;
+    align-items: center;
 }
 
 .tag-container input {
@@ -37,6 +41,8 @@
     padding: 5px;
     outline: none;
     border: 0;
+    display: flex;
+    align-items: center;
 }
 
 .material-icons {

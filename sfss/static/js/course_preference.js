@@ -37,7 +37,7 @@ function createTag(label) {
     const closeBtn = document.createElement('i');
     closeBtn.setAttribute('class', 'material-icons');
     closeBtn.setAttribute('data-item', label);
-    closeBtn.innerHTML = 'x';
+    closeBtn.innerHTML = 'close';
 
     div.appendChild(span);
     div.appendChild(closeBtn);
