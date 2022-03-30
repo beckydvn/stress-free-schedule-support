@@ -219,7 +219,7 @@ class Query:
         for lesson_time in course.section_list[0].lessons_list:
             dict_entries = [x[1] for x in table[lesson_time.day]]
             for entry in dict_entries:
-                if lesson_time.start < entry.end and lesson_time.end > entry.start:
+                if lesson_time.start <= entry.end and lesson_time.end >= entry.start:
                     return False
         return True
     
