@@ -4,7 +4,6 @@ from flask_sqlalchemy import SQLAlchemy
 import nltk
 import os
 import ssl
-import json
 
 try:
     _create_unverified_https_context = ssl._create_unverified_context

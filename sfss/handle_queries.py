@@ -45,11 +45,11 @@ def get_query_results(queries: List[str], exclusive: bool = True):
 
     related_words = {}
     for query in queries:
+        related_words[query] = set()
         # print(query)
         # print(wordnet.synsets(query))
         synsets = (wordnet.synsets(query))
         for syn in synsets:
-            related_words[query] = set()
             related_words[query].add(query)
             # we want to consider all synsets, lemmas, hyponyms, hypernyms.
             #syn = choose_semantic_meaning(query)

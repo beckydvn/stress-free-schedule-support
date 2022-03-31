@@ -6,10 +6,12 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗂</text></svg>">
     <link rel="stylesheet" href="../static/css/global-styles.css">
     <style>
-        .fullclick {
+    .fullclick {
         margin: 1em 0;
         padding: 0;
-        max-width: 30em;
+        /* max-width: 30em; */
+        /* display:inline; */
+        /* width: 100vw; */
     }
 
     .fullclick li {
@@ -25,7 +27,7 @@
     .fullclick a.main {
         color: rgb(102, 199, 255);
         text-align: right;
-        display: block;
+        /* display: block; */
         z-index: 1;
     }
 
@@ -62,12 +64,19 @@
         background:#84afff;
         box-shadow: 0px 3px 6px #000;
     }
+    .course-container {
+        display: grid !important;
+        column-gap: 50px;
+        padding: 2px;
+        grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+    }
+
     </style>
     </head>
     <body>
+        <h1>{{message}}</h1>
         <ul class="fullclick">
-            <h1>Based on your preferences:</h1>
-            <div className="course-container", id="course-container">
+            <div class="course-container" id="course-container" >
                 <li hidden id="output" name="output">{{output}}</li>
             </div>
         </ul>
