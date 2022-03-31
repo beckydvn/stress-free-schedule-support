@@ -3,10 +3,12 @@
 //const jsonData= require('../../../output.json'); 
 
 const text = JSON.parse(document.getElementById("output").innerHTML);
-const tagContainer = document.getElementById('course-container');
+const courseContainer = document.getElementById('course-container');
 for (let [key, value] of Object.entries(text)) {
-    console.log(key, value);
-    tagContainer.append(createCourse(value))
+    for (let [key2, value2] of Object.entries(value)) {
+        console.log(value2);
+        courseContainer.append(createCourse(value2))
+    }
 }
 //document.getElementById("test").innerHTML = text;
 
@@ -16,7 +18,7 @@ for (let [key, value] of Object.entries(text)) {
 // document.getElementById("test").innerHTML = "test2";
 
 function createCourse(query) {
-    const div = document.createElement('div');
+    const div = document.createElement('li');
     div.setAttribute('class', 'course');
     const span = document.createElement('span');
     span.innerHTML = query;
