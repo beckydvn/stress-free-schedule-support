@@ -1,6 +1,6 @@
-const tagContainer = document.getElementById('tag-container')
-const input = document.getElementById('userInput')
-const courseContainer = document.getElementById('course-container')
+const tagContainer = document.getElementById('tag-container');
+const input = document.getElementById('userInput');
+const courseContainer = document.getElementById('course-container');
 
 let tags = [];
 
@@ -86,12 +86,3 @@ function createCourse(query) {
     div.appendChild(span);
     return div;
 }
-
-function searchElective() {
-    // reset();
-    // tags.slice().reverse().forEach(function(tag) {
-    //     const input = createTag(tag);
-    //     tagContainer.prepend(input);
-    // })
-}
-

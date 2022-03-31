@@ -11,17 +11,14 @@ def index_get():
 def course_result_get():
     return render_template('course_result.html')
 
-# @app.route('/', methods=['POST'])
-# def index_post():
-#     split_list = request.form.get("list").split(",")
-#     exclusive = request.form.get("course-search-mode")
-#     if exclusive:
-#         output = handle_queries.get_query_results(split_list, exclusive=True)
-#     else:
-#         output = handle_queries.get_query_results(split_list, exclusive=False)
-#     print(output)
-#     f = open("output.json", "w")
-#     f.write(output)
-#     return render_template('course_result.html')
-#     # output=output
-
+@app.route('/', methods=['POST'])
+def index_post():
+    split_list = request.form.get("list").split(",")
+    exclusive = request.form.get("course-search-mode")
+    if exclusive:
+        result = handle_queries.get_query_results(split_list, exclusive=True)
+    else:
+        result = handle_queries.get_query_results(split_list, exclusive=False)
+    f = open("output.json", "w")
+    f.write(result)
+    return render_template('course_result.html', output=result)
