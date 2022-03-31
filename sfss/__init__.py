@@ -5,15 +5,15 @@ import nltk
 import os
 import ssl
 
-try:
-    _create_unverified_https_context = ssl._create_unverified_context
-except AttributeError:
-    pass
-else:
-    ssl._create_default_https_context = _create_unverified_https_context
+# try:
+#     _create_unverified_https_context = ssl._create_unverified_context
+# except AttributeError:
+#     pass
+# else:
+#     ssl._create_default_https_context = _create_unverified_https_context
 
 nltk.download("wordnet")
-nltk.download('omw-1.4')
+# nltk.download('omw-1.4')
 
 package_dir = os.path.dirname(
     os.path.abspath(__file__)
@@ -173,4 +173,4 @@ def create_database():
 
 # do not move
 db.create_all()
-#create_database()
+create_database()

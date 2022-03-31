@@ -45,7 +45,7 @@ def get_query_results(queries: List[str], exclusive: bool = True):
 
     related_words = {}
     for query in queries:
-        related_words[query] = set()
+        related_words[query] = {query}
         # print(query)
         # print(wordnet.synsets(query))
         synsets = (wordnet.synsets(query))
@@ -58,7 +58,6 @@ def get_query_results(queries: List[str], exclusive: bool = True):
             related_words[query].update(*[w.lemma_names() for w in syn.hyponyms()])
             related_words[query].update(*[w.lemma_names() for w in syn.hypernyms()])
             related_words[query] = {val.replace("_", " ") for val in related_words[query]}
-    print(related_words)
 
     """ 
     searches are case insensitive and include faculty names other than Arts and Science
@@ -66,9 +65,6 @@ def get_query_results(queries: List[str], exclusive: bool = True):
     also, we force that the whole word is contained by using spaces (to avoid matching unrelated words
     that happen to have a smaller related word nested in its spelling...)
     """
-    for q in related_words:
-        for v in related_words[q]:
-            print(v)
 
     filter_list = []
     if exclusive:
@@ -80,9 +76,22 @@ def get_query_results(queries: List[str], exclusive: bool = True):
         # make this true for all entries using "and_"
         return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in db.session.query(Course).filter(and_(*filter_list)).all()})))
     else:
-        test = [func.replace(Course.description, "Arts and Science", "").contains(f" {v} ") for q in related_words for v in related_words[q]]
+        filter_list = []
+        for query in related_words:
+            #filter_list.extend(db.session.query(Course).filter(Course.description.contains(f" {query} ")).all())
+            #print(query)
+            for v in related_words[query]:
+                #print(v)
+                #test = [func.replace(Course.description, "Arts and Science", "").contains(f" {v} ") ]
+                #print(db.session.query(Course).filter(or_(*test)).all())
+                filter_list.extend(db.session.query(Course).filter(Course.description.contains(f" {v} ")).all())
+                #filter_list.extend(db.session.query(Course).filter(or_(*test)).all())
+                #print()
+            # filter_list.extend(db.session.query(Course).filter(Course.description.contains(f" {v} ")).all())
+            # filter_list.extend(db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(f" {v} ")).all())
+        # test = [func.replace(Course.description, "Arts and Science", "").contains(f" {v} ") for q in related_words for v in related_words[q]]
         # filter_list.append(or_(*test))
-        return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in db.session.query(Course).filter(*test).all()})))
+        return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in filter_list})))
 
 if __name__ == "__main__":
     course_recs = get_query_results(["math", "english"], False)

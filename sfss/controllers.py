@@ -22,8 +22,6 @@ def index_post():
     f = open("output.json", "w")
     f.write(result)
     if len(result) <= 2:
-        print("here")
         return render_template('index.html', message="No results were found! Please try entering different subjects.")    
     else:
-        print(len(result))
         return render_template('course_result.html', output=result, message="Based on your preferences:")
