@@ -3,11 +3,12 @@
 //const jsonData= require('../../../output.json'); 
 
 const text = JSON.parse(document.getElementById("output").innerHTML);
-
+const tagContainer = document.getElementById('course-container');
 for (let [key, value] of Object.entries(text)) {
     console.log(key, value);
+    tagContainer.append(createCourse(value))
 }
-document.getElementById("test").innerHTML = text;
+//document.getElementById("test").innerHTML = text;
 
 //createCourse(text[0]);
 

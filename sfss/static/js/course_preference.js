@@ -8,9 +8,6 @@ input.addEventListener('keyup', function(e) {
     if (e.key === 'Enter') {
         tags.push(input.value);
         addTags();
-        // input.value = '';
-        //var text = document.getElementById("userInput").value; 
-        //var br = text + ",";
         document.getElementById("list").value = tags;
         document.getElementById("userInput").value = ""; // clear the value
     }
