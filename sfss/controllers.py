@@ -15,4 +15,5 @@ def index_post():
         output = handle_queries.get_query_results(split_list, exclusive=True)
     else:
         output = handle_queries.get_query_results(split_list, exclusive=False)
-    return render_template('index.html')
+    print(output)
+    return render_template('course_result.html', output=output)

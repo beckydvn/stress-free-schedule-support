@@ -1,6 +1,9 @@
-for (let i = 0; i < document.getElementById("output").length; i++) { 
-    print(i)
-    createCourse(document.getElementById("output")[i]);
+// for (let i = 0; i < document.getElementById("output").length; i++) { 
+//     createCourse(document.getElementById("output"));
+// }
+
+for (const [key, value] of Object.entries(document.getElementById("output"))) {
+    console.log(key, value);
 }
 
 function createCourse(query) {

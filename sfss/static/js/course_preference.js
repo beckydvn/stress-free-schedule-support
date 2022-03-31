@@ -95,15 +95,3 @@ function searchElective() {
     // })
 }
 
-document.addEventListener('click', function(e) {
-    if (e.target.tagName === 'input') {
-        tags.push(input.value);
-        addTags();
-        // input.value = '';
-        //var text = document.getElementById("userInput").value; 
-        //var br = text + ",";
-        document.getElementById("list").value = tags;
-        document.getElementById("userInput").value = ""; // clear the value
-    }
-})
-

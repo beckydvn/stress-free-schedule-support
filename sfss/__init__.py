@@ -75,9 +75,6 @@ class Course(db.Model):
         output += "\n"
         return output
 
-    def toJSON(self):
-        return json.dumps(self, default=lambda o:o.__dict__, indent=11)
-
 def parse_description(line: str):
     # split whenever you come across one of the following keywords
     # need to differenciate the "exclusion" types when splitting

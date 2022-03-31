@@ -74,11 +74,11 @@ def get_query_results(queries: List[str], exclusive: bool = True):
             test = [func.replace(Course.description, "Arts and Science", "").contains(f" {v} ") for v in related_words[query]]
             filter_list.append(or_(*test))
         # make this true for all entries using "and_"
-        return db.session.query(Course).filter(and_(*filter_list)).all()
+        return {d.id : d.toJSON() for d in db.session.query(Course).filter(and_(*filter_list)).all()}
     else:
         test = [func.replace(Course.description, "Arts and Science", "").contains(f" {v} ") for q in related_words for v in related_words[q]]
         filter_list.append(or_(*test))
-        return db.session.query(Course).filter(*filter_list).all() 
+        return {d.id : d.toJSON() for d in db.session.query(Course).filter(*filter_list).all()}
 
 if __name__ == "__main__":
     course_recs = get_query_results(["math", "english"], False)
