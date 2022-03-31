@@ -54,7 +54,7 @@ class Course(db.Model):
          corequisites=corequisites, exclusions=exclusions, one_way_exclusions=one_way_exclusions, equivalency=equivalency, recommendations=recommendations, learning_hours=learning_hours)
 
     def toJSON(self):
-       return json.dumps({c.name: getattr(self, c.name) for c in self.__table__.columns})
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
     def __repr__(self) -> str:
         output = self.description

@@ -3,6 +3,7 @@ from sfss import db, Course
 from sqlalchemy import func, and_, or_
 from typing import List
 import json
+import ast
 
 def choose_semantic_meaning(query):
     possible_synsets = wordnet.synsets(query)
@@ -74,11 +75,11 @@ def get_query_results(queries: List[str], exclusive: bool = True):
             test = [func.replace(Course.description, "Arts and Science", "").contains(f" {v} ") for v in related_words[query]]
             filter_list.append(or_(*test))
         # make this true for all entries using "and_"
-        return {d.id : d.toJSON() for d in db.session.query(Course).filter(and_(*filter_list)).all()}
+        return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in db.session.query(Course).filter(and_(*filter_list)).all()})))
     else:
         test = [func.replace(Course.description, "Arts and Science", "").contains(f" {v} ") for q in related_words for v in related_words[q]]
         filter_list.append(or_(*test))
-        return {d.id : d.toJSON() for d in db.session.query(Course).filter(*filter_list).all()}
+        return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in db.session.query(Course).filter(*filter_list).all()})))
 
 if __name__ == "__main__":
     course_recs = get_query_results(["math", "english"], False)
