@@ -21,9 +21,6 @@ def index_post():
         result = handle_queries.get_query_results(split_list, exclusive=False)
     f = open("output.json", "w")
     f.write(result)
-    f = open("output.json", "r")
-    #print(type(f.read()))
-    #print(len(result))
     if len(result) <= 2:
         print("here")
         return render_template('index.html', message="No results were found! Please try entering different subjects.")    
