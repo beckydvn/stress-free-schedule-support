@@ -16,15 +16,6 @@ else:
 nltk.download("wordnet")
 nltk.download('omw-1.4')
 
-# db_file = 'db.sqlite'
-# if os.path.exists(db_file):
-#     os.remove(db_file)
-# app = Flask(__name__)
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///../db.sqlite'
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-# app.config['SECRET_KEY'] = '69cae04b04756f65eabcd2c5a11c8c24'
-# db = SQLAlchemy(app)
-
 package_dir = os.path.dirname(
     os.path.abspath(__file__)
 )
@@ -57,28 +48,13 @@ class Course(db.Model):
     recommendations = db.Column(db.String, nullable=True, unique=False)
     learning_hours = db.Column(db.String, nullable=True, unique=False)
 
-    def toJSON(self):
-        return json.dumps(self, default=lambda o:o.__dict__, indent=11)
-
-    def __dict__(self):
-        return {
-            "id": self.id,
-            "credits": self.credits,
-            "course_name": self.course_name,
-            "description": self.description,
-            "prerequisites": self.prerequisites,
-            "corequisites": self.corequisites,
-            "exclusions": self.exclusions,
-            "one_way_exclusions": self.one_way_exclusions,
-            "equivalency": self.equivalency,
-            "recommendations": self.recommendations,
-            "learning_hours": self.learning_hours
-        }
-
     def __init__(self, id: str, credits: int, course_name: str, description: str, prerequisites: str, corequisites: str,
                 exclusions: str, one_way_exclusions: str, equivalency: str, recommendations: str, learning_hours: str) -> None:
         super().__init__(id=id, credits=credits, course_name=course_name, description=description, prerequisites=prerequisites,
          corequisites=corequisites, exclusions=exclusions, one_way_exclusions=one_way_exclusions, equivalency=equivalency, recommendations=recommendations, learning_hours=learning_hours)
+
+    def toJSON(self):
+       return json.dumps({c.name: getattr(self, c.name) for c in self.__table__.columns})
 
     def __repr__(self) -> str:
         output = self.description
@@ -98,6 +74,9 @@ class Course(db.Model):
             output += "LEARNING HOURS: " + self.learning_hours
         output += "\n"
         return output
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o:o.__dict__, indent=11)
 
 def parse_description(line: str):
     # split whenever you come across one of the following keywords
