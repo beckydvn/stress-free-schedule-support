@@ -2,6 +2,7 @@ from nltk.corpus import wordnet
 from sfss import db, Course
 from sqlalchemy import func, and_, or_
 from typing import List
+import json
 
 def choose_semantic_meaning(query):
     possible_synsets = wordnet.synsets(query)
@@ -14,7 +15,7 @@ def choose_semantic_meaning(query):
         return possible_synsets[chosen - 1]
     return possible_synsets[0]
 
-def get_query_results(queries: List[str]):
+def get_query_results(queries: List[str], exclusive: bool = True):
     """
     references: 
     https://www.guru99.com/wordnet-nltk.html
@@ -64,18 +65,29 @@ def get_query_results(queries: List[str]):
     also, we force that the whole word is contained by using spaces (to avoid matching unrelated words
     that happen to have a smaller related word nested in its spelling...)
     """
-    
+
     filter_list = []
-    # for a search to be viable, it must contain at least one word from each query category
-    for query in related_words:
-        # each entry must contain at least one word from each key
-        test = [func.replace(Course.description, "Arts and Science", "").contains(f" {v} ") for v in related_words[query]]
+    if exclusive:
+        # for a search to be viable, it must contain at least one word from each query category
+        for query in related_words:
+            # each entry must contain at least one word from each key
+            test = [func.replace(Course.description, "Arts and Science", "").contains(f" {v} ") for v in related_words[query]]
+            filter_list.append(or_(*test))
+        # make this true for all entries using "and_"
+        return db.session.query(Course).filter(and_(*filter_list)).all()
+    else:
+        test = [func.replace(Course.description, "Arts and Science", "").contains(f" {v} ") for q in related_words for v in related_words[q]]
         filter_list.append(or_(*test))
-    # make this true for all entries using "and_"
-    return db.session.query(Course).filter(and_(*filter_list)).all()
+        return db.session.query(Course).filter(*filter_list).all() 
 
 if __name__ == "__main__":
-    course_recs = get_query_results(["math", "english"])
+    course_recs = get_query_results(["math", "english"], False)
     print(f"{len(course_recs)} recommendations found:\n")
     for c in course_recs:
-       print(c.description, "\n")
+        print(c.toJSON())
+       #print(str(c), "\n")
+    course_recs = get_query_results(["math", "english"], True)
+    print(f"{len(course_recs)} recommendations found:\n")
+    for c in course_recs:
+        print(c.toJSON())
+       #print(str(c), "\n")

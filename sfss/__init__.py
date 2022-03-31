@@ -1,10 +1,10 @@
+from calendar import c
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import nltk
 import os
 import ssl
-
-
+import json
 
 try:
     _create_unverified_https_context = ssl._create_unverified_context
@@ -15,15 +15,6 @@ else:
 
 nltk.download("wordnet")
 nltk.download('omw-1.4')
-
-# db_file = 'db.sqlite'
-# if os.path.exists(db_file):
-#     os.remove(db_file)
-# app = Flask(__name__)
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///../db.sqlite'
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-# app.config['SECRET_KEY'] = '69cae04b04756f65eabcd2c5a11c8c24'
-# db = SQLAlchemy(app)
 
 package_dir = os.path.dirname(
     os.path.abspath(__file__)
@@ -62,6 +53,9 @@ class Course(db.Model):
         super().__init__(id=id, credits=credits, course_name=course_name, description=description, prerequisites=prerequisites,
          corequisites=corequisites, exclusions=exclusions, one_way_exclusions=one_way_exclusions, equivalency=equivalency, recommendations=recommendations, learning_hours=learning_hours)
 
+    def toJSON(self):
+       return json.dumps({c.name: getattr(self, c.name) for c in self.__table__.columns})
+
     def __repr__(self) -> str:
         output = self.description
         if self.prerequisites:
@@ -80,6 +74,9 @@ class Course(db.Model):
             output += "LEARNING HOURS: " + self.learning_hours
         output += "\n"
         return output
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o:o.__dict__, indent=11)
 
 def parse_description(line: str):
     # split whenever you come across one of the following keywords
