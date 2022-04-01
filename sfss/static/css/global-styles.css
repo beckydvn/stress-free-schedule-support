@@ -1,12 +1,12 @@
 body {
     font-family: segoe ui, helvetica, sans-serif;
     background: rgb(255, 255, 255);
-    color: black;
+    color: rgb(255, 255, 255);
     margin: 2em;
     /* width: 100vw; */
   }
   h1 {
-    font-size: 1.2em;
+    font-size: 4.2em;
     margin: 0 0 .5em 0;
   }
   h2 {

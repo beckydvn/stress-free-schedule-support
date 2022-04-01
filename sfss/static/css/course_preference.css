@@ -167,7 +167,7 @@ body {
 .logo img {
     width: 10%;
     height: auto;
-    margin-right: 950px;
+    margin-right: 700px;
 }
 
 .nav-btn {
@@ -203,6 +203,15 @@ body {
     margin-left: 120px;
     margin-right: 50px;
     width: 250px;
+}
+
+.not-found {
+    border: 1px rgb(red);
+    color: red;
+    border-radius: 15px;
+    padding: .5rem 1rem;
+    text-align: center;
+    margin: 0 auto;
 }
 
 
