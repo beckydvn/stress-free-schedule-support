@@ -153,7 +153,8 @@ class Query:
                 #print(type(times[0]), type(course_lesson[1].start_time))
                 for i in range(times.index(course_lesson[1].start_time.time_string),times.index(course_lesson[1].end_time.time_string)+1):
                     table[i][day.value].append(course_lesson[0])
-        print(tabulate(table, headers=["Times","Mon", "Tues", "Wed", "Thurs", "Fri"]))
+        #print(tabulate(table, headers=["Times","Mon", "Tues", "Wed", "Thurs", "Fri"]))
+        return table
 
     def generate_table(self):
         '''
@@ -253,6 +254,10 @@ class Query:
                 # re-sort courses to set this course to the right index based on new best section 
                 new_remaining.sort(key=lambda s: self.__time_heuristic(s.section_list[0], s))
     
+    def makeCompatible(courseList):
+        return None
+
+    
 
 
 
@@ -328,6 +333,8 @@ if __name__ == "__main__":
         query = Query(course_list, preference)
         print("Preference = " + preference.name)
         print("missing courses: ", query.conflicting)
-        query.show_table()
+        #query.show_table()
+        print("HERE:", query.show_table())
+        
 
 
