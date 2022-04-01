@@ -1,26 +1,42 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
+body {
+    overflow: hidden;
+    background-color: whitesmoke;
+    background-image: url('https://th.bing.com/th/id/R.35acacf151f51ed35a983308d82df56f?rik=j5k0YDqCCYEjuA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fZRDh9ye.jpg&ehk=c8yUDdxnvteOCSI53QiHnmfzo1JDH2NHKZk2S92XUA4%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+    font-family: monospace;
+}
+
 .container {
-    display: inline-block;
+    display: block;
     margin-top: 1rem;
+    margin-left: 20rem;
+    margin: auto;
+    padding: 10px;
 }
 
 .tag-container {
-    border: 2px solid rgb(102, 199, 255);
+    border: 2px solid rgb(13, 60, 87);
     padding: 10px;
     border-radius:45px;
     display: flex;
+    flex-direction:unset;
+    text-align: center;
+    margin: 0 auto;
+    max-width: fit-content;
 }
 
 .tag-container .tag {
     padding: .5rem 1rem;
-    border: 1px solid rgb(102, 199, 255);
+    border: 1px solid rgb(13, 60, 87);
     margin: 5px;
     display: flex;
     align-items: center;
     border-radius: 15px;
     background: white;
     cursor: default;
+    word-wrap: normal;
 }
 
 .tag-container .tag:hover {
@@ -41,8 +57,12 @@
     padding: 5px;
     outline: none;
     border: 0;
-    display: flex;
+    /* display: flex; */
     align-items: center;
+    justify-content: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .material-icons {
@@ -56,18 +76,21 @@
 }
 
 .searchBtn {
-    color: rgb(102, 199, 255);
-    border: 2px solid rgb(102, 199, 255);
+    color: rgb(13, 60, 87);
+    border: 2px solid rgb(13, 60, 87);
     border-radius: 15px;
     padding: .5rem 1rem;
     text-align: center;
     display: inline-block;
     background: white;
+    font-size: 16px;
+    width: 250px;
+    font-family: monospace;
 }
 
 .searchBtn:hover {
     color: white;
-    background: rgb(102, 199, 255);
+    background: rgb(13, 60, 87);
     cursor: pointer;
 }
 
@@ -80,10 +103,107 @@
     display: none;
 }
 
-/* ul {
+.list {
     display: none;
-} */
+}
 
+.userInput {
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    font-family: monospace;
+}
+
+.userInput::placeholder {
+    color: rgb(84, 85, 85);
+}
+
+.title p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.form-group {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form-group input {
+    padding: 1rem;
+}
+
+.checkbox {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.checkbox label {
+    font-size: 18px;
+}
+
+.checkbox-help {
+    color: rgb(13, 60, 87);
+    font-weight: bold;
+}
+
+.header {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 60px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img {
+    width: 10%;
+    height: auto;
+    margin-right: 950px;
+}
+
+.nav-btn {
+    text-align: right;
+}
+
+.nav-btn button {
+    border-radius: 15px;
+    padding: .5rem 1rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+.timetable-btn:hover {
+    color: white;
+    background: rgb(13, 60, 87);
+    cursor: pointer;
+}
+
+.timetable-btn {
+    color: rgb(13, 60, 87);
+    background: white;
+    margin-top: 20px;
+    margin-right: 120px;
+    width: 250px;
+}
+
+.elective-btn {
+    background: rgb(13, 60, 87);
+    color: white;
+    margin-left: 120px;
+    margin-right: 50px;
+    width: 250px;
+}
 
 
 
