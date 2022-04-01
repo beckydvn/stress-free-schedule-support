@@ -1,7 +1,7 @@
 version: "2"
 services:
   qbay-web:
-    image: 325sfss2022/sfss:v1
+    image: 325sfss2022/sfss:v2
     depends_on:
       - qbay-db
     links:
