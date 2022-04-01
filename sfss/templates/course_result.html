@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗂</text></svg>">
+    <link rel="stylesheet" href="../static/css/global-styles.css">
+    <style>
+        body {
+            /* overflow: hidden; */
+            background-color: whitesmoke;
+            background-image: url('https://th.bing.com/th/id/R.35acacf151f51ed35a983308d82df56f?rik=j5k0YDqCCYEjuA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fZRDh9ye.jpg&ehk=c8yUDdxnvteOCSI53QiHnmfzo1JDH2NHKZk2S92XUA4%3d&risl=&pid=ImgRaw&r=0');
+            font-family: monospace;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .fullclick {
+            margin: 1em 0;
+            padding: 0;
+            /* max-width: 30em; */
+            /* display:inline; */
+            /* width: 100vw; */
+        }
+
+        .fullclick li {
+            list-style: none;
+            margin: 1em 0;
+            padding: 20px 10px;
+            background: rgb(13, 60, 87);
+            position: relative;
+            transition: 400ms;
+            border-radius: 16px;
+        }
+                        
+        .fullclick a.main {
+            color: rgb(102, 199, 255);
+            text-align: right;
+            /* display: block; */
+            z-index: 1;
+        }
+
+        .fullclick li a.main::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: ' ';
+        }
+                        
+        .fullclick:hover a.main, .fullclick:focus-within a.main {
+            color: #000000;
+        }
+
+        .fullclick li button {
+            z-index: 2;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            opacity: 0;
+            transition: 1000ms;
+            border: none;
+            color: rgb(255, 255, 255);
+            background: #333;
+        }
+                        
+        .fullclick li:hover button, .fullclick li:focus-within button {
+            opacity: 1;
+        }
+                        
+        .fullclick li:hover, .fullclick li:focus-within {
+            background:#3e1faf;
+            box-shadow: 0px 3px 6px #000;
+        }
+        .course-container {
+            display: grid !important;
+            column-gap: 50px;
+            padding: 2px;
+            grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+        }
+        .logo {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .logo img {
+            width: 10%;
+            height: auto;
+            margin-right: 700px;
+        }
+
+        .nav-btn {
+            text-align: right;
+        }
+
+        .nav-btn button {
+            border-radius: 15px;
+            padding: .5rem 1rem;
+            text-align: center;
+            padding: 1rem;
+            font-size: 16px;
+            font-family: monospace;
+        }
+
+        .nav-btn button:hover {
+            color: white;
+            background: rgb(13, 60, 87);
+            cursor: pointer;
+        }
+
+        .timetable-btn {
+            color: rgb(13, 60, 87);
+            background: white;
+            margin-top: 20px;
+            margin-right: 120px;
+            width: 250px;
+        }
+
+        .elective-btn {
+            color: rgb(13, 60, 87);
+            background: white;
+            margin-left: 120px;
+            margin-right: 50px;
+            width: 250px;
+        }
+
+        .modifyBtn {
+            color: rgb(13, 60, 87);
+            border: 2px solid rgb(13, 60, 87);
+            border-radius: 15px;
+            padding: .5rem 1rem;
+            text-align: center;
+            display: inline-block;
+            background: white;
+            font-size: 16px;
+            width: 250px;
+            font-family: monospace;
+        }
+
+        .modifyBtn:hover {
+            color: white;
+            background: rgb(13, 60, 87);
+            cursor: pointer;
+        }
+
+        .course-result-modify-button {
+            text-align: center;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .course-result-modify-button input {
+            padding: 1rem;
+        }
+    </style>
+    <div class="logo">
+        <img src="https://www.azirish.org/wp-content/uploads/2016/05/bookgroup2.png" width="250" height="250">
+        <div class="nav-btn">
+            <button class="timetable-btn" id="timetable-btn">Plan your timetable</button>
+            <button class="elective-btn" id="elective-btn">Elective Suggestion</button>
+        </div>
+    </div>
+    </head>
+    <body>
+        <h1>{{message}}</h1>
+        <ul class="fullclick">
+            <div class="course-container" id="course-container" >
+                <li hidden id="output" name="output">{{output}}</li>
+            </div>
+        </ul>
+        <script src="../static/js/course_result.js"> </script>
+        <form method="post">
+            <div class="course-result-modify-button">
+                <input class="modifyBtn" type="submit" id="modify-btn" value="Modify your preference">
+            </div>
+        </form>
+    </body>
+</html>

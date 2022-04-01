@@ -1,16 +1,37 @@
+from calendar import c
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import nltk
 import os
+import ssl
 
-db_file = 'db.sqlite'
-if os.path.exists(db_file):
-    os.remove(db_file)
+# try:
+#     _create_unverified_https_context = ssl._create_unverified_context
+# except AttributeError:
+#     pass
+# else:
+#     ssl._create_default_https_context = _create_unverified_https_context
 
 nltk.download("wordnet")
+# nltk.download('omw-1.4')
+
+package_dir = os.path.dirname(
+    os.path.abspath(__file__)
+)
+
+templates = os.path.join(
+    package_dir, "templates"
+)
+
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///../db.sqlite'
+db_string = os.getenv('db_string')
+if db_string:
+    app.config['SQLALCHEMY_DATABASE_URI'] = db_string
+else:
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///../db.sqlite'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SECRET_KEY'] = '69cae04b04756f65eabcd2c5a11c8c24'
+# create database
 db = SQLAlchemy(app)
 
 class Course(db.Model):
@@ -30,6 +51,9 @@ class Course(db.Model):
                 exclusions: str, one_way_exclusions: str, equivalency: str, recommendations: str, learning_hours: str) -> None:
         super().__init__(id=id, credits=credits, course_name=course_name, description=description, prerequisites=prerequisites,
          corequisites=corequisites, exclusions=exclusions, one_way_exclusions=one_way_exclusions, equivalency=equivalency, recommendations=recommendations, learning_hours=learning_hours)
+
+    def toJSON(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
     def __repr__(self) -> str:
         output = self.description
@@ -102,12 +126,13 @@ def create_database():
     recommendations = None
     learning_hours = None
 
-    f = open("sfss/courses.txt", "r")
+    f = open("sfss/courses.txt", "r", encoding="utf-8")
     text = f.readlines()
     f.close()    
     for i in range(len(text)):
         line = text[i]
         if new_course:
+            db.session.commit()
             id, credits, course_name = parse_course(line)
             description += id + "\t"
             description += credits + "\n"
@@ -148,4 +173,4 @@ def create_database():
 
 # do not move
 db.create_all()
-create_database()
+#create_database()
