@@ -55,6 +55,7 @@ class Time():
             hour = hour + 12 if hour != 12 else hour
         hour = hour % 24
         min = (min/60) % 1
+        self.min = min
         self.mil_time = hour+min # 24h time
 
     def __str__(self):
@@ -140,7 +141,10 @@ class Query:
         Returns a dictionary:
         day enum value (0-4) : list of timeslots for that day, ""no class, "class name" = that class at that time slot
         '''
-        times = [Time(hour%12 if hour >= 13 else hour, min, AmPm.PM if hour>=12 else AmPm.AM).time_string for hour in range(int(table_start.mil_time),int(table_end.mil_time)) for min in range(0,60,30) ]  # 30 min time chunks between start time and end time
+        times = [Time(hour%12 if hour >= 13 else hour, min, AmPm.PM if hour>=12 else AmPm.AM).time_string for hour in range(int(table_start.mil_time),int(table_end.mil_time)+1) for min in range(0,60,30) ]  # 30 min time chunks between start time and end time
+        # if they wanted it to end at hour without extra minutes
+        if table_end.min == 0:
+            times.pop(-1)   # pop off last 30 min (example they wanted stop time 10pm, remove 10:30pm)
         new_dict = {day.value: [""]*len(times) for day in Days}
         for day in Days:
             # for each (class, lesson) tuple in this day
@@ -351,7 +355,7 @@ if __name__ == "__main__":
         print("missing courses: ", query.conflicting)
         query.show_table()
         #print("HERE:", query.show_table())
-        print(query.get_better_dict())
+        print(query.get_better_dict(Time(8), Time(10,00,AmPm.PM)))
     
     
     #class1 = LessonTime(Time(8,30), Time(9,30), Days.MON)
