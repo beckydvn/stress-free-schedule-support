@@ -70,37 +70,26 @@ def get_query_results(queries: List[str], exclusive: bool = True):
     filter_list = []
     test = []
     if exclusive:
-        # ORIGINAL!
-        # # for a search to be viable, it must contain at least one word from each query category
-        # for query in related_words:
-        #     # each entry must contain at least one word from each key
-        #     test = [func.replace(Course.description, "Arts and Science", "").contains(f" {v} ") for v in related_words[query]]
-        #     filter_list.append(or_(*test))
-        # # make this true for all entries using "and_"
-        # return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in db.session.query(Course).filter(and_(*filter_list)).all()})))
-
-        # for query in related_words:
-        #     for combo in itertools.product({query}, related_words[query]):
-        #         print(combo)
-        #         test.append(func.replace(Course.description, "Arts and Science", "").contains(list(combo)))
-        #     filter_list.append(or_(*test))
-        # return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in db.session.query(Course).filter(and_(*filter_list)).all()})))
-        
-
-        # TODO: FOR EXCLUSIVE MODE, ONLY SEARCH BY THE DIRECT KEYWORDS. FOR "BROAD" SEARCH ALSO USE OTHER SUGGESTIONS?
+        # each result has to include at least one related word from each category
         for combo in itertools.product(*[list(related_words[query]) for query in related_words]):
-            filter_list.extend(db.session.query(Course).filter(and_(*[func.replace(Course.description, "Arts and Science", "").contains(c) for c in combo])).all())
-            
+            filter_list.extend(db.session.query(Course).filter(and_(*[func.replace(Course.description, "Arts and Science", "").contains(" " + c + " ") for c in combo])).all())
         return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in filter_list})))
-        # return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in db.session.query(Course).filter(and_(*[func.replace(Course.description, "Arts and Science", "").contains(c) for c in ["math", "spanish"]])).all()})))
-
 
     else:
+        # ORIGINAL!
+        # filter_list = []
+        # for query in related_words:
+        #     for v in related_words[query]:
+        #         filter_list.extend(db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(f" {v} ")).all())
+        # return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in filter_list})))
+
         filter_list = []
         for query in related_words:
-            for v in related_words[query]:
-                filter_list.extend(db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(f" {v} ")).all())
-        return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in filter_list})))
+            filter_list.extend(db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(query)).all())
+            for combo in itertools.combinations(related_words[query], 3):
+                filter_list.extend(db.session.query(Course).filter(and_(*[func.replace(Course.description, "Arts and Science", "").contains(" " + c + " ") for c in combo])).all())
+        return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in filter_list})))        
+
 
 if __name__ == "__main__":
     course_recs = get_query_results(["math", "english"], False)
