@@ -1,7 +1,7 @@
 version: "2"
 services:
   qbay-web:
-    image: your_docker_hub_name/your_docker_hub_repo_name:version_info
+    image: 325sfss2022/sfss:v1
     depends_on:
       - qbay-db
     links:
