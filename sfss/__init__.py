@@ -173,4 +173,4 @@ def create_database():
 
 # do not move
 db.create_all()
-create_database()
+#create_database()
