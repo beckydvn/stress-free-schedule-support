@@ -102,7 +102,7 @@ def create_database():
     recommendations = None
     learning_hours = None
 
-    f = open("sfss/courses.txt", "r")
+    f = open("sfss/courses.txt", "r", encoding='utf-8')
     text = f.readlines()
     f.close()    
     for i in range(len(text)):
