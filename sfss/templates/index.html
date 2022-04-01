@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/css/course_preference.css">
+    </head>
+    <div class="logo">
+        <img src="https://www.azirish.org/wp-content/uploads/2016/05/bookgroup2.png" width="250" height="250">
+        <div class="nav-btn">
+            <button class="timetable-btn" id="timetable-btn">Plan your timetable</button>
+            <button class="elective-btn" id="elective-btn">Elective Suggestion</button>
+        </div>
+    </div>
+    <body>
+        <div class="error" id="error">Subjects can only contain letters!</div>
+        <h1 class="not-found">{{message}}</h1>
+        <div class="header">
+            <h1>ELECTIVE SUGGESTION</h1>
+        </div>
+        <div class="title">
+            <p>Enter all subject(s) that apply to you:</p>
+        </div>
+        <div class="container">
+            <div id="tag-container" class="tag-container">
+                <input class="userInput" type='text' id="userInput" placeholder="Enter subject(s) here...">
+            </div>
+        </div>
+
+        <script src="../static/js/course_preference.js"> </script>
+
+        <form method="post">
+            <div class="form-group">
+                <div class="checkbox">
+                    <input type="checkbox" id="course-search-mode" name="course-search-mode" value="TRUE HELLO???">
+                    <label name="checkbox-title" id="checkbox-title" for="course-search-mode"><b>Exclusive Search Mode</b></label>
+                    <label class="checkbox-help" name="checkbox-helpbox" id="checkbox-helpbox" for="course-search-mode" title="insert annotation"><span>&#x1F6C8;</span> </label><br>
+                </div>
+                <input class="searchBtn" type="submit" id="search-btn" value="Search">
+            </div>
+            <input name="list" id='list' class='list'>
+        </form>
+    </body>
+</html>

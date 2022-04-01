@@ -3,5 +3,6 @@
         "sfss_test"
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "python.pythonPath": "/usr/local/bin/python3"
 }
