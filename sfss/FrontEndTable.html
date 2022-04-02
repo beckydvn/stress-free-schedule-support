@@ -1,0 +1,419 @@
+<!-- CSS Code: Place this code in the document's head (between the 'head' tags) -->
+<style>
+
+    /*For the Page itself*/
+    .fullclick {
+            margin: 1em 0;
+            padding: 0;
+            /* max-width: 30em; */
+            /* display:inline; */
+            /* width: 100vw; */
+        }
+
+        .fullclick li {
+            list-style: none;
+            margin: 1em 0;
+            padding: 20px 10px;
+            background: rgb(13, 60, 87);
+            position: relative;
+            transition: 400ms;
+            border-radius: 16px;
+        }
+                        
+        .fullclick a.main {
+            color: rgb(102, 199, 255);
+            text-align: right;
+            /* display: block; */
+            z-index: 1;
+        }
+
+        .fullclick li a.main::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: ' ';
+        }
+                        
+        .fullclick:hover a.main, .fullclick:focus-within a.main {
+            color: #000000;
+        }
+
+        .fullclick li button {
+            z-index: 2;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            opacity: 0;
+            transition: 1000ms;
+            border: none;
+            color: rgb(255, 255, 255);
+            background: #333;
+        }
+                        
+        .fullclick li:hover button, .fullclick li:focus-within button {
+            opacity: 1;
+        }
+                        
+        .fullclick li:hover, .fullclick li:focus-within {
+            background:#3e1faf;
+            box-shadow: 0px 3px 6px #000;
+        }
+      
+        .logo {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .logo img {
+            width: 10%;
+            height: 20%;
+            margin-right: 700px;
+        }
+
+        .nav-btn {
+            position: fixed;
+            top: 0;
+            right: 0;
+            text-align: right;
+            margin-right: auto;
+            width: 30%
+        }
+
+        .nav-btn button {
+            border-radius: 15px;
+            padding: .5rem 1rem;
+            text-align: center;
+            padding: 1rem;
+            font-size: 16px;
+            font-family: monospace;
+        }
+
+        .nav-btn button:hover {
+            color: white;
+            background: rgb(13, 60, 87);
+            cursor: pointer;
+        }
+
+        .timetable-btn {
+            color: rgb(13, 60, 87);
+            background: white;
+            margin-top: 20px;
+            margin-right: 120px;
+            width: 250px;
+        }
+
+        .elective-btn {
+            color: rgb(13, 60, 87);
+            background: white;
+            margin-left: 120px;
+            margin-right: 50px;
+            width: 250px;
+        }
+
+    body {
+      /* overflow: hidden; */
+      background-color: whitesmoke;
+      background-image: url('https://th.bing.com/th/id/R.35acacf151f51ed35a983308d82df56f?rik=j5k0YDqCCYEjuA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fZRDh9ye.jpg&ehk=c8yUDdxnvteOCSI53QiHnmfzo1JDH2NHKZk2S92XUA4%3d&risl=&pid=ImgRaw&r=0');
+      font-family: monospace;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+            }
+    table.GeneratedTable {
+      position: fixed;
+      bottom: 0;
+      background-color: #ffffff;
+      border-collapse: collapse;
+      border-width: 2px;
+      border-color: #000000;
+      border-style: solid;
+      color: #000000;
+      width: 80%;
+      left: 10%
+    }
+    
+    table.GeneratedTable td {
+      border-width: 2px;
+      border-color: #000000;
+      border-style: solid;
+      padding: 3px;
+    }
+
+    table.GeneratedTable th{
+      border-width: 2px;
+      border-color: #000000;
+      border-style: solid;
+      padding: 3px;
+      height: 75px;
+      font-size: 20px;
+      color: white;
+    }
+    
+
+    table.GeneratedTable thead {
+      background-color: #57b5c1;
+    }
+    </style>
+
+    <body>
+      <h1 style="position: absolute; left: 15%"><u>Here Is Your Completed Timetable</u></h1>
+    </body>
+    <div class="logo">
+      <img src="https://www.azirish.org/wp-content/uploads/2016/05/bookgroup2.png" width="250" height="250">
+      <div class="nav-btn">
+          <button class="timetable-btn" id="timetable-btn">Plan your timetable</button>
+          <button class="elective-btn" id="elective-btn">Elective Suggestion</button>
+      </div>
+
+    <!-- HTML Code: Place this code in the document's body (between the 'body' tags) where the table should appear -->
+    <table class="GeneratedTable">
+      <thead>
+        <tr id="rTitles">
+          <th style="height:75px">Time/Days</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="r0">
+          <td align="center" height="25">8:00 AM</td>
+          <td id="r0c0" align="center" height="25"></td>
+          <td id="r0c1" align="center" height="25"></td>
+          <td id="r0c2" align="center" height="25"></td>
+          <td id="r0c3" align="center" height="25"></td>
+          <td id="r0c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r1">
+          <td align="center" height="25">8:30 AM</td>
+          <td id="r1c0" align="center" height="25"></td>
+          <td id="r1c1" align="center" height="25"></td>
+          <td id="r1c2" align="center" height="25"></td>
+          <td id="r1c3" align="center" height="25"></td>
+          <td id="r1c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r2">
+          <td align="center" height="25">9:00 AM</td>
+          <td id="r2c0" align="center" height="25"></td>
+          <td id="r2c1" align="center" height="25"></td>
+          <td id="r2c2" align="center" height="25"></td>
+          <td id="r2c3" align="center" height="25"></td>
+          <td id="r2c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r3">
+          <td align="center" height="25">9:30 AM</td>
+          <td id="r3c0" align="center" height="25"></td>
+          <td id="r3c1" align="center" height="25"></td>
+          <td id="r3c2" align="center" height="25"></td>
+          <td id="r3c3" align="center" height="25"></td>
+          <td id="r3c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r4">
+          <td align="center" height="25">10:00 AM</td>
+          <td id="r4c0" align="center" height="25"></td>
+          <td id="r4c1" align="center" height="25"></td>
+          <td id="r4c2" align="center" height="25"></td>
+          <td id="r4c3" align="center" height="25"></td>
+          <td id="r4c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r5">
+          <td align="center" height="25">10:30 AM</td>
+          <td id="r5c0" align="center" height="25"></td>
+          <td id="r5c1" align="center" height="25"></td>
+          <td id="r5c2" align="center" height="25"></td>
+          <td id="r5c3" align="center" height="25"></td>
+          <td id="r5c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r6">
+          <td align="center" height="25">11:00 AM</td>
+          <td id="r6c0" align="center" height="25"></td>
+          <td id="r6c1" align="center" height="25"></td>
+          <td id="r6c2" align="center" height="25"></td>
+          <td id="r6c3" align="center" height="25"></td>
+          <td id="r6c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r7">
+          <td align="center" height="25">11:30 AM</td>
+          <td id="r7c0" align="center" height="25"></td>
+          <td id="r7c1" align="center" height="25"></td>
+          <td id="r7c2" align="center" height="25"></td>
+          <td id="r7c3" align="center" height="25"></td>
+          <td id="r7c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r8">
+          <td align="center" height="25">12:00 PM</td>
+          <td id="r8c0" align="center" height="25"></td>
+          <td id="r8c1" align="center" height="25"></td>
+          <td id="r8c2" align="center" height="25"></td>
+          <td id="r8c3" align="center" height="25"></td>
+          <td id="r8c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r9">
+          <td align="center" height="25">12:30 PM</td>
+          <td id="r9c0" align="center" height="25"></td>
+          <td id="r9c1" align="center" height="25"></td>
+          <td id="r9c2" align="center" height="25"></td>
+          <td id="r9c3" align="center" height="25"></td>
+          <td id="r9c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r10">
+          <td align="center" height="25">1:00 PM</td>
+          <td id="r10c0" align="center" height="25"></td>
+          <td id="r10c1" align="center" height="25"></td>
+          <td id="r10c2" align="center" height="25"></td>
+          <td id="r10c3" align="center" height="25"></td>
+          <td id="r10c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r11">
+          <td align="center" height="25">1:30 PM</td>
+          <td id="r11c0" align="center" height="25"></td>
+          <td id="r11c1" align="center" height="25"></td>
+          <td id="r11c2" align="center" height="25"></td>
+          <td id="r11c3" align="center" height="25"></td>
+          <td id="r11c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r12">
+          <td align="center" height="25">2:00 PM</td>
+          <td id="r12c0" align="center" height="25"></td>
+          <td id="r12c1" align="center" height="25"></td>
+          <td id="r12c2" align="center" height="25"></td>
+          <td id="r12c3" align="center" height="25"></td>
+          <td id="r12c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r13">
+          <td align="center" height="25">2:30 PM</td>
+          <td id="r13c0" align="center" height="25"></td>
+          <td id="r13c1" align="center" height="25"></td>
+          <td id="r13c2" align="center" height="25"></td>
+          <td id="r13c3" align="center" height="25"></td>
+          <td id="r13c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r14">
+          <td align="center" height="25">3:00 PM</td>
+          <td id="r14c0" align="center" height="25"></td>
+          <td id="r14c1" align="center" height="25"></td>
+          <td id="r14c2" align="center" height="25"></td>
+          <td id="r14c3" align="center" height="25"></td>
+          <td id="r14c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r15">
+          <td align="center" height="25">3:30 PM</td>
+          <td id="r15c0" align="center" height="25"></td>
+          <td id="r15c1" align="center" height="25"></td>
+          <td id="r15c2" align="center" height="25"></td>
+          <td id="r15c3" align="center" height="25"></td>
+          <td id="r15c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r16">
+          <td align="center" height="25">4:00 PM</td>
+          <td id="r16c0" align="center" height="25"></td>
+          <td id="r16c1" align="center" height="25"></td>
+          <td id="r16c2" align="center" height="25"></td>
+          <td id="r16c3" align="center" height="25"></td>
+          <td id="r16c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r17">
+          <td align="center" height="25">4:30 PM</td>
+          <td id="r17c0" align="center" height="25"></td>
+          <td id="r17c1" align="center" height="25"></td>
+          <td id="r17c2" align="center" height="25"></td>
+          <td id="r17c3" align="center" height="25"></td>
+          <td id="r17c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r18">
+          <td align="center" height="25">5:00 PM</td>
+          <td id="r18c0" align="center" height="25"></td>
+          <td id="r18c1" align="center" height="25"></td>
+          <td id="r18c2" align="center" height="25"></td>
+          <td id="r18c3" align="center" height="25"></td>
+          <td id="r18c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r19">
+          <td align="center" height="25">5:30 PM</td>
+          <td id="r19c0" align="center" height="25"></td>
+          <td id="r19c1" align="center" height="25"></td>
+          <td id="r19c2" align="center" height="25"></td>
+          <td id="r19c3" align="center" height="25"></td>
+          <td id="r19c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r20">
+          <td align="center" height="25">6:00 PM</td>
+          <td id="r20c0" align="center" height="25"></td>
+          <td id="r20c1" align="center" height="25"></td>
+          <td id="r20c2" align="center" height="25"></td>
+          <td id="r20c3" align="center" height="25"></td>
+          <td id="r20c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r21">
+          <td align="center" height="25">6:30 PM</td>
+          <td id="r21c0" align="center" height="25"></td>
+          <td id="r21c1" align="center" height="25"></td>
+          <td id="r21c2" align="center" height="25"></td>
+          <td id="r21c3" align="center" height="25"></td>
+          <td id="r21c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r22">
+          <td align="center" height="25">7:00 PM</td>
+          <td id="r22c0" align="center" height="25"></td>
+          <td id="r22c1" align="center" height="25"></td>
+          <td id="r22c2" align="center" height="25"></td>
+          <td id="r22c3" align="center" height="25"></td>
+          <td id="r22c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r23">
+          <td align="center" height="25">7:30 PM</td>
+          <td id="r23c0" align="center" height="25"></td>
+          <td id="r23c1" align="center" height="25"></td>
+          <td id="r23c2" align="center" height="25"></td>
+          <td id="r23c3" align="center" height="25"></td>
+          <td id="r23c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r24">
+          <td align="center" height="25">8:00 PM</td>
+          <td id="r24c0" align="center" height="25"></td>
+          <td id="r24c1" align="center" height="25"></td>
+          <td id="r24c2" align="center" height="25"></td>
+          <td id="r24c3" align="center" height="25"></td>
+          <td id="r24c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r25">
+          <td align="center" height="25">8:30 PM</td>
+          <td id="r25c0" align="center" height="25"></td>
+          <td id="r25c1" align="center" height="25"></td>
+          <td id="r25c2" align="center" height="25"></td>
+          <td id="r25c3" align="center" height="25"></td>
+          <td id="r25c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r26">
+          <td align="center" height="25">9:00 PM</td>
+          <td id="r26c0" align="center" height="25"></td>
+          <td id="r26c1" align="center" height="25"></td>
+          <td id="r26c2" align="center" height="25"></td>
+          <td id="r26c3" align="center" height="25"></td>
+          <td id="r26c4" align="center" height="25"></td>
+        </tr>
+        <tr id="r27">
+            <td align="center" height="25">9:30 PM</td>
+            <td id="r27c0" align="center" height="25"></td>
+            <td id="r27c1" align="center" height="25"></td>
+            <td id="r27c2" align="center" height="25"></td>
+            <td id="r27c3" align="center" height="25"></td>
+            <td id="r27c4" align="center" height="25"></td>
+          </tr>
+        <tr id="r28">
+            <td align="center" height="25">10:00 PM</td>
+            <td id="r28c0" align="center" height="25"></td>
+            <td id="r28c1" align="center" height="25"></td>
+            <td id="r28c2" align="center" height="25"></td>
+            <td id="r28c3" align="center" height="25"></td>
+            <td id="r28c4" align="center" height="25"></td>
+        </tr>
+        <script src="FrontEndTable.js"></script>
+      </tbody>
+    </table>
+    <!-- Codes by Quackit.com -->

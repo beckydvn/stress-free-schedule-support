@@ -13,7 +13,7 @@ import ssl
 #     ssl._create_default_https_context = _create_unverified_https_context
 
 nltk.download("wordnet")
-# nltk.download('omw-1.4')
+nltk.download('omw-1.4')
 
 package_dir = os.path.dirname(
     os.path.abspath(__file__)
@@ -126,7 +126,7 @@ def create_database():
     recommendations = None
     learning_hours = None
 
-    f = open("sfss/courses.txt", "r", encoding="utf-8")
+    f = open("sfss/courses.txt", "r", encoding='utf-8')
     text = f.readlines()
     f.close()    
     for i in range(len(text)):
@@ -173,4 +173,4 @@ def create_database():
 
 # do not move
 db.create_all()
-#create_database()
+create_database() # feel free to comment this out once database has been created, just be sure to uncomment it after!
