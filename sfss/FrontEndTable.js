@@ -21,7 +21,7 @@ var Schedule2 = {0: ['', '', '', '', '', '', '', '', '', '', 'Course A', 'Course
 
 //Listening for Term Buttons
 
-document.getElementById("term1Button").onclick = function() {
+document.getElementById("term1Button").onclick = function() { //Code to generate table for the first term
     if (document.getElementById("term2Button").disabled = true){
         document.getElementById("term2Button").disabled = false
     }
@@ -35,7 +35,7 @@ document.getElementById("term1Button").onclick = function() {
     document.getElementById("term1Button").disabled = true
 };
 
-document.getElementById("term2Button").onclick = function(){
+document.getElementById("term2Button").onclick = function(){ //Code to generate table for second term 
     if (document.getElementById("term1Button").disabled = true){
         document.getElementById("term1Button").disabled = false
     }
@@ -47,13 +47,6 @@ document.getElementById("term2Button").onclick = function(){
         generateTable(Schedule2)
     }
     document.getElementById("term2Button").disabled = true
-}
-
-function setDefault(rx, cx){
-    cell = document.getElementById("r" + rx + "c" + cx)
-    cell.innerHTML = ""
-    cell.style.backgroundColor = "white"
-    cell.setDefault(rowspan, "1")
 }
 
 function generateTable(Schedule){
