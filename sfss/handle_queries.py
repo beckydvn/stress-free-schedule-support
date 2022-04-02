@@ -191,7 +191,7 @@ def get_query_results(queries: List[str], exclusive: bool = True):
         #         #print(combo)
         #         filter_list.extend(db.session.query(Course).filter(and_(*[func.replace(Course.description, "Arts and Science", "").contains(c) for c in combo])).all())
         # return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in filter_list})))        
-
+    return {}
 
 if __name__ == "__main__":
     course_recs = get_query_results(["math", "english"], False)
