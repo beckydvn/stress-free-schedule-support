@@ -5,7 +5,11 @@ var Schedule = {0: ['', '', '', '', '', 'Course 4', 'Course 4', 'Course 4', '', 
 3: ['Course 2', 'Course 2', 'Course 2', 'Course 3', 'Course 3', 'Course 3', 'Course 4', 'Course 4', 'Course 4', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''], 
 4: ['', '', '', '', '', 'Course 2', 'Course 2', 'Course 2', '', '', '', 'Course 3', 'Course 3', 'Course 3', '', '', 'Course 4', 'Course 4', 'Course 4', '', '', '', '', '', '', '', '', '']
 }
-var colourOptions = ["tomato", "DodgerBlue", "rgb(146, 222, 76)", "rgb(106, 81, 255)", "rgb(255, 81, 81)", "rgb(255, 152, 77)"]
+//var colourOptions = ["tomato", "DodgerBlue", "rgb(146, 222, 76)", "rgb(106, 81, 255)", "rgb(255, 81, 81)", "rgb(255, 152, 77)"]
+//var colourOptions = ["rgb(204, 237, 228)", "rgb(166, 210, 225)", "rgb(168, 166, 219)", "rgb(211, 186, 233)", "rgb(243, 208, 245)", "rgb(255, 231, 247)"] //Light Pastels
+//var colourOptions = ["rgb(197, 232, 180)", "rgb(250, 243, 211)", "rgb(117, 207, 224)", "rgb(248, 204, 222)", "rgb(211, 197, 242)", "rgb(167, 187, 225)"]
+//Pastel Rainbow https://www.schemecolor.com/house-party.php 
+var colourOptions = ["rgb(240, 119, 105)", "rgb(255, 189, 102)", "rgb(255, 244, 133)", "rgb(178, 230, 240)", "rgb(147, 171, 234)", "rgb(142, 118, 214)"]
 var courseColours = {} 
 
 for (Day in Schedule){
@@ -42,8 +46,10 @@ for (Day in Schedule){
                 }
                 else{
                     //var randomColour = Math.floor(Math.random()*16777215).toString(16);
-                    var randomColour = colourOptions[Math.floor(Math.random() * colourOptions.length)];
+                    var colourIndex = Math.floor(Math.random() * colourOptions.length)
+                    var randomColour = colourOptions[colourIndex];
                     document.getElementById("r" + j + "c" + Day).style.backgroundColor = randomColour
+                    colourOptions.splice(colourIndex, 1); 
                     courseColours[cell] = randomColour
                 }
             }
@@ -51,34 +57,3 @@ for (Day in Schedule){
         }
     } 
 }
-
-/*
-for (Day in Schedule){
-    //I value corresponds to column number 
-    for (var j = 0; j < Schedule[Day].length; j++) {
-        cell = Schedule[Day][j]
-        rowspan = 1
-        courseTracking = "None"
-        if (cell != ""){
-            document.getElementById("r" + j + "c" + Day).innerHTML = cell
-            if (cell in courseColours){
-                document.getElementById("r" + j + "c" + Day).style.backgroundColor = courseColours[cell]
-            }
-            else{
-                //var randomColour = Math.floor(Math.random()*16777215).toString(16);
-                var randomColour = colourOptions[Math.floor(Math.random() * colourOptions.length)];
-                document.getElementById("r" + j + "c" + Day).style.backgroundColor = randomColour
-                courseColours[cell] = randomColour
-            }
-        }
-    } 
-}
-*/
-
-//Translate: MON = rxc0
-//Tues = rxc1
-//WeD = rxc2
-//THURS = rxc3
-//FRI = rxc4
-
-//Rows align with time
