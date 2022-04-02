@@ -19,9 +19,6 @@ def front_end_table_get():
 def index_post():
     split_list = request.form.get("list").split(",")
     result = handle_queries.get_query_results(split_list)
-
-    # f = open("output.json", "w")
-    # f.write(result)
     if len(result) <= 2:
         return render_template('index.html', message="No results were found! Please try entering different subjects.")    
     else:
