@@ -156,14 +156,16 @@
             padding: 1rem;
         }
     </style>
+    </head>
+
     <div class="logo">
         <img src="https://www.azirish.org/wp-content/uploads/2016/05/bookgroup2.png" width="250" height="250">
         <div class="nav-btn">
-            <button class="timetable-btn" id="timetable-btn">Plan your timetable</button>
-            <button class="elective-btn" id="elective-btn">Elective Suggestion</button>
+            <button class="timetable-btn" id="timetable-btn" onclick=navToTable>Plan your timetable</button>
+            <button class="elective-btn" id="elective-btn" onclick=navToElective>Elective Suggestion</button>
         </div>
     </div>
-    </head>
+
     <body>
         <h1>{{message}}</h1>
         <ul class="fullclick">
@@ -172,6 +174,14 @@
             </div>
         </ul>
         <script src="../static/js/course_result.js"> </script>
+        <script>
+            function navToTable(){            
+               window.location.href="{{ url_for('front_end_table_get') }}"
+            }
+            function navToElective(){
+                window.location.href="{{ url_for('index_get') }}"
+            }
+        </script>
         <form method="post">
             <div class="course-result-modify-button">
                 <input class="modifyBtn" type="submit" id="modify-btn" value="Modify your preference">
