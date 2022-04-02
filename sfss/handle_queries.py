@@ -1,7 +1,10 @@
+import itertools
 from nltk.corpus import wordnet
 from sfss import db, Course
 from sqlalchemy import func, and_, or_
 from typing import List
+import json
+import ast
 
 def choose_semantic_meaning(query):
     possible_synsets = wordnet.synsets(query)
@@ -14,7 +17,7 @@ def choose_semantic_meaning(query):
         return possible_synsets[chosen - 1]
     return possible_synsets[0]
 
-def get_query_results(queries: List[str]):
+def get_query_results(queries: List[str], exclusive: bool = True):
     """
     references: 
     https://www.guru99.com/wordnet-nltk.html
@@ -43,16 +46,19 @@ def get_query_results(queries: List[str]):
 
     related_words = {}
     for query in queries:
-        related_words[query] = set()
-        related_words[query].add(query)
-        # we want to consider all synsets, lemmas, hyponyms, hypernyms.
-        syn = choose_semantic_meaning(query)
-        related_words[query].update([l.name() for l in syn.lemmas()])
-        # syn.hyponyms() and syn.hypernyms() return synsets as well
-        related_words[query].update(*[w.lemma_names() for w in syn.hyponyms()])
-        related_words[query].update(*[w.lemma_names() for w in syn.hypernyms()])
-        related_words[query] = {val.replace("_", " ") for val in related_words[query]}
-    print(related_words)
+        related_words[query] = {query}
+        # print(query)
+        # print(wordnet.synsets(query))
+        synsets = (wordnet.synsets(query))
+        for syn in synsets:
+            related_words[query].add(query)
+            # we want to consider all synsets, lemmas, hyponyms, hypernyms.
+            #syn = choose_semantic_meaning(query)
+            related_words[query].update([l.name() for l in syn.lemmas()])
+            # syn.hyponyms() and syn.hypernyms() return synsets as well
+            related_words[query].update(*[w.lemma_names() for w in syn.hyponyms()])
+            related_words[query].update(*[w.lemma_names() for w in syn.hypernyms()])
+            related_words[query] = {val.replace("_", " ") for val in related_words[query]}
 
     """ 
     searches are case insensitive and include faculty names other than Arts and Science
@@ -60,18 +66,39 @@ def get_query_results(queries: List[str]):
     also, we force that the whole word is contained by using spaces (to avoid matching unrelated words
     that happen to have a smaller related word nested in its spelling...)
     """
-    
+
     filter_list = []
-    # for a search to be viable, it must contain at least one word from each query category
-    for query in related_words:
-        # each entry must contain at least one word from each key
-        test = [func.replace(Course.description, "Arts and Science", "").contains(f" {v} ") for v in related_words[query]]
-        filter_list.append(or_(*test))
-    # make this true for all entries using "and_"
-    return db.session.query(Course).filter(and_(*filter_list)).all()
+    test = []
+    if exclusive:
+        # each result has to include at least one related word from each category
+        for combo in itertools.product(*[list(related_words[query]) for query in related_words]):
+            filter_list.extend(db.session.query(Course).filter(and_(*[func.replace(Course.description, "Arts and Science", "").contains(" " + c + " ") for c in combo])).all())
+        return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in filter_list})))
+
+    else:
+        # ORIGINAL!
+        # filter_list = []
+        # for query in related_words:
+        #     for v in related_words[query]:
+        #         filter_list.extend(db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(f" {v} ")).all())
+        # return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in filter_list})))
+
+        filter_list = []
+        for query in related_words:
+            filter_list.extend(db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(query)).all())
+            for combo in itertools.combinations(related_words[query], 3):
+                filter_list.extend(db.session.query(Course).filter(and_(*[func.replace(Course.description, "Arts and Science", "").contains(" " + c + " ") for c in combo])).all())
+        return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in filter_list})))        
+
 
 if __name__ == "__main__":
-    course_recs = get_query_results(["math", "english"])
+    course_recs = get_query_results(["math", "english"], False)
     print(f"{len(course_recs)} recommendations found:\n")
     for c in course_recs:
-       print(c.description, "\n")
+        print(c.toJSON())
+       #print(str(c), "\n")
+    course_recs = get_query_results(["math", "english"], True)
+    print(f"{len(course_recs)} recommendations found:\n")
+    for c in course_recs:
+        print(c.toJSON())
+       #print(str(c), "\n")

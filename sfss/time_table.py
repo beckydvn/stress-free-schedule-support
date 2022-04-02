@@ -6,11 +6,11 @@ from typing import Dict, List
 from tabulate import tabulate
 
 class Days(Enum):
-    MON = 1
-    TUES = 2
-    WED = 3
-    THURS = 4
-    FRI = 5
+    MON = 0
+    TUES = 1
+    WED = 2
+    THURS = 3
+    FRI = 4
     
 class TimePreference(Enum):
     EARLY = 1
@@ -55,6 +55,7 @@ class Time():
             hour = hour + 12 if hour != 12 else hour
         hour = hour % 24
         min = (min/60) % 1
+        self.min = min
         self.mil_time = hour+min # 24h time
 
     def __str__(self):
@@ -131,7 +132,27 @@ class Query:
         return str(self.table)
     def __repr__(self):
         return str(self.table)
-    
+
+    def get_better_dict(self,table_start:Time=Time(8,0,AmPm.AM), table_end:Time=Time(10,0,AmPm.PM)):
+        '''
+        input: 
+        table_start = Time object representing first time slot of the dictionary (inclusive) ex Time(8) = start at 8AM
+        table_end = Time object representing last time slot of the dictionary (exlusive, goes to 30 min before end time provided) ex) Time(9,30,AmPm.PM) = end at 9PM
+        Returns a dictionary:
+        day enum value (0-4) : list of timeslots for that day, ""no class, "class name" = that class at that time slot
+        '''
+        times = [Time(hour%12 if hour >= 13 else hour, min, AmPm.PM if hour>=12 else AmPm.AM).time_string for hour in range(int(table_start.mil_time),int(table_end.mil_time)+1) for min in range(0,60,30) ]  # 30 min time chunks between start time and end time
+        # if they wanted it to end at hour without extra minutes
+        if table_end.min == 0:
+            times.pop(-1)   # pop off last 30 min (example they wanted stop time 10pm, remove 10:30pm)
+        new_dict = {day.value: [""]*len(times) for day in Days}
+        for day in Days:
+            # for each (class, lesson) tuple in this day
+                for course_lesson in self.table[day]:
+                    for i in range(times.index(course_lesson[1].start_time.time_string),times.index(course_lesson[1].end_time.time_string)+1):
+                        new_dict[day.value][i] = course_lesson[0]
+        return new_dict
+
     def show_table(self):
         start_time = 7
         end_time = 23
@@ -152,8 +173,8 @@ class Query:
             for course_lesson in self.table[day]:
                 #print(type(times[0]), type(course_lesson[1].start_time))
                 for i in range(times.index(course_lesson[1].start_time.time_string),times.index(course_lesson[1].end_time.time_string)+1):
-                    table[i][day.value].append(course_lesson[0])
-        #print(tabulate(table, headers=["Times","Mon", "Tues", "Wed", "Thurs", "Fri"]))
+                    table[i][day.value+1].append(course_lesson[0])
+        print(tabulate(table, headers=["Times","Mon", "Tues", "Wed", "Thurs", "Fri"]))
         return table
 
     def generate_table(self):
@@ -254,8 +275,7 @@ class Query:
                 # re-sort courses to set this course to the right index based on new best section 
                 new_remaining.sort(key=lambda s: self.__time_heuristic(s.section_list[0], s))
     
-    def makeCompatible(courseList):
-        return None
+
 
     
 
@@ -316,9 +336,9 @@ if __name__ == "__main__":
                     if hour == 12:
                         am_pm = AmPm.PM # becomes noon
                 else:
-                    hour = random.randint(1,9)
+                    hour = random.randint(1,8)
                 min = random.randrange(0,60,30)                
-                day = Days(random.randint(1,5))
+                day = Days(random.randint(0,4))
                 lesson_list.append(LessonTime(Time(hour, min, am_pm), Time((hour+1)%12,min,am_pm if hour != 11 else AmPm.PM), day))
             section_list.append(Section(lesson_list,"Section %i"%(x)))
         rng = random.randint(1,3)
@@ -333,8 +353,15 @@ if __name__ == "__main__":
         query = Query(course_list, preference)
         print("Preference = " + preference.name)
         print("missing courses: ", query.conflicting)
-        #query.show_table()
-        print("HERE:", query.show_table())
+        query.show_table()
+        #print("HERE:", query.show_table())
+        print(query.get_better_dict(Time(8), Time(10,00,AmPm.PM)))
+    
+    
+    #class1 = LessonTime(Time(8,30), Time(9,30), Days.MON)
+    #class2 = LessonTime(Time(10,30), Time(11,30), Days.TUES)
+    #class3 = LessonTime(Time(9,30), Time(10,30), Days.WED)
+    #print(query2.get_better_dict())
         
 
 
