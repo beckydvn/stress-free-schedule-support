@@ -8,26 +8,29 @@ var Schedule = {0: ['', '', '', '', '', 'Course 4', 'Course 4', 'Course 4', '', 
 var colourOptions = ["tomato", "DodgerBlue", "rgb(146, 222, 76)", "rgb(106, 81, 255)", "rgb(255, 81, 81)", "rgb(255, 152, 77)"]
 var courseColours = {} 
 
-var colourOptions = ["tomato", "DodgerBlue", "rgb(146, 222, 76)", "rgb(106, 81, 255)", "rgb(255, 81, 81)", "rgb(255, 152, 77)"]
-
-var courseColours = {} 
-
-var rowspan = 1
-var courseTracking = "None"
-
-var cellToStartMerge = ["None", "None"] //The row and column of the starting cell [j, Day]
-var courseIndex = "None" //[index of last cell with course, the course name]
-var currCourse = "None"
-
 for (Day in Schedule){
+    var rowspan = 1
+    var courseTracking = "None"
+    var cellToStartMerge = ["None", "None"] //The row and column of the starting cell [j, Day]
+    var courseIndex = "None" //[index of last cell with course, the course name]
+    var currCourse = "None"
     //I value corresponds to column number 
     for (var j = 0; j < Schedule[Day].length; j++) {
         cell = Schedule[Day][j]
  
+        if (cell != currCourse && rowspan > 1){
+            var stringSpan = rowspan.toString(10)
+            document.getElementById("r" +cellToStartMerge[0] + "c" + cellToStartMerge[1]).setAttribute("rowspan", stringSpan)
+            rowspan = 1
+        }
+
         if (cell != ""){
             if ((cell == currCourse) && (courseIndex == j-1)){
                 rowspan += 1
                 courseIndex = j
+                //var row = document.getElementById("r"+j);
+                //row.deleteCell(Day+1);
+                document.getElementById("r" + j + "c" + Day).style.display= 'none';
             }
             else{
                 cellToStartMerge = [j, Day]
@@ -42,11 +45,6 @@ for (Day in Schedule){
                     var randomColour = colourOptions[Math.floor(Math.random() * colourOptions.length)];
                     document.getElementById("r" + j + "c" + Day).style.backgroundColor = randomColour
                     courseColours[cell] = randomColour
-                }
-                if (rowspan > 1){
-                    var stringSpan = rowspan.toString(10)
-                    document.getElementById("r" +cellToStartMerge[0] + "c" + cellToStartMerge[1]).setAttribute("rowspan", stringSpan)
-                    rowspan = 1
                 }
             }
 
