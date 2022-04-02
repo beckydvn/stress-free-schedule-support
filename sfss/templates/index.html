@@ -2,12 +2,24 @@
 <html>
     <head>
         <link rel="stylesheet" href="../static/css/course_preference.css">
+        <style>
+            .timetable-btn:hover {
+                color: white;
+                background: rgb(13, 60, 87);
+                cursor: pointer;
+            }
+            .elective-btn {
+                background: rgb(13, 60, 87);
+                color: white;
+                pointer-events: none;
+            }
+        </style>
     </head>
     <div class="logo">
         <img src="https://www.azirish.org/wp-content/uploads/2016/05/bookgroup2.png" width="250" height="250">
         <div class="nav-btn">
-            <button class="timetable-btn" id="timetable-btn">Plan your timetable</button>
-            <button class="elective-btn" id="elective-btn">Elective Suggestion</button>
+            <a href="front_end_table"> <button class="timetable-btn" id="timetable-btn">Plan your timetable</button> </a>
+            <a><button class="elective-btn" id="elective-btn">Elective Suggestion</button> </a>
         </div>
     </div>
     <body>
@@ -29,11 +41,6 @@
 
         <form method="post">
             <div class="form-group">
-                <div class="checkbox">
-                    <input type="checkbox" id="course-search-mode" name="course-search-mode" value="TRUE HELLO???">
-                    <label name="checkbox-title" id="checkbox-title" for="course-search-mode"><b>Exclusive Search Mode</b></label>
-                    <label class="checkbox-help" name="checkbox-helpbox" id="checkbox-helpbox" for="course-search-mode" title="insert annotation"><span>&#x1F6C8;</span> </label><br>
-                </div>
                 <input class="searchBtn" type="submit" id="search-btn" value="Search">
             </div>
             <input name="list" id='list' class='list'>

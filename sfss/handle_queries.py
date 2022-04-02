@@ -17,7 +17,84 @@ def choose_semantic_meaning(query):
         return possible_synsets[chosen - 1]
     return possible_synsets[0]
 
-def get_query_results(queries: List[str], exclusive: bool = True):
+def faculty_translator(input):
+    translator = {
+        "anatomy": "ANAT",
+        "anishinaabe": "ANSH",
+        "arabic": "ARAB",
+        "art": "ARTF",
+        "fine arts": "ARTF",
+        "art history": "ARTF",
+        "astronomy": "ASTR",
+        "biochemistry": "BCHM",
+        "biology": "BIOL",
+        "cancer": "CANC",
+        "chemistry": "CHEM",
+        "chinese": "CHIN",
+        "computer": "CISC",
+        "computing": "CISC",
+        "computer science": "CISC",
+        "classical literature": "CLST",
+        "cognitive science": "COGS",
+        "cognitive": "COGS",
+        "creative writing": "CWRI",
+        "developmoent": "DEVS",
+        "drama": "DRAM",
+        "economics": "ECON",
+        "employment relations": "EMPR",
+        "english": "ENGL",
+        "entrepreneur": "ENIN",
+        "environment sciences": "ENSC",
+        "epidemiology" : "EPID",
+        "film": "FILM",
+        "french": "FREN",
+        "geology": "GEOL",
+        "gender": "GNDS",
+        "geography": "GPHY",
+        "greek": "GREK",
+        "german": "GRMN",
+        "hebrew": "HEBR",
+        "history": "HIST",
+        "health": "HLTH",
+        "humanities": "IDIS",
+        "indigenous" : "INDG",
+        "global": "INTS",
+        "italian": "ITLN",
+        "japanese": "JAPN",
+        "kinesiology": "KNPE",
+        "language": "LANG",
+        "latin": "LATN",
+        "linguistics": "LING",
+        "life sciences": "LISC",
+        "cultures": "LLCU",
+        "media and performance": "MAPP",
+        "math": "MATH",
+        "microbiology": "MICR",
+        "mohawk": "MOHK",
+        "music": "MUSC",
+        "musical theater": "MUTH",
+        "neurosciencee": "NSCI",
+        "pathology": "PATH",
+        "pharmacology": "PHAR",
+        "physiology": "PHGY",
+        "philosophy": "PHIL",
+        "physics": "PHYS",
+        "politics": "POLS",
+        "political science": "POLS",
+        "psychology": "PSYC",
+        "religion": "RELS",
+        "sociology": "SOCY",
+        "spanish": "SPAN",
+        "statistics": "STAT",
+        "writing": "WRIT",
+
+    }
+    input = input.lower()
+    if input in translator.keys():
+        return translator[input.lower()]
+    return None
+
+def get_query_results(queries: List[str]):
     """
     references: 
     https://www.guru99.com/wordnet-nltk.html
@@ -63,32 +140,35 @@ def get_query_results(queries: List[str], exclusive: bool = True):
     """ 
     searches are case insensitive and include faculty names other than Arts and Science
     (we choose to disclude Arts and Science as the faculty is too broad...)
-    also, we force that the whole word is contained by using spaces (to avoid matching unrelated words
-    that happen to have a smaller related word nested in its spelling...)
     """
 
     filter_list = []
-    test = []
-    if exclusive:
-        # each result has to include at least one related word from each category
-        for combo in itertools.product(*[list(related_words[query]) for query in related_words]):
-            filter_list.extend(db.session.query(Course).filter(and_(*[func.replace(Course.description, "Arts and Science", "").contains(" " + c + " ") for c in combo])).all())
-        return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in filter_list})))
+    # if we have multiple search terms, prioritize courses that fit the broader range of categories
+    if len(related_words) > 1:
+        # add results that include all search keywords in the description
+        print([i for i in itertools.combinations(related_words, 2)])
+        filter_list.extend(db.session.query(Course).filter(and_(*[func.replace(Course.description, "Arts and Science", "").contains(query) for query in related_words])).all())
+        # add results that include pairs of keywords in the description
+        for combo in itertools.combinations(related_words, 2):
+            filter_list.extend(db.session.query(Course).filter(and_(*[func.replace(Course.description, "Arts and Science", "").contains(c) for c in combo])).all())
+    # add results where the keywords are in the COURSE CODE
+    for query in related_words:
+        translation = faculty_translator(query)
+        if translation:
+            filter_list.extend(db.session.query(Course).filter(Course.id.contains(translation)).all())
+    
+    # add results where the keywords are in the NAME
+    for query in related_words:
+        filter_list.extend(db.session.query(Course).filter(Course.course_name.contains(query)).all())
+    # then add results that contain the direct keywords individually in their description
+    for query in related_words:
+        filter_list.extend(db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(query)).all())
 
-    else:
-        # ORIGINAL!
-        # filter_list = []
-        # for query in related_words:
-        #     for v in related_words[query]:
-        #         filter_list.extend(db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(f" {v} ")).all())
-        # return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in filter_list})))
-
-        filter_list = []
-        for query in related_words:
-            filter_list.extend(db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(query)).all())
-            for combo in itertools.combinations(related_words[query], 3):
-                filter_list.extend(db.session.query(Course).filter(and_(*[func.replace(Course.description, "Arts and Science", "").contains(" " + c + " ") for c in combo])).all())
-        return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in filter_list})))        
+    # finally, add any that have related words in their description
+    for query in related_words:
+        for v in related_words[query]:
+            filter_list.extend(db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(v)).all())
+    return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in filter_list})))
 
 
 if __name__ == "__main__":

@@ -11,17 +11,19 @@ def index_get():
 def course_result_get():
     return render_template('course_result.html')
 
+@app.route('/front_end_table', methods=['GET'])
+def front_end_table_get():
+    return render_template('front_end_table.html')
+
 @app.route('/', methods=['POST'])
 def index_post():
     split_list = request.form.get("list").split(",")
-    exclusive = request.form.get("course-search-mode")
-    if exclusive:
-        result = handle_queries.get_query_results(split_list, exclusive=True)
-    else:
-        result = handle_queries.get_query_results(split_list, exclusive=False)
-    # f = open("output.json", "w")
-    # f.write(result)
+    result = handle_queries.get_query_results(split_list)
     if len(result) <= 2:
         return render_template('index.html', message="No results were found! Please try entering different subjects.")    
     else:
         return render_template('course_result.html', output=result, message="Based on your preferences:")
+
+@app.route('/course_results', methods=['POST'])
+def elective_button():
+    return render_template('index.html')

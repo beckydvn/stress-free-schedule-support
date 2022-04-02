@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/css/course_preference.css">
+    </head>
+    <style>
+        .timetable-btn {
+            background: rgb(13, 60, 87);
+            color: white;
+            pointer-events: none;
+        }
+
+        .elective-btn:hover {
+            color: white;
+            background: rgb(13, 60, 87);
+            cursor: pointer;
+        }
+    </style>
+    <div class="logo">
+        <img src="https://www.azirish.org/wp-content/uploads/2016/05/bookgroup2.png" width="250" height="250">
+        <div class="nav-btn">
+            <a href="front_end_table"> <button class="timetable-btn" id="timetable-btn">Plan your timetable</button> </a>
+            <a href='..'><button class="elective-btn" id="elective-btn">Elective Suggestion</button> </a>
+        </div>
+    </div>
+    <body>
+        <div class="header">
+            <h1>PLAN YOUR TIMETABLE</h1>
+        </div>
+        <div class="title">
+            <p>Enter your potential courses (and all their sections):</p>
+        </div>
+
+        <!-- label for="cars">Choose a car:</label-->
+        <div class="course">
+            <h1>Course 1</h1>
+            <input class="coursename" type="coursename" id="course1" value="Enter course name.">
+            <div class="priority">
+                <select name="course1" id="course1">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+            </div>
+            <div class="section">
+                <div lesson="lesson">
+                    <select name="course1start" id="course1start">
+                        <option value="8:00AM">8:00AM</option>
+                        <option value="8:30AM">8:30AM</option>
+                        <option value="9:00AM">9:00AM</option>
+                        <option value="9:30AM">9:30AM</option>
+                        <option value="10:00AM">10:00AM</option>
+                        <option value="10:30AM">10:30AM</option>
+                        <option value="11:00AM">11:00AM</option>
+                        <option value="11:30AM">11:30AM</option>
+                        <option value="12:00PM">12:00PM</option>
+                        <option value="12:30PM">12:30PM</option>
+                        <option value="1:00PM">1:00PM</option>
+                        <option value="1:30PM">1:30PM</option>
+                        <option value="2:00PM">2:00PM</option>
+                        <option value="2:30PM">2:30PM</option>
+                        <option value="3:00PM">3:00PM</option>
+                        <option value="3:30PM">3:30PM</option>
+                        <option value="4:00PM">4:00PM</option>
+                        <option value="4:30PM">4:30PM</option>
+                        <option value="5:00PM">5:00PM</option>
+                        <option value="5:30PM">5:30PM</option>
+                        <option value="6:00PM">6:00PM</option>
+                        <option value="6:30PM">6:30PM</option>
+                        <option value="7:00PM">7:00PM</option>
+                        <option value="7:30PM">7:30PM</option>
+                        <option value="8:00PM">8:00PM</option>
+                        <option value="8:30PM">8:30PM</option>
+                        <option value="9:00PM">9:00PM</option>
+                        <option value="9:30PM">9:30PM</option>
+                        <option value="10:00PM">10:00PM</option>
+                    </select>
+
+                    <select name="course1end" id="course1end">
+                        <option value="8:00AM">8:00AM</option>
+                        <option value="8:30AM">8:30AM</option>
+                        <option value="9:00AM">9:00AM</option>
+                        <option value="9:30AM">9:30AM</option>
+                        <option value="10:00AM">10:00AM</option>
+                        <option value="10:30AM">10:30AM</option>
+                        <option value="11:00AM">11:00AM</option>
+                        <option value="11:30AM">11:30AM</option>
+                        <option value="12:00PM">12:00PM</option>
+                        <option value="12:30PM">12:30PM</option>
+                        <option value="1:00PM">1:00PM</option>
+                        <option value="1:30PM">1:30PM</option>
+                        <option value="2:00PM">2:00PM</option>
+                        <option value="2:30PM">2:30PM</option>
+                        <option value="3:00PM">3:00PM</option>
+                        <option value="3:30PM">3:30PM</option>
+                        <option value="4:00PM">4:00PM</option>
+                        <option value="4:30PM">4:30PM</option>
+                        <option value="5:00PM">5:00PM</option>
+                        <option value="5:30PM">5:30PM</option>
+                        <option value="6:00PM">6:00PM</option>
+                        <option value="6:30PM">6:30PM</option>
+                        <option value="7:00PM">7:00PM</option>
+                        <option value="7:30PM">7:30PM</option>
+                        <option value="8:00PM">8:00PM</option>
+                        <option value="8:30PM">8:30PM</option>
+                        <option value="9:00PM">9:00PM</option>
+                        <option value="9:30PM">9:30PM</option>
+                        <option value="10:00PM">10:00PM</option>
+                    </select>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- <div class="container">
+            <div id="tag-container" class="tag-container">
+                <input class="userInput" type='text' id="userInput" placeholder="Enter subject(s) here...">
+            </div>
+        </div>
+
+        <script src="../static/js/course_preference.js"> </script> -->
+
+        <!-- <form method="post">
+            <div class="form-group">
+                <input class="searchBtn" type="submit" id="search-btn" value="Search">
+            </div>
+            <input name="list" id='list' class='list'>
+        </form> -->
+    </body>
+</html>
