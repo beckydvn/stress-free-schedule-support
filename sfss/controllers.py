@@ -18,11 +18,8 @@ def front_end_table_get():
 @app.route('/', methods=['POST'])
 def index_post():
     split_list = request.form.get("list").split(",")
-    exclusive = request.form.get("course-search-mode")
-    if exclusive:
-        result = handle_queries.get_query_results(split_list, exclusive=True)
-    else:
-        result = handle_queries.get_query_results(split_list, exclusive=False)
+    result = handle_queries.get_query_results(split_list)
+
     # f = open("output.json", "w")
     # f.write(result)
     if len(result) <= 2:

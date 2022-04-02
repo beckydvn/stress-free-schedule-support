@@ -18,7 +18,7 @@ def choose_semantic_meaning(query):
     return possible_synsets[0]
 
 def faculty_translator(input):
-    return {
+    translator = {
         "anatomy": "ANAT",
         "anishinaabe": "ANSH",
         "arabic": "ARAB",
@@ -88,9 +88,13 @@ def faculty_translator(input):
         "statistics": "STAT",
         "writing": "WRIT",
 
-    }[input.lower()]
+    }
+    input = input.lower()
+    if input in translator.keys():
+        return translator[input.lower()]
+    return None
 
-def get_query_results(queries: List[str], exclusive: bool = True):
+def get_query_results(queries: List[str]):
     """
     references: 
     https://www.guru99.com/wordnet-nltk.html
@@ -144,11 +148,16 @@ def get_query_results(queries: List[str], exclusive: bool = True):
     # if we have multiple search terms, prioritize courses that fit the broader range of categories
     if len(related_words) > 1:
         # add results that include all search keywords in the description
+        print([i for i in itertools.combinations(related_words, 2)])
         filter_list.extend(db.session.query(Course).filter(and_(*[func.replace(Course.description, "Arts and Science", "").contains(query) for query in related_words])).all())
-    print(filter_list)
+        # add results that include pairs of keywords in the description
+        for combo in itertools.combinations(related_words, 2):
+            filter_list.extend(db.session.query(Course).filter(and_(*[func.replace(Course.description, "Arts and Science", "").contains(c) for c in combo])).all())
     # add results where the keywords are in the COURSE CODE
     for query in related_words:
-        filter_list.extend(db.session.query(Course).filter(Course.id.contains(faculty_translator(query))).all())
+        translation = faculty_translator(query)
+        if translation:
+            filter_list.extend(db.session.query(Course).filter(Course.id.contains(translation)).all())
     
     # add results where the keywords are in the NAME
     for query in related_words:
