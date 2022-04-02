@@ -165,6 +165,25 @@
                 </li>
  
             </ul>
+            
+        <div class="course">
+            <h1>Course 1</h1>
+            <input class="coursename" type="coursename" id="course1" value="Enter course name.">
+            <div class="priority">
+                <select name="course1" id="course1">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+            </div>
+            <div class="section">
+                <div class="lesson" id=lesson1>
+                    <select id="selectStartTime" onchange="startChosen(this.parentNode.id, this.value);">
+                        <option>"Pick a start time..."</option>
+                    </select>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -249,5 +268,11 @@
             </li>
         </ul> -->
 
+        <form method="post">
+            <div class="form-group">
+                <input class="searchBtn" type="submit" id="search-btn" value="Search">
+            </div>
+        </form> 
+        <script src="../static/js/plan_table.js"> </script>
     </body>
 </html>
