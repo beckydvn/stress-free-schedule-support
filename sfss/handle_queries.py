@@ -17,6 +17,79 @@ def choose_semantic_meaning(query):
         return possible_synsets[chosen - 1]
     return possible_synsets[0]
 
+def faculty_translator(input):
+    return {
+        "anatomy": "ANAT",
+        "anishinaabe": "ANSH",
+        "arabic": "ARAB",
+        "art": "ARTF",
+        "fine arts": "ARTF",
+        "art history": "ARTF",
+        "astronomy": "ASTR",
+        "biochemistry": "BCHM",
+        "biology": "BIOL",
+        "cancer": "CANC",
+        "chemistry": "CHEM",
+        "chinese": "CHIN",
+        "computer": "CISC",
+        "computing": "CISC",
+        "computer science": "CISC",
+        "classical literature": "CLST",
+        "cognitive science": "COGS",
+        "cognitive": "COGS",
+        "creative writing": "CWRI",
+        "developmoent": "DEVS",
+        "drama": "DRAM",
+        "economics": "ECON",
+        "employment relations": "EMPR",
+        "english": "ENGL",
+        "entrepreneur": "ENIN",
+        "environment sciences": "ENSC",
+        "epidemiology" : "EPID",
+        "film": "FILM",
+        "french": "FREN",
+        "geology": "GEOL",
+        "gender": "GNDS",
+        "geography": "GPHY",
+        "greek": "GREK",
+        "german": "GRMN",
+        "hebrew": "HEBR",
+        "history": "HIST",
+        "health": "HLTH",
+        "humanities": "IDIS",
+        "indigenous" : "INDG",
+        "global": "INTS",
+        "italian": "ITLN",
+        "japanese": "JAPN",
+        "kinesiology": "KNPE",
+        "language": "LANG",
+        "latin": "LATN",
+        "linguistics": "LING",
+        "life sciences": "LISC",
+        "cultures": "LLCU",
+        "media and performance": "MAPP",
+        "math": "MATH",
+        "microbiology": "MICR",
+        "mohawk": "MOHK",
+        "music": "MUSC",
+        "musical theater": "MUTH",
+        "neurosciencee": "NSCI",
+        "pathology": "PATH",
+        "pharmacology": "PHAR",
+        "physiology": "PHGY",
+        "philosophy": "PHIL",
+        "physics": "PHYS",
+        "politics": "POLS",
+        "political science": "POLS",
+        "psychology": "PSYC",
+        "religion": "RELS",
+        "sociology": "SOCY",
+        "spanish": "SPAN",
+        "statistics": "STAT",
+        "writing": "WRIT",
+
+    }[input.lower()]
+
 def get_query_results(queries: List[str], exclusive: bool = True):
     """
     references: 
@@ -68,8 +141,32 @@ def get_query_results(queries: List[str], exclusive: bool = True):
     """
 
     filter_list = []
-    if exclusive:
-        pass
+    # if we have multiple search terms, prioritize courses that fit the broader range of categories
+    if len(related_words) > 1:
+        # add results that include all search keywords in the description
+        filter_list.extend(db.session.query(Course).filter(and_(*[func.replace(Course.description, "Arts and Science", "").contains(query) for query in related_words])).all())
+    print(filter_list)
+    # add results where the keywords are in the COURSE CODE
+    for query in related_words:
+        filter_list.extend(db.session.query(Course).filter(Course.id.contains(faculty_translator(query))).all())
+    
+    # add results where the keywords are in the NAME
+    for query in related_words:
+        filter_list.extend(db.session.query(Course).filter(Course.course_name.contains(query)).all())
+    #print(filter_list)
+    # then add results that contain the direct keywords individually in their description
+    for query in related_words:
+        filter_list.extend(db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(query)).all())
+
+    # finally, add any that have related words in their description
+    for query in related_words:
+        for v in related_words[query]:
+            filter_list.extend(db.session.query(Course).filter(func.replace(Course.description, "Arts and Science", "").contains(v)).all())
+    #print(filter_list)
+    return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in filter_list})))
+
+    # filter_list = []
+    # if exclusive:
         # OLD VERSION!
         # each result has to include at least one related word from each category
         # for combo in itertools.product(*[list(related_words[query]) for query in related_words]):
@@ -77,8 +174,8 @@ def get_query_results(queries: List[str], exclusive: bool = True):
         #     filter_list.extend(db.session.query(Course).filter(and_(*[func.replace(Course.description, "Arts and Science", "").contains(c) for c in combo])).all())
         # return json.dumps(ast.literal_eval(str({d.id : d.toJSON() for d in filter_list})))
 
-    else:
-        pass
+    # else:
+    #     pass
         # ORIGINAL!
         # filter_list = []
         # for query in related_words:
