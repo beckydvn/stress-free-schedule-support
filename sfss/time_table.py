@@ -149,7 +149,7 @@ class Query:
         for day in Days:
             # for each (class, lesson) tuple in this day
                 for course_lesson in self.table[day]:
-                    for i in range(times.index(course_lesson[1].start_time.time_string),times.index(course_lesson[1].end_time.time_string)+1):
+                    for i in range(times.index(course_lesson[1].start_time.time_string),times.index(course_lesson[1].end_time.time_string)):
                         new_dict[day.value][i] = course_lesson[0]
         return new_dict
 
@@ -172,7 +172,7 @@ class Query:
             # for each (class, lesson) tuple in this day
             for course_lesson in self.table[day]:
                 #print(type(times[0]), type(course_lesson[1].start_time))
-                for i in range(times.index(course_lesson[1].start_time.time_string),times.index(course_lesson[1].end_time.time_string)+1):
+                for i in range(times.index(course_lesson[1].start_time.time_string),times.index(course_lesson[1].end_time.time_string)):
                     table[i][day.value+1].append(course_lesson[0])
         print(tabulate(table, headers=["Times","Mon", "Tues", "Wed", "Thurs", "Fri"]))
         return table
@@ -238,15 +238,18 @@ class Query:
 
     def __no_conflict(self, course:Course, table:Dict[Days, tuple]):
         ''' return true if no conflict, false if conflict '''
-        own_lessons = []
+        own_lessons = course.section_list[0].lessons_list
         for lesson_time in course.section_list[0].lessons_list:
             # checking against other lessons in the section in case user is an idiot
+            counter = 0
             for own_lesson in own_lessons:
                 if lesson_time.start <= own_lesson.end and lesson_time.end >= own_lesson.start:
-                    return False
+                    counter += 1
+                    if counter >1:  # to account for itself in the lesson list
+                        return False
             dict_entries = [x[1] for x in table[lesson_time.day]]
             for entry in dict_entries:
-                if lesson_time.start <= entry.end and lesson_time.end >= entry.start:
+                if (lesson_time.start < entry.end and lesson_time.end > entry.start) or (lesson_time.start == entry.start and lesson_time.end == entry.end):
                     return False
         return True
     
@@ -322,8 +325,8 @@ if __name__ == "__main__":
 
 
     lessons = 3
-    sections = 15
-    courses = 5
+    sections = 30
+    courses = 15
     course_list = []
     for i in range(courses):
         section_list = []    
