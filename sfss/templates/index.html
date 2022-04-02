@@ -2,12 +2,24 @@
 <html>
     <head>
         <link rel="stylesheet" href="../static/css/course_preference.css">
+        <style>
+            .timetable-btn:hover {
+                color: white;
+                background: rgb(13, 60, 87);
+                cursor: pointer;
+            }
+            .elective-btn {
+                background: rgb(13, 60, 87);
+                color: white;
+                pointer-events: none;
+            }
+        </style>
     </head>
     <div class="logo">
         <img src="https://www.azirish.org/wp-content/uploads/2016/05/bookgroup2.png" width="250" height="250">
         <div class="nav-btn">
             <a href="front_end_table"> <button class="timetable-btn" id="timetable-btn">Plan your timetable</button> </a>
-            <a href='..'><button class="elective-btn" id="elective-btn">Elective Suggestion</button> </a>
+            <a><button class="elective-btn" id="elective-btn">Elective Suggestion</button> </a>
         </div>
     </div>
     <body>
