@@ -28,6 +28,15 @@ def index_post():
     else:
         return render_template('course_result.html', output=result, message="Based on your preferences:")
 
+'''
+@app.route('/plan_table', methods=['POST'])
+def table_post():
+    for lesson in _:
+        request.form.get(lesson_time)
+'''
+
+'''
 @app.route('/course_results', methods=['POST'])
 def elective_button():
     return render_template('index.html')
+'''
