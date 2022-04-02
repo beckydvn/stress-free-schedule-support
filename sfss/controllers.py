@@ -1,4 +1,3 @@
-from posixpath import split
 from re import S
 from flask import render_template, request, session, redirect
 from sfss import app, handle_queries
