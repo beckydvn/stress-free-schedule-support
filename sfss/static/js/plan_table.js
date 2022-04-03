@@ -77,10 +77,23 @@ function newLesson(lessonList){
     let lesson = generateLesson();
     lessonList.appendChild(lesson);
 }
+function killSelf(me){
+    parent = me.parentNode;
+    me.remove();
+    if (parent.childElementCount == 0 || me.childElementCount == 0)
+    {
+        killSelf(parent);
+    }
+}
 
 function generateCourse(){
     let course = document.createElement("li");
     course.classList.add("course");
+    let xButton = document.createElement("button");
+    xButton.classList.add("x-button");
+    xButton.textContent="x";
+    xButton.onclick=function(){killSelf(course)};
+    course.appendChild(xButton);
     let sectionContainer = document.createElement("ul");
     sectionContainer.classList.add("section-container");
     let section = generateSection();
@@ -102,6 +115,11 @@ function generateCourse(){
 function generateSection(){
     let section = document.createElement("li");
     section.classList.add("section");
+    let xButton = document.createElement("button");
+    xButton.classList.add("x-button");
+    xButton.textContent="x";
+    xButton.onclick=function(){killSelf(section)};
+    section.appendChild(xButton);
     let sectionTitle = document.createElement("h2");
     sectionTitle.innerHTML = "Section:";
     let lessonContainer = document.createElement("ul");
@@ -120,6 +138,11 @@ function generateSection(){
 function generateLesson(){
     let lesson = document.createElement("li");
     lesson.classList.add("lesson");
+    let xButton = document.createElement("button");
+    xButton.classList.add("x-button");
+    xButton.textContent="x";
+    xButton.onclick=function(){killSelf(lesson)};
+    lesson.appendChild(xButton);
     let lessonTitle = document.createElement("h3");
     lessonTitle.innerHTML = "Lesson:";
     lesson.appendChild(lessonTitle);
