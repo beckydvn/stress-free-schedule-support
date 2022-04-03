@@ -25,7 +25,7 @@ def index_post():
     if len(result) <= 2:
         return render_template('index.html', message="No results were found! Please try entering different subjects.")    
     else:
-        return render_template('course_result.html', output=result, message="Based on your preferences:")
+        return render_template('course_result.html', output=result, message="BASED ON YOUR PREFERENCES:")
 
 
 @app.route('/plan_table', methods=['POST'])
