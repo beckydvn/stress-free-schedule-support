@@ -1,3 +1,10 @@
+/**
+ * These are the inputs this file manages:
+ * 
+ * A 2d array corresponding to the generated schedule
+ * a nested list of the courses in conflict
+ * 
+ */
 
 var Session = false
 
@@ -48,6 +55,24 @@ document.getElementById("term2Button").onclick = function(){ //Code to generate 
     }
     document.getElementById("term2Button").disabled = true
 }
+
+function getConflicts(conflict_list){ //Has to be a list of lists
+    if (conflict_list.length > 0){
+        var elem = document.getElementById("noConflicts")
+        elem.parentNode.removeChild(elem);
+        for (conflict in conflict_list){
+            var node = document.createElement('li');
+            messageString = "There was a conflict between these courses: " + conflict_list[conflict][0] + ', ' + conflict_list[conflict][1]
+            node.appendChild(document.createTextNode(messageString));
+            document.querySelector('ul').appendChild(node);
+
+        }
+
+    }
+}
+
+var conflicts = [["Course 1", "Course 2"], ["Course 4", "Course 2"]]
+getConflicts(conflicts)
 
 function generateTable(Schedule){
 
