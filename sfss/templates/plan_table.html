@@ -87,23 +87,26 @@
             <p>Enter your potential courses (and all their sections):</p>
         </div>
         <ul class="fullclick" id="course-container">
+            <button onclick="newCourse(this);">New Course</button>   
             <li class="course">
                 <select class="select" name="priority0" id="priority0">
                     <option value="high">High</option>
                     <option value="medium">Medium</option>
                     <option value="low">Low</option>
                 </select>
-                <input class="course-input" id="course1" placeholder="Enter course name.">
-                <ul class="section-container" id="section-container">       
+                <input class="course-input" id="course0" placeholder="Enter course name.">
+                <ul class="section-container" id="section-container">   
+                    <button onclick="newSection(this);">New Section</button>    
                     <li class="section">
-                        <h2>Section 1</h2>
+                        <h2>Section</h2>
                         <ul class="lesson-container">
+                            <button onclick="newLesson(this);">New Lesson</button>
                             <li class="lesson" id="lesson0">
-                                <h3>Lesson 1</h3>
+                                <h3>Lesson</h3>
                                 <select class="select" id="day0">
                                     <option value="">Pick a day...</option>
                                 </select>
-                                <select class="select" id="start0" onchange="addEndTime(this.parentNode.id, this.value);">
+                                <select class="select" id="start0" onchange="addEndTime(this);">
                                     <option value="">Pick a start time...</option>
                                 </select>
                             </li>
