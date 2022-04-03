@@ -1,4 +1,3 @@
-from posixpath import split
 from re import S
 from flask import render_template, request, session, redirect
 from sfss import app, handle_queries
@@ -11,9 +10,13 @@ def index_get():
 def course_result_get():
     return render_template('course_result.html')
 
-@app.route('/front_end_table', methods=['GET'])
-def front_end_table_get():
-    return render_template('front_end_table.html')
+@app.route('/plan_table', methods=['GET'])
+def plan_table_get():
+    return render_template('plan_table.html')
+
+@app.route('/table_results', methods=['GET'])
+def table_results_get():
+    return render_template('table_results.html')
 
 @app.route('/', methods=['POST'])
 def index_post():
@@ -24,6 +27,16 @@ def index_post():
     else:
         return render_template('course_result.html', output=result, message="Based on your preferences:")
 
+
+@app.route('/plan_table', methods=['POST'])
+def table_post():
+    return str(request.form.get("fullclick"))
+    # for lesson in _:
+    #     request.form.get(lesson_time)
+
+
+'''
 @app.route('/course_results', methods=['POST'])
 def elective_button():
     return render_template('index.html')
+'''

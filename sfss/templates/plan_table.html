@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/css/course_preference.css">
+    </head>
+    <style>
+        .timetable-btn {
+            background: rgb(13, 60, 87);
+            color: white;
+            pointer-events: none;
+        }
+        .elective-btn:hover {
+            color: white;
+            background: rgb(13, 60, 87);
+            cursor: pointer;
+        }
+
+        /* same as .tag-container but deleted flex display*/
+        .select {
+            border: 2px solid rgb(13, 60, 87);
+            padding: 10px;
+            border-radius:45px;
+            flex-direction:unset;
+            text-align: center;
+            margin: 0 auto;
+            max-width: fit-content;
+        }
+        .select:hover {
+            cursor: pointer;
+        }
+        /* same as .tag-container but deleted flex display*/
+        .course-input {
+            border: 2px solid rgb(13, 60, 87);
+            padding: 10px;
+            border-radius:45px;
+            flex-direction:unset;
+            text-align: center;
+            margin: 0 auto;
+            max-width: fit-content;
+        }
+        .fullclick li {
+            background: #2a3783;
+            /* display:inline-table; */
+        }
+        .section-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .fullclick li:hover, .fullclick li:focus-within {
+            background:#b1d2e7;
+            box-shadow: 0px 3px 6px #000;
+        }
+        .section-container li {
+            list-style: none;
+            margin: 10px 10px;
+            padding: 20px 10px;
+            background: #3360db;
+            position: relative;
+            transition: 400ms;
+            border-radius: 16px;
+            display:table-caption;
+        }
+        .section-container li:hover, .section li:focus-within {
+            background:#335fda;
+            box-shadow: 0px 3px 6px rgb(10, 9, 110);
+        }
+        .lesson-container li {
+            list-style: none;
+            margin: 1em 0;
+            padding: 10px 10px;
+            background: rgb(88, 196, 223);
+            position: relative;
+            transition: 400ms;
+            border-radius: 16px;
+        }
+        .lesson-container li:hover, .lesson li:focus-within {
+            background:rgb(88, 196, 223);
+            box-shadow: 0px 3px 6px rgb(6, 88, 64);
+        }
+        .new-btn {
+            border-radius: 15px;
+            padding: .5rem 1rem;
+            text-align: center;
+            /* padding: 1rem; */
+            font-size: 12px;
+            font-family: monospace;
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            /* width: 250px; */
+        }
+        .new-btn:hover {
+            color: rgb(0, 0, 0);
+            background: rgb(255, 253, 126);
+            cursor: pointer;
+        }
+        .fullclick li button {
+            opacity: 100;
+            color: rgb(0, 0, 0);
+            position: unset;
+        }
+        .x-button {
+            border-radius: 20px;
+            background: transparent;
+            text-align: center;
+            font-size: 20px;
+            font-family: monospace;
+            float: right;
+        }
+        .x-button:hover {
+            color:red;
+            cursor: pointer;
+        }
+        
+    </style>
+
+    <div class="logo">
+        <img src="https://www.azirish.org/wp-content/uploads/2016/05/bookgroup2.png" width="250" height="250">
+        <div class="nav-btn">
+            <button class="timetable-btn" id="timetable-btn">Plan your timetable</button>
+            <a href='..'><button class="elective-btn" id="elective-btn">Elective Suggestion</button> </a>
+        </div>
+    </div>
+    <body>
+        <div class="header">
+            <h1>PLAN YOUR TIMETABLE</h1>
+        </div>
+        <div class="title">
+            <p>Enter your potential courses (and all their sections):</p>
+        </div>
+        <ul class="fullclick" id="course-container">
+            <li class="course">
+                <h1>Course</h1>
+                <select class="select" name="priority0" id="priority0">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                <input class="course-input" id="course0" placeholder="Enter course name.">
+                <ul class="section-container" id="section-container">   
+                    <li class="section">
+                        <h2>Section</h2>
+                            <ul class="lesson-container">
+                                <li class="lesson" id="lesson0">
+                                    <h3>Lesson</h3>
+                                    <select class="select" id="day0">
+                                        <option value="">Pick a day...</option>
+                                    </select>
+                                    <select class="select" id="start0" onchange="addEndTime(this);">
+                                        <option value="">Pick a start time...</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <button class="new-btn" id="new-lesson-btn" onclick="newLesson(this.previousElementSibling);">+ Add another lesson...</button>
+                    </li>
+                </ul>
+                <button class="new-btn" id="new-section-btn" onclick="newSection(this.previousElementSibling);">+ Add another section...</button>
+            </li>
+        </ul>
+        <button class="new-btn" id="new-course-btn" onclick="newCourse(this.previousElementSibling);">+ Add another course...</button>
+            
+        
+
+
+        <form method="post">
+            <div class="form-group">
+                <input class="searchBtn" type="submit" id="search-btn" value="Search">
+            </div>
+        </form> 
+        <script src="../static/js/plan_table.js"> </script>
+    </body>
+</html>
