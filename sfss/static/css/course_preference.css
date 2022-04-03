@@ -157,13 +157,14 @@
 }
 
 .logo img {
-    width: 10%;
-    height: auto;
-    /* margin-right: 700px; */
+    width: 180px;
+    height: 120px;
 }
 
 .nav-btn {
     text-align: right;
+    margin-top: 30px;
+    margin-left: 50px;
 }
 
 .nav-btn button {
