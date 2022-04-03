@@ -106,8 +106,7 @@
         </div>
         <ul class="fullclick" id="course-container">
             <li class="course">
-            <h1>Course 1</h1>
-                <select class="select" name="priority1" id="priority1">
+                <select class="select" name="priority0" id="priority0">
                     <option value="high">High</option>
                     <option value="medium">Medium</option>
                     <option value="low">Low</option>
@@ -122,7 +121,7 @@
                                     <select class="select" id="day0">
                                         <option value="">Pick a day...</option>
                                     </select>
-                                    <select class="select" id="start0" onchange="startChosen(this.parentNode.id, this.value);">
+                                    <select class="select" id="start0" onchange="addEndTime(this.parentNode.id, this.value);">
                                         <option value="">Pick a start time...</option>
                                     </select>
                                 </li>
