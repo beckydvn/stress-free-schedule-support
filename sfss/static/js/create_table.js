@@ -83,7 +83,6 @@ function generateTable(Schedule){
                         document.getElementById("r" + j + "c" + Day).style.backgroundColor = courseColours[cell]
                     }
                     else{
-                        //var randomColour = Math.floor(Math.random()*16777215).toString(16);
                         var colourIndex = Math.floor(Math.random() * colourOptions.length)
                         var randomColour = colourOptions[colourIndex];
                         document.getElementById("r" + j + "c" + Day).style.backgroundColor = randomColour
