@@ -134,9 +134,6 @@ def create_database():
         if new_course:
             db.session.commit()
             id, credits, course_name = parse_course(line)
-            description += id + "\t"
-            description += credits + "\n"
-            description += course_name
             new_course = False
         elif line.strip(" ") == "\n":
             description_dict = parse_description(description)
@@ -173,4 +170,4 @@ def create_database():
 
 # do not move
 db.create_all()
-#create_database() # feel free to comment this out once database has been created, just be sure to uncomment it after!
+# create_database() # feel free to comment this out once database has been created, just be sure to uncomment it after!

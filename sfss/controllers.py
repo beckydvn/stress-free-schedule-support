@@ -6,6 +6,19 @@ from sfss import app, handle_queries
 def index_get():
     return render_template('index.html')
 
+@app.route('/elective_suggestion', methods=['GET'])
+def elective_suggestion_get():
+    return render_template('/elective_suggestion.html')
+
+@app.route('/elective_suggestion', methods=['POST'])
+def elective_suggestion_post():
+    split_list = request.form.get("list").split(",")
+    result = handle_queries.get_query_results(split_list)
+    if len(result) <= 2:
+        return render_template('elective_suggestion.html', message="No results were found! Please try entering different subjects.")    
+    else:
+        return render_template('course_result.html', output=result, message="BASED ON YOUR PREFERENCES:")
+
 @app.route('/course_result', methods=['GET'])
 def course_result_get():
     return render_template('course_result.html')
@@ -18,14 +31,7 @@ def plan_table_get():
 def table_results_get():
     return render_template('table_results.html')
 
-@app.route('/', methods=['POST'])
-def index_post():
-    split_list = request.form.get("list").split(",")
-    result = handle_queries.get_query_results(split_list)
-    if len(result) <= 2:
-        return render_template('index.html', message="No results were found! Please try entering different subjects.")    
-    else:
-        return render_template('course_result.html', output=result, message="BASED ON YOUR PREFERENCES:")
+
 
 
 @app.route('/plan_table', methods=['POST'])
