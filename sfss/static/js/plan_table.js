@@ -12,9 +12,10 @@ for(let i = 0; i < times.length-1; i++) {   // times.length-1 so it only include
 }
 
 // display endtime dropdowns once they choose a starttime
-function startChosen(parentid, value){
-    lesson = document.getElementById(parentid);
-    endTime = document.createElement("select");
+function startChosen(startTime){
+    let lesson = startTime.parentNode;
+    let value = startTime.value;
+    let endTime = document.createElement("select");
     let oldChild = lesson.querySelector("#endTime");
     endTime.classList.add("select");
     endTime.setAttribute("id", "endTime");
@@ -36,6 +37,48 @@ function startChosen(parentid, value){
     }
 }
 
-function newLesson(parentid){
+function newCourse(course){
+    let courseList = course.parentNode;
+    let course = generateCourse();
+    courseList.appendChild(course);
+}
+function newSection(section){
+    let sectionList = section.parentNode;
+    let section = generateSection();
+    sectionList.appendChild(section);
+}
+function newLesson(lesson){
+    let lessonList = lesson.parentNode;
+    let lesson = generateLesson();
+    lessonList.appendChild(lesson);
+}
 
+function generateCourse(){
+    let course = document.createElement("course");
+    let section = generateSection();
+    course.appendChild(section);
+    return course; 
+}
+function generateSection(){
+    let section = document.createElement("section");
+    let sectionTitle = document.createElement("h2");
+    sectionTitle.innerHTML = "Section:";
+    lesson.appendChild(sectionTitle);
+    let lesson = generateLesson();
+    section.appendChild(lesson);
+    return section;
+}
+function generateLesson(){
+    let lesson = document.createElement("lesson");
+    let lessonTitle = document.createElement("h2");
+    lessonTitle.innerHTML = "Lesson:";
+    lesson.appendChild(lessonTitle);
+    start = generateStart;
+    lesson.appendChild(start);
+    return lesson;
+}
+function generateStart(){
+    let start = document.createElement("select");
+    start.classList.add("select");
+    return start;
 }
