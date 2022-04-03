@@ -25,6 +25,9 @@
             margin: 0 auto;
             max-width: fit-content;
         }
+        .select:hover {
+            cursor: pointer;
+        }
         /* same as .tag-container but deleted flex display*/
         .course-input {
             border: 2px solid rgb(13, 60, 87);
@@ -105,7 +108,6 @@
             <p>Enter your potential courses (and all their sections):</p>
         </div>
         <ul class="fullclick" id="course-container">
-            <button onclick="newCourse(this);">New Course</button>   
             <li class="course">
                 <select class="select" name="priority0" id="priority0">
                     <option value="high">High</option>
@@ -114,7 +116,6 @@
                 </select>
                 <input class="course-input" id="course0" placeholder="Enter course name.">
                 <ul class="section-container" id="section-container">   
-                    <button onclick="newSection(this);">New Section</button>    
                     <li class="section">
                         <h2>Section 1</h2>
                             <ul class="lesson-container">
@@ -128,13 +129,13 @@
                                     </select>
                                 </li>
                             </ul>
-                            <button class="new-btn" id="new-lesson-btn">+ Add another lesson...</button>
+                            <button class="new-btn" id="new-lesson-btn" onclick="newLesson(this.previousElementSibling);">+ Add another lesson...</button>
                     </li>
                 </ul>
-                <button class="new-btn" id="new-section-btn">+ Add another section...</button>
+                <button class="new-btn" id="new-section-btn" onclick="newSection(this.previousElementSibling);">+ Add another section...</button>
             </li>
         </ul>
-        <button class="new-btn" id="new-course-btn">+ Add another course...</button>
+        <button class="new-btn" id="new-course-btn" onclick="newCourse(this.previousElementSibling);">+ Add another course...</button>
             
         
 

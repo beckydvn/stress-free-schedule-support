@@ -65,25 +65,24 @@ function addEndTime(startTime){
     }
 }
 
-function newCourse(generator){
-    let courseList = generator.parentNode;
+function newCourse(courseList){
     let course = generateCourse();
     courseList.appendChild(course);
 }
-function newSection(generator){
-    let sectionList = generator.parentNode;
+function newSection(sectionList){
     let section = generateSection();
     sectionList.appendChild(section);
 }
-function newLesson(generator){
-    let lessonList = generator.parentNode;
+function newLesson(lessonList){
     let lesson = generateLesson();
     lessonList.appendChild(lesson);
 }
 
 function generateCourse(){
     let course = document.createElement("li");
-    let sectionContainer = document.createElement("section-container");
+    course.classList.add("course");
+    let sectionContainer = document.createElement("ul");
+    sectionContainer.classList.add("section-container");
     let section = generateSection();
     let priority = generatePriority();
     course.appendChild(priority);
@@ -93,26 +92,39 @@ function generateCourse(){
     course.appendChild(input);
     sectionContainer.appendChild(section);
     course.appendChild(sectionContainer);
+    let newSectionButton = document.createElement("button");
+    newSectionButton.classList.add("new-btn");
+    newSectionButton.textContent = "+ Add another section...";
+    newSectionButton.onclick = function(){newSection(sectionContainer)};
+    course.appendChild(newSectionButton);
     return course; 
 }
 function generateSection(){
     let section = document.createElement("li");
+    section.classList.add("section");
     let sectionTitle = document.createElement("h2");
     sectionTitle.innerHTML = "Section:";
-    let lessonContainer = document.createElement("lesson-container");
+    let lessonContainer = document.createElement("ul");
+    lessonContainer.classList.add("lesson-container");
     let lesson = generateLesson();
     section.appendChild(sectionTitle);
     lessonContainer.appendChild(lesson);
     section.appendChild(lessonContainer);
+    let newLessonButton = document.createElement("button");
+    newLessonButton.classList.add("new-btn");
+    newLessonButton.onclick = function(){newLesson(lessonContainer)};
+    newLessonButton.textContent = "+ Add another lesson...";
+    section.appendChild(newLessonButton);
     return section;
 }
 function generateLesson(){
     let lesson = document.createElement("li");
+    lesson.classList.add("lesson");
     let lessonTitle = document.createElement("h3");
     lessonTitle.innerHTML = "Lesson:";
     lesson.appendChild(lessonTitle);
-    days = generateDay();
-    lesson.appendChild(days);
+    dayDropdown = generateDay();
+    lesson.appendChild(dayDropdown);
     start = generateStart();
     lesson.appendChild(start);
     return lesson;
@@ -120,6 +132,7 @@ function generateLesson(){
 function generateStart(){
     let start = document.createElement("select");
     start.classList.add("select");
+    start.onchange = function(){addEndTime(start)};
     let def = document.createElement("option");
     def.textContent = "Pick a start time...";
     def.value = "";
