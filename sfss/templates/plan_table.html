@@ -25,6 +25,9 @@
             margin: 0 auto;
             max-width: fit-content;
         }
+        .select:hover {
+            cursor: pointer;
+        }
         /* same as .tag-container but deleted flex display*/
         .course-input {
             border: 2px solid rgb(13, 60, 87);
@@ -124,8 +127,8 @@
                     <option value="medium">Medium</option>
                     <option value="low">Low</option>
                 </select>
-                <input class="course-input" id="course1" placeholder="Enter course name.">
-                <ul class="section-container" id="section-container">       
+                <input class="course-input" id="course0" placeholder="Enter course name.">
+                <ul class="section-container" id="section-container">   
                     <li class="section">
                         <button class="x-button">x</button>
                         <h2>Section 1</h2>
@@ -136,18 +139,21 @@
                                     <select class="select" id="day0">
                                         <option value="">Pick a day...</option>
                                     </select>
-                                    <select class="select" id="start0" onchange="addEndTime(this.parentNode.id, this.value);">
+                                    <select class="select" id="start0" onchange="addEndTime(this);">
                                         <option value="">Pick a start time...</option>
                                     </select>
                                 </li>
                             </ul>
-                            <button class="new-btn" id="new-lesson-btn">+ Add another lesson...</button>
+                            <button class="new-btn" id="new-lesson-btn" onclick="newLesson(this.previousElementSibling);">+ Add another lesson...</button>
                     </li>
                 </ul>
-                <button class="new-btn" id="new-section-btn">+ Add another section...</button>
+                <button class="new-btn" id="new-section-btn" onclick="newSection(this.previousElementSibling);">+ Add another section...</button>
             </li>
         </ul>
-        <button class="new-btn" id="new-course-btn">+ Add another course...</button>
+        <button class="new-btn" id="new-course-btn" onclick="newCourse(this.previousElementSibling);">+ Add another course...</button>
+            
+        
+
 
         <form method="post">
             <div class="form-group">
