@@ -26,35 +26,6 @@ var Schedule2 = {0: ['', '', '', '', '', '', '', '', '', '', 'Course A', 'Course
 //var colourOptions = ["rgb(197, 232, 180)", "rgb(250, 243, 211)", "rgb(117, 207, 224)", "rgb(248, 204, 222)", "rgb(211, 197, 242)", "rgb(167, 187, 225)"]
 //Pastel Rainbow https://www.schemecolor.com/house-party.php 
 
-//Listening for Term Buttons
-
-document.getElementById("term1Button").onclick = function() { //Code to generate table for the first term
-    if (document.getElementById("term2Button").disabled = true){
-        document.getElementById("term2Button").disabled = false
-    }
-    if (Session == false){
-        generateTable(Schedule1)
-        Session = true
-    }
-    else{
-        generateTable(Schedule1)
-    }
-    document.getElementById("term1Button").disabled = true
-};
-
-document.getElementById("term2Button").onclick = function(){ //Code to generate table for second term 
-    if (document.getElementById("term1Button").disabled = true){
-        document.getElementById("term1Button").disabled = false
-    }
-    if (Session == false){
-        generateTable(Schedule2)
-        Session = true
-    }
-    else{
-        generateTable(Schedule2)
-    }
-    document.getElementById("term2Button").disabled = true
-}
 
 function getConflicts(conflict_list){ //Has to be a list of lists
     if (conflict_list.length > 0){
@@ -73,6 +44,7 @@ function getConflicts(conflict_list){ //Has to be a list of lists
 
 var conflicts = [["Course 1", "Course 2"], ["Course 4", "Course 2"]]
 getConflicts(conflicts)
+generateTable(Schedule1)
 
 function generateTable(Schedule){
 
@@ -81,20 +53,12 @@ function generateTable(Schedule){
 
     for (Day in Schedule){
         var rowspan = 1
-        var courseTracking = "None"
         var cellToStartMerge = ["None", "None"] //The row and column of the starting cell [j, Day]
         var courseIndex = "None" //[index of last cell with course, the course name]
         var currCourse = "None"
         //I value corresponds to column number 
         for (var j = 0; j < Schedule[Day].length; j++) {
             cell = Schedule[Day][j]
-
-            if (Session == true){ //If statement used to clear the cells from the term that was in the table before
-                document.getElementById("r" + j + "c" + Day).innerHTML = ""
-                document.getElementById("r" + j + "c" + Day).style.backgroundColor = "white" 
-                document.getElementById("r" + j + "c" + Day).setAttribute("rowspan", "1")
-                document.getElementById("r" + j + "c" + Day).style.display = ""
-            }
     
             if (cell != currCourse && rowspan > 1){
                 var stringSpan = rowspan.toString(10)
