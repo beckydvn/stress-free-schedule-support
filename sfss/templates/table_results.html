@@ -1,125 +1,18 @@
-<!-- CSS Code: Place this code in the document's head (between the 'head' tags) -->
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="../static/css/course_preference.css">
 <style>
+    .timetable-btn:hover {
+        color: white;
+        background: rgb(13, 60, 87);
+        cursor: pointer;
+    }
 
-    /*For the Page itself*/
-    div.scroll {
-                margin:4px, 4px;
-                padding:4px;
-                height: 1252px;
-                overflow-x: hidden;
-                overflow-y: auto;
-            }
-    
-    .fullclick {
-            margin: 1em 0;
-            padding: 0;
-            /* max-width: 30em; */
-            /* display:inline; */
-            /* width: 100vw; */
-        }
-
-        .fullclick li {
-            list-style: none;
-            margin: 1em 0;
-            padding: 20px 10px;
-            background: rgb(13, 60, 87);
-            position: relative;
-            transition: 400ms;
-            border-radius: 16px;
-        }
-                        
-        .fullclick a.main {
-            color: rgb(102, 199, 255);
-            text-align: right;
-            /* display: block; */
-            z-index: 1;
-        }
-
-        .fullclick li a.main::after {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            content: ' ';
-        }
-                        
-        .fullclick:hover a.main, .fullclick:focus-within a.main {
-            color: #000000;
-        }
-
-        .fullclick li button {
-            z-index: 2;
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            opacity: 0;
-            transition: 1000ms;
-            border: none;
-            color: rgb(255, 255, 255);
-            background: #333;
-        }
-                        
-        .fullclick li:hover button, .fullclick li:focus-within button {
-            opacity: 1;
-        }
-                        
-        .fullclick li:hover, .fullclick li:focus-within {
-            background:#3e1faf;
-            box-shadow: 0px 3px 6px #000;
-        }
-      
-        .logo {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .logo img {
-            width: 10%;
-            height: 20%;
-            margin-right: 700px;
-        }
-
-        .nav-btn {
-            position: fixed;
-            top: 0;
-            right: 0;
-            text-align: right;
-            margin-right: auto;
-            width: 30%
-        }
-
-        .nav-btn button {
-            border-radius: 15px;
-            padding: .5rem 1rem;
-            text-align: center;
-            padding: 1rem;
-            font-size: 16px;
-            font-family: monospace;
-        }
-
-        .nav-btn button:hover {
-            color: white;
-            background: rgb(13, 60, 87);
-            cursor: pointer;
-        }
-
-        .timetable-btn {
-            color: rgb(13, 60, 87);
-            background: white;
-            margin-top: 20px;
-            margin-right: 120px;
-            width: 250px;
-        }
-
-        .elective-btn {
-            color: rgb(13, 60, 87);
-            background: white;
-            margin-left: 120px;
-            margin-right: 50px;
-            width: 250px;
-        }
-
+      .elective-btn:hover {
+        color: white;
+        background: rgb(13, 60, 87);
+        cursor: pointer;
+    }
     body {
       /* overflow: hidden; */
       width: 100%;
@@ -173,22 +66,24 @@
       color: white;
     }
     
-
     table.GeneratedTable thead {
       background-color: #57b5c1;
     }
     </style>
 
-      <body>
-          <h1 style="position: absolute; left: 15%"><u>Here Is Your Completed Timetable</u></h1>
-          <li hidden id="schedule" name="schedule">{{output}}</li>
-        <div class="logo">
-          <img src="https://www.azirish.org/wp-content/uploads/2016/05/bookgroup2.png" width="250" height="250">
-          <div class="nav-btn">
-            <a href="plan_table"> <button class="timetable-btn" id="timetable-btn">Plan your timetable</button> </a>
-            <a href=".."><button class="elective-btn" id="elective-btn">Elective Suggestion</button> </a>
-          </div>
+      <li hidden id="schedule" name="schedule">{{output}}</li>      
+      <div class="logo">
+        <a href=".."><img src="https://www.azirish.org/wp-content/uploads/2016/05/bookgroup2.png"></a>
+        <div class="nav-btn">
+          <a href="plan_table"> <button class="timetable-btn" id="timetable-btn">Plan your timetable</button> </a>
+          <a href="elective_suggestion"><button class="elective-btn" id="elective-btn">Elective Suggestion</button> </a>
         </div>
+      </div>
+    <body>
+
+      <div class="header">
+        <h1>GENERATED TIMETABLE</h1>
+      </div>
 
     <div class="MessageBoard" id="MessageBoard" style="font-size: 15px;"><u> Messages you have about your time table will appear here:</u>
         <ul>
@@ -444,3 +339,4 @@
     </table></div>
   </body>
     <!-- Codes by Quackit.com -->
+</html>
