@@ -36,38 +36,56 @@
             max-width: fit-content;
         }
         .fullclick li {
-            background: rgb(70, 38, 146);
+            background: #2a3783;
             display:inline-table;
-        }
-        .fullclick li:hover, .fullclick li:focus-within {
-            background:#7d35b8;
-            box-shadow: 0px 3px 6px #000;
         }
         .section-container li {
             list-style: none;
             margin: 1em 0;
             padding: 20px 10px;
-            background: rgb(42, 55, 168);
+            background: #3360db;
             position: relative;
             transition: 400ms;
             border-radius: 16px;
+            align-content: right;
         }
         .section-container li:hover, .section li:focus-within {
-            background:#2760ff;
-            box-shadow: 0px 3px 6px #000;
+            background:#335fda;
+            box-shadow: 0px 3px 6px rgb(10, 9, 110);
         }
         .lesson-container li {
             list-style: none;
             margin: 1em 0;
             padding: 20px 10px;
-            background: rgb(0, 153, 145);
+            background: rgb(88, 196, 223);
             position: relative;
             transition: 400ms;
             border-radius: 16px;
         }
         .lesson-container li:hover, .lesson li:focus-within {
-            background:#40c5ba;
-            box-shadow: 0px 3px 6px #000;
+            background:rgb(88, 196, 223);
+            box-shadow: 0px 3px 6px rgb(6, 88, 64);
+        }
+        .new-btn {
+            border-radius: 15px;
+            padding: .5rem 1rem;
+            text-align: center;
+            /* padding: 1rem; */
+            font-size: 12px;
+            font-family: monospace;
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            /* width: 250px; */
+        }
+        .new-btn:hover {
+            color: rgb(0, 0, 0);
+            background: rgb(255, 253, 126);
+            cursor: pointer;
+        }
+        .fullclick li button {
+            opacity: 100;
+            color: rgb(0, 0, 0);
+            position: unset;
         }
         
     </style>
@@ -98,23 +116,25 @@
                 <ul class="section-container" id="section-container">   
                     <button onclick="newSection(this);">New Section</button>    
                     <li class="section">
-                        <h2>Section</h2>
-                        <ul class="lesson-container">
-                            <button onclick="newLesson(this);">New Lesson</button>
-                            <li class="lesson" id="lesson0">
-                                <h3>Lesson</h3>
-                                <select class="select" id="day0">
-                                    <option value="">Pick a day...</option>
-                                </select>
-                                <select class="select" id="start0" onchange="addEndTime(this);">
-                                    <option value="">Pick a start time...</option>
-                                </select>
-                            </li>
-                        </ul>
+                        <h2>Section 1</h2>
+                            <ul class="lesson-container">
+                                <li class="lesson" id="lesson0">
+                                    <h3>Lesson 1</h3>
+                                    <select class="select" id="day0">
+                                        <option value="">Pick a day...</option>
+                                    </select>
+                                    <select class="select" id="start0" onchange="addEndTime(this);">
+                                        <option value="">Pick a start time...</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <button class="new-btn" id="new-lesson-btn">+ Add another lesson...</button>
                     </li>
                 </ul>
+                <button class="new-btn" id="new-section-btn">+ Add another section...</button>
             </li>
         </ul>
+        <button class="new-btn" id="new-course-btn">+ Add another course...</button>
             
         
 

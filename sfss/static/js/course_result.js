@@ -31,7 +31,6 @@ function createCourse(course_info) {
     const div = document.createElement('li');
     div.setAttribute('class', 'course');
 
-    // for(let i=0; i < course_info.length; i++) {
     for(let [key, value] of Object.entries(course_info)){
         const boldedkey = bold(key);
         const newvalue = document.createElement('span');
