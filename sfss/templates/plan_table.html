@@ -157,13 +157,15 @@
             </li>
         </ul>
         <button class="new-btn" id="new-course-btn" onclick="newCourse(this.previousElementSibling);">+ Add another course...</button>
+        <button class="new-btn" id="new-course-btn" onclick="postInfo(this);"> TEST BUTTON</button>
             
         
 
 
         <form method="post">
-            <div class="form-group">
-                <input class="searchBtn" type="submit" id="search-btn" value="Search">
+            <div class="form-group"></div>
+                <input class="searchBtn" type="submit" id="search-btn" value="Search" onclick="postInfo(this.parentNode);">
+                 <!-- form sent as { course(i)-section(x)-lesson(z)-priority-coursename : "day", "start", "end"} -->
             </div>
         </form> 
         <script src="../static/js/plan_table.js"> </script>

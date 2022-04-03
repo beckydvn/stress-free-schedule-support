@@ -1,10 +1,15 @@
 
-var Schedule = {0: ['', '', '', '', '', 'Course 4', 'Course 4', 'Course 4', '', '', 'Course 3', 'Course 3', 'Course 3', '', '', '', '', '', '', 'Course 1', 'Course 1', 'Course 1', '', '', '', '', '', ''], 
-1: ['', '', '', '', '', '', 'Course 0', 'Course 0', 'Course 0', 'Course 0', 'Course 0', 'Course 0', 'Course 0', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''], 
-2: ['', '', '', '', '', '', '', '', '', '', '', '', 'Course 1', 'Course 1', 'Course 1', '', 'Course 2', 'Course 2', 'Course 2', '', '', '', 'Course 1', 'Course 1', 'Course 1', '', '', ''], 
-3: ['Course 2', 'Course 2', 'Course 2', 'Course 3', 'Course 3', 'Course 3', 'Course 4', 'Course 4', 'Course 4', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''], 
-4: ['', '', '', '', '', 'Course 2', 'Course 2', 'Course 2', '', '', '', 'Course 3', 'Course 3', 'Course 3', '', '', 'Course 4', 'Course 4', 'Course 4', '', '', '', '', '', '', '', '', '']
-}
+// var Schedule = {0: ['', '', '', '', '', 'Course 4', 'Course 4', 'Course 4', '', '', 'Course 3', 'Course 3', 'Course 3', '', '', '', '', '', '', 'Course 1', 'Course 1', 'Course 1', '', '', '', '', '', ''], 
+// 1: ['', '', '', '', '', '', 'Course 0', 'Course 0', 'Course 0', 'Course 0', 'Course 0', 'Course 0', 'Course 0', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''], 
+// 2: ['', '', '', '', '', '', '', '', '', '', '', '', 'Course 1', 'Course 1', 'Course 1', '', 'Course 2', 'Course 2', 'Course 2', '', '', '', 'Course 1', 'Course 1', 'Course 1', '', '', ''], 
+// 3: ['Course 2', 'Course 2', 'Course 2', 'Course 3', 'Course 3', 'Course 3', 'Course 4', 'Course 4', 'Course 4', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''], 
+// 4: ['', '', '', '', '', 'Course 2', 'Course 2', 'Course 2', '', '', '', 'Course 3', 'Course 3', 'Course 3', '', '', 'Course 4', 'Course 4', 'Course 4', '', '', '', '', '', '', '', '', '']
+// }
+
+console.log(document.getElementById("schedule").innerHTML);
+const Schedule = JSON.parse(document.getElementById("schedule").innerHTML);
+console.log(Schedule)
+
 //var colourOptions = ["tomato", "DodgerBlue", "rgb(146, 222, 76)", "rgb(106, 81, 255)", "rgb(255, 81, 81)", "rgb(255, 152, 77)"]
 //var colourOptions = ["rgb(204, 237, 228)", "rgb(166, 210, 225)", "rgb(168, 166, 219)", "rgb(211, 186, 233)", "rgb(243, 208, 245)", "rgb(255, 231, 247)"] //Light Pastels
 //var colourOptions = ["rgb(197, 232, 180)", "rgb(250, 243, 211)", "rgb(117, 207, 224)", "rgb(248, 204, 222)", "rgb(211, 197, 242)", "rgb(167, 187, 225)"]
