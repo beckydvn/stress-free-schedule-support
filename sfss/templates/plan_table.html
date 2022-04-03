@@ -40,17 +40,21 @@
         }
         .fullclick li {
             background: #2a3783;
-            display:inline-table;
+            /* display:inline-table; */
+        }
+        .section-container {
+            display: flex;
+            flex-wrap: wrap;
         }
         .section-container li {
             list-style: none;
-            margin: 1em 0;
+            margin: 10px 10px;
             padding: 20px 10px;
             background: #3360db;
             position: relative;
             transition: 400ms;
             border-radius: 16px;
-            align-content: right;
+            display:table-caption;
         }
         .section-container li:hover, .section li:focus-within {
             background:#335fda;
