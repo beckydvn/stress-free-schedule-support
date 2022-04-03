@@ -37,6 +37,7 @@
         }
         .fullclick li {
             background: rgb(70, 38, 146);
+            display:inline-table;
         }
         .fullclick li:hover, .fullclick li:focus-within {
             background:#7d35b8;
@@ -87,6 +88,7 @@
         </div>
         <ul class="fullclick" id="course-container">
             <li class="course">
+            <h1>Course 1</h1>
                 <select class="select" name="priority1" id="priority1">
                     <option value="high">High</option>
                     <option value="medium">Medium</option>
@@ -95,8 +97,13 @@
                 <input class="course-input" id="course1" placeholder="Enter course name.">
                 <ul class="section-container" id="section-container">       
                     <li class="section">
+                        <h2>Section 1</h2>
                         <ul class="lesson-container">
                             <li class="lesson" id="lesson0">
+                                <h3>Lesson 1</h3>
+                                <select class="select" id="day0">
+                                    <option value="">Pick a day...</option>
+                                </select>
                                 <select class="select" id="start0" onchange="startChosen(this.parentNode.id, this.value);">
                                     <option value="">Pick a start time...</option>
                                 </select>
