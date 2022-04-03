@@ -26,6 +26,16 @@ var Schedule2 = {0: ['', '', '', '', '', '', '', '', '', '', 'Course A', 'Course
 //var colourOptions = ["rgb(197, 232, 180)", "rgb(250, 243, 211)", "rgb(117, 207, 224)", "rgb(248, 204, 222)", "rgb(211, 197, 242)", "rgb(167, 187, 225)"]
 //Pastel Rainbow https://www.schemecolor.com/house-party.php 
 
+/** Testing Code as an intermediate apllication of fucntions */
+
+
+var conflicts = [["Course 1", "Course 2"], ["Course 4", "Course 2"]]
+getConflicts(conflicts)
+generateTable(Schedule1)
+
+
+/**End of testing code */
+
 
 function getConflicts(conflict_list){ //Has to be a list of lists
     if (conflict_list.length > 0){
@@ -41,10 +51,6 @@ function getConflicts(conflict_list){ //Has to be a list of lists
 
     }
 }
-
-var conflicts = [["Course 1", "Course 2"], ["Course 4", "Course 2"]]
-getConflicts(conflicts)
-generateTable(Schedule1)
 
 function generateTable(Schedule){
 
