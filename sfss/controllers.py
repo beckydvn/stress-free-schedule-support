@@ -150,6 +150,6 @@ def table_post():
     query.show_table()
     return_dict = query.get_better_dict()
     if query.conflicting:
-        return render_template('table_results.html', message="The following courses could not be included due to conflicts: " + query.conflicting, output={'schedule': json.dumps(return_dict)})    
+        return render_template('table_results.html', message="The following courses could not be included due to conflicts: " + ", ".join(query.conflicting), output=json.dumps(return_dict))    
     else:
         return render_template('table_results.html', output=json.dumps(return_dict))

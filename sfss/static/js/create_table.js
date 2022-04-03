@@ -13,9 +13,11 @@
 // 4: ['', '', '', '', '', 'Course 2', 'Course 2', 'Course 2', '', '', '', 'Course 3', 'Course 3', 'Course 3', '', '', 'Course 4', 'Course 4', 'Course 4', '', '', '', '', '', '', '', '', '']
 // }
 
-console.log(document.getElementById("schedule").innerHTML);
+// unhide warning box if conflict message exists
+if (document.getElementById("noConflicts").innerHTML){
+    document.getElementById('MessageBoard').removeAttribute("hidden");
+}
 const Schedule = JSON.parse(document.getElementById("schedule").innerHTML);
-console.log(Schedule)
 
 //var colourOptions = ["tomato", "DodgerBlue", "rgb(146, 222, 76)", "rgb(106, 81, 255)", "rgb(255, 81, 81)", "rgb(255, 152, 77)"]
 //var colourOptions = ["rgb(204, 237, 228)", "rgb(166, 210, 225)", "rgb(168, 166, 219)", "rgb(211, 186, 233)", "rgb(243, 208, 245)", "rgb(255, 231, 247)"] //Light Pastels
@@ -35,20 +37,20 @@ console.log(Schedule)
 generateTable(Schedule)
 
 
-function getConflicts(conflict_list){ //Has to be a list of lists
-    if (conflict_list.length > 0){
-        var elem = document.getElementById("noConflicts")
-        elem.parentNode.removeChild(elem);
-        for (conflict in conflict_list){
-            var node = document.createElement('li');
-            messageString = "There was a conflict between these courses: " + conflict_list[conflict][0] + ', ' + conflict_list[conflict][1]
-            node.appendChild(document.createTextNode(messageString));
-            document.querySelector('ul').appendChild(node);
+// function getConflicts(conflict_list){ //Has to be a list of lists
+//     if (conflict_list.length > 0){
+//         var elem = document.getElementById("noConflicts")
+//         elem.parentNode.removeChild(elem);
+//         for (conflict in conflict_list){
+//             var node = document.createElement('li');
+//             messageString = "There was a conflict between these courses: " + conflict_list[conflict][0] + ', ' + conflict_list[conflict][1]
+//             node.appendChild(document.createTextNode(messageString));
+//             document.querySelector('ul').appendChild(node);
 
-        }
+//         }
 
-    }
-}
+//     }
+// }
 
 
 function generateTable(Schedule){
