@@ -243,7 +243,7 @@ class Query:
             # checking against other lessons in the section in case user is an idiot
             counter = 0
             for own_lesson in own_lessons:
-                if lesson_time.start <= own_lesson.end and lesson_time.end >= own_lesson.start:
+                if lesson_time.start <= own_lesson.end and lesson_time.end >= own_lesson.start and lesson_time.day == own_lesson.day:
                     counter += 1
                     if counter >1:  # to account for itself in the lesson list
                         return False

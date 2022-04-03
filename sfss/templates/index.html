@@ -8,42 +8,23 @@
                 background: rgb(13, 60, 87);
                 cursor: pointer;
             }
-            .elective-btn {
-                background: rgb(13, 60, 87);
+            .elective-btn:hover {
                 color: white;
-                pointer-events: none;
+                background: rgb(13, 60, 87);
+                cursor: pointer;
             }
         </style>
     </head>
     <div class="logo">
-        <img src="https://www.azirish.org/wp-content/uploads/2016/05/bookgroup2.png" width="250" height="250">
+        <img src="https://www.azirish.org/wp-content/uploads/2016/05/bookgroup2.png">
         <div class="nav-btn">
-            <a href="plan_table"> <button class="timetable-btn" id="timetable-btn">Plan your timetable</button> </a>
-            <button class="elective-btn" id="elective-btn">Elective Suggestion</button>
+            <a href="plan_table" style="text-decoration: none;"> <button class="timetable-btn" id="timetable-btn">Plan your timetable</button> </a>
+            <a href="elective_suggestion"><button class="elective-btn" id="elective-btn">Elective Suggestion</button> </a>
         </div>
     </div>
     <body>
-        <div class="error" id="error">Subjects can only contain letters!</div>
-        <h1 class="not-found">{{message}}</h1>
         <div class="header">
-            <h1>ELECTIVE SUGGESTION</h1>
+            <h1>STRESS-FREE SCHEDULE SUPPORT</h1>
         </div>
-        <div class="title">
-            <p>Enter all subject(s) that apply to you:</p>
-        </div>
-        <div class="container">
-            <div id="tag-container" class="tag-container">
-                <input class="userInput" type='text' id="userInput" placeholder="Enter subject(s) here...">
-            </div>
-        </div>
-
-        <script src="../static/js/course_preference.js"> </script>
-
-        <form method="post">
-            <div class="form-group">
-                <input class="searchBtn" type="submit" id="search-btn" value="Search">
-            </div>
-            <input name="list" id='list' class='list'>
-        </form>
     </body>
 </html>

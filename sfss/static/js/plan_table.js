@@ -1,6 +1,9 @@
 var times = ["8:00AM", "8:30AM", "9:00AM", "9:30AM", "10:00AM", "10:30AM", "11:00AM", "11:30AM", "12:00PM", "12:30PM", "1:00PM", "1:30PM", "2:00PM", "2:30PM", "3:00PM", "3:30PM", "4:00PM", "4:30PM", "5:00PM", "5:30PM", "6:00PM", "6:30PM", "7:00PM", "7:30PM", "8:00PM", "8:30PM", "9:00PM", "9:30PM", "10:00PM"]
 var days = ["MON", "TUES", "WED", "THURS", "FRI"]
 
+//var courseDict = {document.getElementById("course-container") :{document.getElementById("")}}
+
+
 // instantiate first time dropdown 
 let timeDropdown = document.getElementById("start0");
 instantiateStartTimeDropdown(timeDropdown);
@@ -15,7 +18,7 @@ function instantiateStartTimeDropdown(dropdown){
         let el = document.createElement("option");
     
         el.textContent = opt;
-        el.value = opt
+        el.value = opt;
         dropdown.appendChild(el);
     }
 }
@@ -194,4 +197,57 @@ function generatePriority(){
     priority.appendChild(medium);
     priority.appendChild(low);
     return priority;
+}
+
+function postInfo(form){
+    let courseContainer = document.getElementById("course-container");
+    // all course nodes
+    let courses = courseContainer.querySelectorAll(".course");
+    // course list to be returned
+    let courseList = Array(courses.length);
+    console.log(courses);
+    for (let course=0; course<courses.length; course++){
+        let prio = courses[course].querySelector(".select").value;
+        let priorityReturn = document.createElement("input");
+        priorityReturn.value = prio;
+        priorityReturn.name = "priority" + course;
+        priorityReturn.setAttribute("type", "hidden");
+        form.appendChild(priorityReturn);
+        let coursename = courses[course].querySelector(".course-input").value;
+        let nameReturn = document.createElement("input");
+        nameReturn.value = coursename;
+        nameReturn.name = "name" + course;
+        nameReturn.setAttribute("type", "hidden");
+        form.appendChild(nameReturn);
+        let sectionContainer = courses[course].querySelector(".section-container");
+        // all section nodes in this course
+        let sections = sectionContainer.querySelectorAll(".section");
+        // section list to be placed in course
+        sectionList = Array(sections.length);      
+        for (let section=0; section<sections.length; section++){
+            let lessonContainer = sections[section].querySelector(".lesson-container");
+            // all lesson nodes in this section
+            let lessons = lessonContainer.querySelectorAll(".lesson");
+            // lesson list to be placed in section
+            lessonList = Array(lessons.length);
+                for (let lesson=0; lesson<lessons.length; lesson++){
+                    let dayStartEnd = lessons[lesson].querySelectorAll(".select");
+                    let day = dayStartEnd[0].value;
+                    let start = dayStartEnd[1].value;
+                    let end = dayStartEnd[2].value;
+                    let lessonTime = [day, start, end];
+                    let les = document.createElement("input");
+                    les.value = lessonTime
+                    les.name = "course" + course + "-section" + section + "-lesson" + lesson;
+                    les.setAttribute("type", "hidden");
+                    form.appendChild(les);
+                    // form sent as { course(i)-section(x)-lesson(z) : "day", "start", "end"}
+                }
+        }    
+    }
+    let preference = document.createElement("input");
+    preference.value = "early" // change to reflect their choice when dropdown added
+    preference.name = "preference";
+    preference.setAttribute("type", "hidden");
+    form.appendChild(preference);
 }
