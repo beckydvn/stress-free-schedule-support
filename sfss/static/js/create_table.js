@@ -38,9 +38,9 @@ function getConflicts(conflict_list){ //Has to be a list of lists
     }
 }
 
-var conflicts = [["Course 1", "Course 2"], ["Course 4", "Course 2"]]
-getConflicts(conflicts)
-generateTable(Schedule1)
+//var conflicts = [["Course 1", "Course 2"], ["Course 4", "Course 2"]]
+//getConflicts(conflicts)
+generateTable(Schedule)
 
 function generateTable(Schedule){
 
