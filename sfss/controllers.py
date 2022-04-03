@@ -27,12 +27,13 @@ def index_post():
     else:
         return render_template('course_result.html', output=result, message="Based on your preferences:")
 
-'''
+
 @app.route('/plan_table', methods=['POST'])
 def table_post():
-    for lesson in _:
-        request.form.get(lesson_time)
-'''
+    return str(request.form.get("fullclick"))
+    # for lesson in _:
+    #     request.form.get(lesson_time)
+
 
 '''
 @app.route('/course_results', methods=['POST'])

@@ -94,6 +94,9 @@ function generateCourse(){
     xButton.textContent="x";
     xButton.onclick=function(){killSelf(course)};
     course.appendChild(xButton);
+    let courseTitle = document.createElement("h1");
+    courseTitle.innerHTML = "Course";
+    course.appendChild(courseTitle);
     let sectionContainer = document.createElement("ul");
     sectionContainer.classList.add("section-container");
     let section = generateSection();
@@ -121,7 +124,7 @@ function generateSection(){
     xButton.onclick=function(){killSelf(section)};
     section.appendChild(xButton);
     let sectionTitle = document.createElement("h2");
-    sectionTitle.innerHTML = "Section:";
+    sectionTitle.innerHTML = "Section";
     let lessonContainer = document.createElement("ul");
     lessonContainer.classList.add("lesson-container");
     let lesson = generateLesson();
@@ -144,7 +147,7 @@ function generateLesson(){
     xButton.onclick=function(){killSelf(lesson)};
     lesson.appendChild(xButton);
     let lessonTitle = document.createElement("h3");
-    lessonTitle.innerHTML = "Lesson:";
+    lessonTitle.innerHTML = "Lesson";
     lesson.appendChild(lessonTitle);
     dayDropdown = generateDay();
     lesson.appendChild(dayDropdown);
