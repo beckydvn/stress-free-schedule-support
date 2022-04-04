@@ -170,4 +170,4 @@ def create_database():
 
 # do not move
 db.create_all()
-# create_database() # feel free to comment this out once database has been created, just be sure to uncomment it after!
+create_database() # feel free to comment this out once database has been created, just be sure to uncomment it after!

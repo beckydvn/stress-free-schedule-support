@@ -34,6 +34,7 @@
         right: 0;
         background-color: #ffffff;
         font-family: monospace;
+        border-radius: 40px;
       }
 
     
@@ -71,6 +72,19 @@
     table.GeneratedTable thead {
       background-color: #57b5c1;
     }
+
+    .fullclick li {
+      padding: 10px 15px; 
+      margin-left: 10%; 
+      margin-right: 10%;
+      background: rgb(161, 62, 82);
+      font-size: xx-large;
+    }
+    .fullclick li:hover, .fullclick li:focus-within {
+    background:#942d36;
+    box-shadow: 0px 3px 6px #000;
+}
+
     </style>
 
       <li hidden id="schedule" name="schedule">{{output}}</li>      
@@ -87,11 +101,31 @@
         <h1>GENERATED TIMETABLE</h1>
       </div>
 
-    <div class="MessageBoard" hidden id="MessageBoard" style="font-size: 15px;"><u> Warning: </u>
-        <ul>
-          <li id="noConflicts">{{message}}</li>
+    <!-- <div style="display: flex; justify-content: center;">
+      <div class="MessageBoard" hidden id="MessageBoard" style="padding: 20px 20px; display: flex; justify-content: center;">
+        <ul style="padding: unset;">
+          <h3>WARNING</h3> 
         </ul>
-    </div>
+        <ul style="padding: unset;">
+          
+        </ul>
+        <ul style="padding: unset;">
+          <br>
+          <h3 id="noConflicts">{{message}}</h3>
+        </ul>
+
+      </div>
+    </div> -->
+
+    <ul class="fullclick">
+      <li id="MessageBoard" hidden>
+        <div style="display: flex; justify-content: center;">
+          <h3>WARNING</h3><br>
+        </div>
+        <h5 id="noConflicts" style="padding: 0px 0px;">{{message}}</h5>
+      </li>
+  </ul>
+
     <div style="overflow-x:auto; width: 940px; height: 1200px;"><table class="GeneratedTable">
       <thead>
         <tr id="rTitles">
