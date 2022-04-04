@@ -107,11 +107,13 @@ function generateCourse(){
     course.appendChild(priority);
     let input = document.createElement("input");
     input.classList.add("course-input");
+    input.setAttribute("required","");
     input.placeholder="Enter course name.";
     course.appendChild(input);
     sectionContainer.appendChild(section);
     course.appendChild(sectionContainer);
     let newSectionButton = document.createElement("button");
+    newSectionButton.setAttribute("type", "button");
     newSectionButton.classList.add("new-btn");
     newSectionButton.textContent = "+ Add another section...";
     newSectionButton.onclick = function(){newSection(sectionContainer)};
@@ -135,6 +137,7 @@ function generateSection(){
     lessonContainer.appendChild(lesson);
     section.appendChild(lessonContainer);
     let newLessonButton = document.createElement("button");
+    newLessonButton.setAttribute("type", "button");
     newLessonButton.classList.add("new-btn");
     newLessonButton.onclick = function(){newLesson(lessonContainer)};
     newLessonButton.textContent = "+ Add another lesson...";
@@ -161,6 +164,7 @@ function generateLesson(){
 function generateStart(){
     let start = document.createElement("select");
     start.classList.add("select");
+    start.setAttribute("required","");
     start.onchange = function(){addEndTime(start)};
     let def = document.createElement("option");
     def.textContent = "Pick a start time...";
@@ -175,6 +179,7 @@ function generateStart(){
 function generateDay(){
     let dayDropdown = document.createElement("select");
     dayDropdown.classList.add("select");
+    dayDropdown.setAttribute("required", "");
     let def = document.createElement("option");
     def.textContent = "Pick a day...";
     def.value = "";
@@ -187,6 +192,7 @@ function generateDay(){
 
 function generatePriority(){
     let priority  = document.createElement("select");
+    priority.setAttribute("required","");
     priority.classList.add("select");
     let high = document.createElement("option");
     high.textContent = "High";
@@ -217,19 +223,24 @@ function postInfo(){
     // course list to be returned
     for (let course=0; course<courses.length; course++){
         let prio = courses[course].querySelector(".select").value;
-        let priorityReturn = document.createElement("input");
-        priorityReturn.value = prio;
-        priorityReturn.name = "priority" + course;
-        priorityReturn.setAttribute("type", "hidden");
-        form.appendChild(priorityReturn);
+        // only append value to the form if not empty
+        if (prio){
+            let priorityReturn = document.createElement("input");
+            priorityReturn.value = prio;
+            priorityReturn.name = "priority" + course;
+            priorityReturn.setAttribute("type", "hidden");
+            form.appendChild(priorityReturn);
+        }
         let coursename = courses[course].querySelector(".course-input").value;
-        console.log(coursename);
-        let nameReturn = document.createElement("input");
-        nameReturn.value = coursename;
-        nameReturn.name = "name" + course;
-        nameReturn.setAttribute("type", "hidden");
-        console.log(nameReturn);
-        form.appendChild(nameReturn);
+        // only append value to the form if not empty
+        if (coursename){
+            let nameReturn = document.createElement("input");
+            nameReturn.value = coursename;
+            nameReturn.name = "name" + course;
+            nameReturn.setAttribute("type", "hidden");
+            console.log(nameReturn);
+            form.appendChild(nameReturn);
+        }
         let sectionContainer = courses[course].querySelector(".section-container");
         // all section nodes in this course
         let sections = sectionContainer.querySelectorAll(".section");
