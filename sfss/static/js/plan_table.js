@@ -50,6 +50,7 @@ function addEndTime(startTime){
         let oldChild = lesson.querySelector("#endTime");
         endTime.classList.add("select");
         endTime.setAttribute("id", "endTime");
+        
         if (oldChild){
             lesson.replaceChild(endTime, oldChild);
         }
@@ -163,7 +164,7 @@ function generateStart(){
     start.classList.add("select");
     start.onchange = function(){addEndTime(start)};
     let def = document.createElement("option");
-    def.textContent = "Pick a start time...";
+    def.textContent = "Select Start Time";
     def.value = "";
     start.appendChild(def);
     instantiateStartTimeDropdown(start);
@@ -174,7 +175,7 @@ function generateDay(){
     let dayDropdown = document.createElement("select");
     dayDropdown.classList.add("select");
     let def = document.createElement("option");
-    def.textContent = "Pick a day...";
+    def.textContent = "Select Day";
     def.value = "";
     dayDropdown.appendChild(def);
     instantiateDayDropdown(dayDropdown);
