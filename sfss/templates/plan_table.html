@@ -33,9 +33,10 @@
             padding: 10px;
             border-radius:45px;
             flex-direction:unset;
-            text-align: center;
+            text-align: left;
             margin: 0 auto;
             max-width: fit-content;
+            font-size: 30pt;
         }
         .fullclick li {
             background: rgb(4, 44, 90);
@@ -130,14 +131,14 @@
         <form method="post" id="postMethod">
             <ul class="fullclick" id="course-container">
                 <li class="course">
-                    <h1>Course</h1>
+                    <!-- <h1>Course</h1> -->
+                    <input class="course-input" id="course0" placeholder="Course" onkeydown="updateText(this)" required>
                     <select class="select" required id="priority0">
                         <option value="" selected disabled>Priority</option>
                         <option value="high">High</option>
                         <option value="medium">Medium</option>
                         <option value="low">Low</option>
                     </select>
-                    <input class="course-input" id="course0" placeholder="Enter course name." required>
                     <ul class="section-container" id="section-container">   
                         <li class="section">
                             <h2>Section</h2>
