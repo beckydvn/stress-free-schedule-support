@@ -39,8 +39,6 @@
         }
         .fullclick li {
             background: rgb(4, 44, 90);
-            margin: auto auto auto auto;
-            /* display:inline-table; */
         }
         .section-container {
             display: flex;
@@ -53,7 +51,7 @@
         .section-container li {
             list-style: none;
             margin: 10px 10px;
-            padding: 20px 10px;
+            padding: 20px 20px;
             background: rgb(0, 112, 187);
             position: relative;
             transition: 400ms;
@@ -65,8 +63,7 @@
         }
         .lesson-container li {
             list-style: none;
-            margin: 1em 0;
-            padding: 10px 10px;
+            padding: 20px 20px;
             background: rgb(0, 155, 155);
             position: relative;
             transition: 400ms;
@@ -109,6 +106,9 @@
             color:red;
             cursor: pointer;
         }
+        h3 {
+            margin: 0 0 .5em 0;
+        }
         
     </style>
 
@@ -145,10 +145,10 @@
                                 <li class="lesson" id="lesson0">
                                     <h3>Lesson</h3>
                                     <select class="select" required id="day0">
-                                        <option value="" selected disabled>Pick a day...</option>
+                                        <option value="" selected disabled>Select Day</option>
                                     </select>
                                     <select class="select" id="start0" required onchange="addEndTime(this);">
-                                        <option value="" selected disabled>Pick a start time...</option>
+                                        <option value="" selected disabled>Select Start Time</option>
                                     </select>
                                 </li>
                             </ul>
@@ -161,14 +161,14 @@
             <button class="new-btn" type="button" id="new-course-btn" onclick="newCourse(this.previousElementSibling);">+ Add another course...</button>
 
             
-            <div class="form-group"></div>
+            <div class="form-group" style="margin-top: 10%; display: flex; justify-content: center;"></div>
                 <select class="select" name="preference" id=preference required>
-                    <option value="" selected disabled>time preference</option>
-                    <option value=na>no preference</option>
-                    <option value=early>early</option>
-                    <option value=mid>mid-day</option>
-                    <option value=late>late</option>
-                    <option value=spread>spread out</option>
+                    <option value="" selected disabled>Time Preference</option>
+                    <option value=na>No preference</option>
+                    <option value=early>Early</option>
+                    <option value=mid>Mid-day</option>
+                    <option value=late>Late</option>
+                    <option value=spread>Spread out</option>
                 </select>
                 <input class="searchBtn" type="submit" id="search-btn" value="Search" onclick="postInfo();">
                  <!-- form sent as { course(i)-section(x)-lesson(z)-priority-coursename : "day", "start", "end"} -->
