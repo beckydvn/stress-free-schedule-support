@@ -108,11 +108,13 @@ function generateCourse(){
     course.appendChild(priority);
     let input = document.createElement("input");
     input.classList.add("course-input");
+    input.setAttribute("required","");
     input.placeholder="Enter course name.";
     course.appendChild(input);
     sectionContainer.appendChild(section);
     course.appendChild(sectionContainer);
     let newSectionButton = document.createElement("button");
+    newSectionButton.setAttribute("type", "button");
     newSectionButton.classList.add("new-btn");
     newSectionButton.textContent = "+ Add another section...";
     newSectionButton.onclick = function(){newSection(sectionContainer)};
@@ -136,6 +138,7 @@ function generateSection(){
     lessonContainer.appendChild(lesson);
     section.appendChild(lessonContainer);
     let newLessonButton = document.createElement("button");
+    newLessonButton.setAttribute("type", "button");
     newLessonButton.classList.add("new-btn");
     newLessonButton.onclick = function(){newLesson(lessonContainer)};
     newLessonButton.textContent = "+ Add another lesson...";
@@ -162,10 +165,13 @@ function generateLesson(){
 function generateStart(){
     let start = document.createElement("select");
     start.classList.add("select");
+    start.setAttribute("required","");
     start.onchange = function(){addEndTime(start)};
     let def = document.createElement("option");
     def.textContent = "Select Start Time";
     def.value = "";
+    def.selected = true;
+    def.disabled = true;
     start.appendChild(def);
     instantiateStartTimeDropdown(start);
     return start;
@@ -174,9 +180,12 @@ function generateStart(){
 function generateDay(){
     let dayDropdown = document.createElement("select");
     dayDropdown.classList.add("select");
+    dayDropdown.setAttribute("required", "");
     let def = document.createElement("option");
     def.textContent = "Select Day";
     def.value = "";
+    def.selected = true;
+    def.disabled = true;
     dayDropdown.appendChild(def);
     instantiateDayDropdown(dayDropdown);
     return dayDropdown;
@@ -184,6 +193,7 @@ function generateDay(){
 
 function generatePriority(){
     let priority  = document.createElement("select");
+    priority.setAttribute("required","");
     priority.classList.add("select");
     let high = document.createElement("option");
     high.textContent = "High";
@@ -194,37 +204,48 @@ function generatePriority(){
     let low = document.createElement("option");
     low.textContent = "Low";
     low.value = "low";
+    let def = document.createElement("option");
+    def.textContent = "Priority";
+    def.value = "";
+    def.selected = true;
+    def.disabled = true;
+    priority.appendChild(def);
     priority.appendChild(high);
     priority.appendChild(medium);
     priority.appendChild(low);
     return priority;
 }
 
-function postInfo(form){
+function postInfo(){
+    let form = document.getElementById("postMethod");
     let courseContainer = document.getElementById("course-container");
     // all course nodes
     let courses = courseContainer.querySelectorAll(".course");
     // course list to be returned
-    let courseList = Array(courses.length);
-    console.log(courses);
     for (let course=0; course<courses.length; course++){
         let prio = courses[course].querySelector(".select").value;
-        let priorityReturn = document.createElement("input");
-        priorityReturn.value = prio;
-        priorityReturn.name = "priority" + course;
-        priorityReturn.setAttribute("type", "hidden");
-        form.appendChild(priorityReturn);
+        // only append value to the form if not empty
+        if (prio){
+            let priorityReturn = document.createElement("input");
+            priorityReturn.value = prio;
+            priorityReturn.name = "priority" + course;
+            priorityReturn.setAttribute("type", "hidden");
+            form.appendChild(priorityReturn);
+        }
         let coursename = courses[course].querySelector(".course-input").value;
-        let nameReturn = document.createElement("input");
-        nameReturn.value = coursename;
-        nameReturn.name = "name" + course;
-        nameReturn.setAttribute("type", "hidden");
-        form.appendChild(nameReturn);
+        // only append value to the form if not empty
+        if (coursename){
+            let nameReturn = document.createElement("input");
+            nameReturn.value = coursename;
+            nameReturn.name = "name" + course;
+            nameReturn.setAttribute("type", "hidden");
+            console.log(nameReturn);
+            form.appendChild(nameReturn);
+        }
         let sectionContainer = courses[course].querySelector(".section-container");
         // all section nodes in this course
         let sections = sectionContainer.querySelectorAll(".section");
-        // section list to be placed in course
-        sectionList = Array(sections.length);      
+        // section list to be placed in course     
         for (let section=0; section<sections.length; section++){
             let lessonContainer = sections[section].querySelector(".lesson-container");
             // all lesson nodes in this section
@@ -246,9 +267,4 @@ function postInfo(form){
                 }
         }    
     }
-    let preference = document.createElement("input");
-    preference.value = "early" // change to reflect their choice when dropdown added
-    preference.name = "preference";
-    preference.setAttribute("type", "hidden");
-    form.appendChild(preference);
 }

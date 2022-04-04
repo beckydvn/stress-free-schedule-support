@@ -73,7 +73,7 @@
     }
     </style>
 
-      <input id="schedule" type="hidden">{{output}}</input>
+      <li hidden id="schedule" name="schedule">{{output}}</li>      
       <div class="logo">
         <a href=".."><img src="https://www.azirish.org/wp-content/uploads/2016/05/bookgroup2.png"></a>
         <div class="nav-btn">
@@ -87,9 +87,9 @@
         <h1>GENERATED TIMETABLE</h1>
       </div>
 
-    <div class="MessageBoard" id="MessageBoard" style="font-size: 15px;"><u> Messages you have about your time table will appear here:</u>
+    <div class="MessageBoard" hidden id="MessageBoard" style="font-size: 15px;"><u> Warning: </u>
         <ul>
-          <li id="noConflicts">There were no problems with your time table creation</li>
+          <li id="noConflicts">{{message}}</li>
         </ul>
     </div>
     <div style="overflow-x:auto; width: 940px; height: 1200px;"><table class="GeneratedTable">
