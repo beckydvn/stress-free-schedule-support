@@ -50,6 +50,7 @@ function addEndTime(startTime){
         let oldChild = lesson.querySelector("#endTime");
         endTime.classList.add("select");
         endTime.setAttribute("id", "endTime");
+        
         if (oldChild){
             lesson.replaceChild(endTime, oldChild);
         }
@@ -167,7 +168,7 @@ function generateStart(){
     start.setAttribute("required","");
     start.onchange = function(){addEndTime(start)};
     let def = document.createElement("option");
-    def.textContent = "Pick a start time...";
+    def.textContent = "Select Start Time";
     def.value = "";
     def.selected = true;
     def.disabled = true;
@@ -181,7 +182,7 @@ function generateDay(){
     dayDropdown.classList.add("select");
     dayDropdown.setAttribute("required", "");
     let def = document.createElement("option");
-    def.textContent = "Pick a day...";
+    def.textContent = "Select Day";
     def.value = "";
     def.selected = true;
     def.disabled = true;
