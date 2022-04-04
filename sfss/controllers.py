@@ -91,7 +91,7 @@ def table_post():
                 if section_num == last_section:
                     # add new lesson to the current lesson list
                     lesson_list.append(time_table.LessonTime(start_time, end_time, day))
-                    print(lesson_list)
+                    # print(lesson_list)
                 # if same course but new section
                 else:
                     # create previous section using built up lesson list
@@ -114,7 +114,7 @@ def table_post():
                 course_name = request.form.get("name%s"%(last_course))
                 prev_course = time_table.Course(course_name, section_list, priority)
                 course_list.append(prev_course)
-                print(course_list)
+                # print(course_list)
                 # clear lesson and section lists for next course, add this new one as first lesson
                 section_list = []
                 lesson_list = []
@@ -148,9 +148,9 @@ def table_post():
     elif preference == "na":
         preference = time_table.TimePreference.NA
         
-    print(course_list)
+    #print(course_list)
     query = time_table.Query(course_list, preference)
-    query.show_table()
+    #query.show_table()
     return_dict = query.get_better_dict()
     if query.conflicting:
         return render_template('table_results.html', message="The following courses could not be included due to conflicts: " + ", ".join(query.conflicting), output=json.dumps(return_dict))    
