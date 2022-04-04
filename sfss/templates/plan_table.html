@@ -126,48 +126,56 @@
         </div>
         <div class="title">
             <p>Enter your potential courses (and all their sections):</p>
+            <p style="color: red;">{{warning}}</p>
         </div>
         <ul class="fullclick" id="course-container">
             <li class="course">
                 <h1>Course</h1>
-                <select class="select" name="priority0" id="priority0">
-                    <option value="high">High</option>
-                    <option value="medium">Medium</option>
-                    <option value="low">Low</option>
-                </select>
-                <input class="course-input" id="course0" placeholder="Enter course name.">
-                <ul class="section-container" id="section-container">   
-                    <li class="section">
-                        <h2>Section</h2>
-                            <ul class="lesson-container">
-                                <li class="lesson" id="lesson0">
-                                    <h3>Lesson</h3>
-                                    <select class="select" id="day0">
-                                        <option value="">Pick a day...</option>
-                                    </select>
-                                    <select class="select" id="start0" onchange="addEndTime(this);">
-                                        <option value="">Pick a start time...</option>
-                                    </select>
-                                </li>
-                            </ul>
-                            <button class="new-btn" id="new-lesson-btn" onclick="newLesson(this.previousElementSibling);">+ Add another lesson...</button>
-                    </li>
-                </ul>
-                <button class="new-btn" id="new-section-btn" onclick="newSection(this.previousElementSibling);">+ Add another section...</button>
-            </li>
-        </ul>
-        <button class="new-btn" id="new-course-btn" onclick="newCourse(this.previousElementSibling);">+ Add another course...</button>
-        <button class="new-btn" id="new-course-btn" onclick="postInfo(this);"> TEST BUTTON</button>
-            
+        <form method="post" id="postMethod">
+                    <select class="select" required id="priority0">
+                        <option value="" selected disabled>Priority</option>
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                    <input class="course-input" id="course0" placeholder="Enter course name." required>
+                    <ul class="section-container" id="section-container">   
+                        <li class="section">
+                            <h2>Section</h2>
+                                <ul class="lesson-container">
+                                    <li class="lesson" id="lesson0">
+                                        <h3>Lesson</h3>
+                                        <select class="select" required id="day0">
+                                            <option value="" selected disabled>Pick a day...</option>
+                                        </select>
+                                        <select class="select" id="start0" required onchange="addEndTime(this);">
+                                            <option value="" selected disabled>Pick a start time...</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                                <button class="new-btn" type="button" id="new-lesson-btn" onclick="newLesson(this.previousElementSibling);">+ Add another lesson...</button>
+                        </li>
+                    </ul>
+                    <button class="new-btn" type="button" id="new-section-btn" onclick="newSection(this.previousElementSibling);">+ Add another section...</button>
+                </li>
+            </ul>
+            <button class="new-btn" type="button" id="new-course-btn" onclick="newCourse(this.previousElementSibling);">+ Add another course...</button>
+
         
-
-
-        <form method="post">
             <div class="form-group"></div>
-                <input class="searchBtn" type="submit" id="search-btn" value="Search" onclick="postInfo(this.parentNode);">
+                <select class="select" name="preference" id=preference required>
+                    <option value="" selected disabled>time preference</option>
+                    <option value=na>no preference</option>
+                    <option value=early>early</option>
+                    <option value=mid>mid-day</option>
+                    <option value=late>late</option>
+                    <option value=spread>spread out</option>
+                </select>
+                <input class="searchBtn" type="submit" id="search-btn" value="Search" onclick="postInfo();">
                  <!-- form sent as { course(i)-section(x)-lesson(z)-priority-coursename : "day", "start", "end"} -->
             </div>
         </form> 
+        <button class="searchBtn" onclick="postInfo();">Test</button>
         <script src="../static/js/plan_table.js"> </script>
     </body>
 </html>

@@ -50,6 +50,9 @@ def table_post():
     section_list = []
     lesson_list = []    
     for entry in dict_given:
+        if not dict_given[entry]:
+            return render_template('plan_table.html', warning="Please fill in all the required fields before submitting.")
+    for entry in dict_given:
         # if this key is one of the lesson keys (course(i)-section(x)-lesson(z)) create the associated lesson object
         if entry[0] == 'c':
             info = entry.split("-")
